@@ -1,0 +1,40 @@
+2014-10-12 17:06:45		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2014-10-13 09:32:13		fifo: pipe closed
+2014-10-15 18:11:43		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2014-10-15 22:15:01		fifo: pipe closed
+2014-10-17 20:33:37		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2014-10-18 04:02:56		fifo: pipe closed
+2014-10-20 23:39:34		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2014-10-20 23:39:51	=!=	irc: command "msg" must be executed on connected irc server
+2014-10-20 23:39:57	=!=	irc: command "msg" must be executed on connected irc server
+2014-10-20 23:45:56		irc: server snoonet created
+2014-10-20 23:46:23		irc: Server snoonet has been deleted
+2014-10-20 23:46:42		irc: server snoonet created
+2014-10-20 23:50:32		fifo: pipe closed
+2014-10-20 23:50:36		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2014-10-21 00:59:45		fifo: pipe closed
+2014-11-02 22:25:23		Plugins loaded: alias, aspell, charset, fifo, guile, irc, logger, lua, perl, python, relay, rmodifier, ruby, tcl, xfer
+2014-11-02 22:26:00	=!=	irc: command "msg" must be executed on connected irc server
+2014-11-03 00:19:52	=!=	Error: WeeChat main buffer can't be closed
+2014-11-03 00:19:56		fifo: pipe closed
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 22: unknown option for section "look": hide_nickserv_pwd = on
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 26: unknown option for section "look": highlight_tags = "irc_privmsg,irc_notice"
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 28: unknown option for section "look": item_channel_modes = on
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 29: unknown option for section "look": item_channel_modes_hide_key = off
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 39: unknown option for section "look": nick_prefix = ""
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 40: unknown option for section "look": nick_suffix = ""
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 63: unknown option for section "color": nick_prefix = green
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 65: unknown option for section "color": nick_suffix = green
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/irc.conf, line 77: unknown option for section "network": lag_disconnect = 0
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/aspell.conf, line 5: unknown section identifier ("look")
+2014-12-10 18:07:07	=!=	Warning: /home/chris/.weechat/aspell.conf, line 6: option outside section: color = lightred
+2014-12-10 18:07:08		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-10 18:07:16		fifo: pipe closed
+2014-12-10 18:07:22		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-11 01:33:44		fifo: pipe closed
+2014-12-11 22:42:19		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-12 15:06:31		fifo: pipe closed
+2014-12-14 11:21:58		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2014-12-26 03:03:20		fifo: pipe closed
+2015-01-05 01:41:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2015-01-05 01:42:02		fifo: pipe closed

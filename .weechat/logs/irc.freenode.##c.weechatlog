@@ -1,0 +1,955 @@
+2014-12-11 22:44:45	-->	nectarly (~chris@falk-egg-224-210.halls.student.lut.ac.uk) has joined ##c
+2014-12-11 22:44:45	--	Topic for ##c is "The C Programming Language || C11 is the current C Standard || PASTE (>3 lines) here: http://ideone.com/ || HOME page: http://www.iso-9899.info/ (to edit you need an account, see an wiki/channel admin if you need one) || BOOKS here: http://www.iso-9899.info/wiki/Books || Be civil"
+2014-12-11 22:44:45	--	Topic set by twkm on Fri, 08 Feb 2013 10:28:14
+2014-12-11 22:44:45	--	Channel ##c: 661 nicks (0 ops, 0 voices, 661 normals)
+2014-12-11 22:44:45	--	URL for ##c: http://www.iso-9899.info/
+2014-12-11 22:44:51	--	Channel created on Sun, 26 Nov 2006 06:42:39
+2014-12-11 22:44:52	kate	nullspoon, datastructures are an obvious one. imo, C really does not suit making generic, reusable ADTs. you can sort of do it, but it's cumbersome. so i don't make generic ADTs; i make something specific to each program, whenever i need it
+2014-12-11 22:46:05	-->	dseitz (~dan@ip70-191-237-177.pn.at.cox.net) has joined ##c
+2014-12-11 22:46:15	nullspoon	kate: Yeah, I've kind of noticed that. My hope is that as I get better with c, writing those kinds of things will become easier and faster for me.
+2014-12-11 22:46:28	kate	i think they do
+2014-12-11 22:46:44	edk	like practising anything
+2014-12-11 22:46:49	<--	l_r (~no@adsl-ull-188-92.42-151.net24.it) has left ##c ("Sto andando via")
+2014-12-11 22:46:50	nullspoon	My other goal is to get much better with using other people's libraries.
+2014-12-11 22:46:52	<--	diegoviola (~diego@unaffiliated/diegoviola) has quit (Quit: WeeChat 1.0.1)
+2014-12-11 22:47:05	edk	well, bear in mind that almost all of them are terrible
+2014-12-11 22:47:22	<--	Preda- (~preda@dsl-olubrasgw2-54f866-173.dhcp.inet.fi) has quit (Ping timeout: 256 seconds)
+2014-12-11 22:47:24	nullspoon	As it stands, getting up and running for the first time (AND understanding) with libssh2 took me quite some time.
+2014-12-11 22:47:29	nullspoon	Same with libcurl.
+2014-12-11 22:47:40	kate	libcurl is particularly nuts
+2014-12-11 22:47:45	pestle_	kate: you're never inclined to use a macro library like attractive chaos' klib: https://github.com/attractivechaos/klib ?
+2014-12-11 22:47:45	nullspoon	yeah, I noticed.
+2014-12-11 22:47:52	zid`	libcurl is nuts?
+2014-12-11 22:47:56	zid`	I thought it was really simple
+2014-12-11 22:48:12	zid`	It has like.. simple functions and advanced functions, then you just provide a callback and gg
+2014-12-11 22:48:25	nullspoon	kate: My first experience with libcurl was so bad that I was tempted to just stick with writing my own sockets.
+2014-12-11 22:48:40	kate	pestle_, https://github.com/attractivechaos/klib/blob/master/knhx.c#L54
+2014-12-11 22:48:42	kate	pestle_, no thank you
+2014-12-11 22:49:00	edk	hey! undefined behaviour
+2014-12-11 22:49:04	nullspoon	zid`,kate: In defense of libcurl though, I was much newer to c/c++ at the time than I am now, so it might go much smoother now for me.
+2014-12-11 22:49:45	edk	i like that parsing FASTQ is considered a "common component"
+2014-12-11 22:50:00	nullspoon	Pessimist: Oh, and followup: I sure wish I did. Not good enough yet though.
+2014-12-11 22:50:22	-->	AngusH (~angus@31.185.247.48) has joined ##c
+2014-12-11 22:50:37	pestle_	kate: hrm.  yeah, that's not good.
+2014-12-11 22:51:27	zid`	[22:50] <sepeck> this might be better in ##hardware or ##networking
+2014-12-11 22:51:27	zid`	[22:51] <zid`> Ohh we have a poppavic too, you two should be friends
+2014-12-11 22:51:32	zid`	PoppaVic: I found you a friend
+2014-12-11 22:51:42	PoppaVic	zid`:  unlikely
+2014-12-11 22:51:51	kate	friends are off-topic
+2014-12-11 22:51:56	zid`	kek
+2014-12-11 22:52:10	zid`	kate: Nobody listens to you being bossy anymore
+2014-12-11 22:52:13	likecolacola	haha
+2014-12-11 22:52:13	zid`	You lost your edge.
+2014-12-11 22:52:20	<--	agjacome (~agjacome@171.169.20.95.dynamic.jazztel.es) has quit (Ping timeout: 245 seconds)
+2014-12-11 22:52:30	kate	i was never bossy!
+2014-12-11 22:52:38	zid`	The ` was just THAT imposing.
+2014-12-11 22:52:40	kate	I AM A NICE PERSON
+2014-12-11 22:52:43	sharpneli	kate: "For discussion about friends go to #cplusplus"
+2014-12-11 22:52:48	<--	TMM (~hp@fsf/member/pdpc.professional.tmm) has quit (Quit: Ex-Chat)
+2014-12-11 22:53:08	-->	TMM (~hp@fsf/member/pdpc.professional.tmm) has joined ##c
+2014-12-11 22:53:35	PoppaVic	yer all offtopic again - blame zid`
+2014-12-11 22:54:23	zid`	PoppaVic: blame is offtopic
+2014-12-11 22:54:23	-->	qnavry (~zyxwvuts@unaffiliated/qnavry) has joined ##c
+2014-12-11 22:55:00	pestle_	zid`: is it on-topic to have a metadiscussion of what's offtopic?
+2014-12-11 22:55:25	<--	mwbrown (~Bluhd@wikipedia/Bluhd) has quit (Ping timeout: 264 seconds)
+2014-12-11 22:55:48	<--	Fiji_ (Sharoa@1x-vl938-72-19-73-4.wireless.umass.edu) has quit (Ping timeout: 255 seconds)
+2014-12-11 22:56:15	zcram	Your conversation does not concern C. Please talk about C only.
+2014-12-11 22:56:28	zid`	I think channel moderation is on-topic in any channel, because they're channels
+2014-12-11 22:57:32	PoppaVic	and it has a 'c'
+2014-12-11 22:57:41	zid`	perfect
+2014-12-11 22:57:50	-->	Zentdayn (~Zentdayn@43.198.54.77.rev.vodafone.pt) has joined ##c
+2014-12-11 22:58:10	smithw	There's absolutely no way I can call a macro using as argument the result of another macro call, is there? As in, MY_MACRO1(MY_MACRO2(x))?
+2014-12-11 22:58:20	-->	guidj0s (~guidjos@oftn/member/guidj0s) has joined ##c
+2014-12-11 22:58:33	cousteau	there is, but I don't know how that works
+2014-12-11 22:58:45	zid`	Why not?
+2014-12-11 22:58:57	PoppaVic	silly droogs - do a damned test
+2014-12-11 22:58:58	zid`	It would just expand it all and be a single expression
+2014-12-11 22:59:04	<--	Zerock|Work (~0ck@h162.243.184.173.static.ip.windstream.net) has quit (Quit: Leaving)
+2014-12-11 22:59:05	PoppaVic	open the documentation, too
+2014-12-11 22:59:08	<--	SM0TVI (kvirc@unaffiliated/sm0tvi) has quit (Quit: I view things as they are, without regard to place or person; my country is the world, and my religion is to do good. -- Thomas Paine (*1737 †1809))
+2014-12-11 22:59:32	zid`	It might not *work* but it should expand correctly, no?
+2014-12-11 22:59:45	<--	bjh13 (~bjh13@199.201.255.244) has quit (Quit: leaving)
+2014-12-11 22:59:53	cousteau	,cc #define MY_MACRO1(x) "A" x \n  #define MY_MACRO2(x) "B" x \n   puts(MY_MACRO1(MY_MACRO2("C")));
+2014-12-11 22:59:55	candide	cousteau: ABC
+2014-12-11 23:00:02	zid`	#define MY_MACRO1(x) 2*x  #define MY_MACRO2(x) 2*x MY_MACRO2(x) expands to '2*x', MY_MACRO1(x) expands to 2*2*x
+2014-12-11 23:00:05	<--	quinman22 (~quinman22@192.48.192.5) has quit (Read error: Connection reset by peer)
+2014-12-11 23:00:08	-->	quinman23 (~quinman22@192.48.192.5) has joined ##c
+2014-12-11 23:00:10	smithw	In my test, that just expands MY_MACRO1 with "MY_MACRO2(x)" literally as its arguments. I wondered if there was a clever way around that.
+2014-12-11 23:00:59	cousteau	yeah, macros just replace the arguments literally...  but then the MY_MACRO2(x) should have expanded as well
+2014-12-11 23:01:17	guidj0s	Anyone aware of an open source, light weight, distributed, non-webserver-served wiki system?
+2014-12-11 23:01:27	zid`	guidj0s: cat
+2014-12-11 23:01:30	<--	sigchild (~nobody@unaffiliated/zx10k1) has quit (Quit: Leaving)
+2014-12-11 23:01:39	smithw	cousteau, tbh, I forget another level of indirection, it's actually #define MY_MACRO3(x) MY_MACRO2(MY_MACRO1(x))
+2014-12-11 23:01:56	smithw	(obviously it's more complicated than that, but that's the gist of it)
+2014-12-11 23:01:58	kesselhaus_	guidj0s: wikipad .. but its winodws afaik
+2014-12-11 23:02:13	cousteau	I don't know in which order macros are expanded; I think it's unspecified
+2014-12-11 23:02:13	zid`	that's not going to work, smithw
+2014-12-11 23:02:25	zid`	because it requires the other ones to already be expanded at the time of the #define
+2014-12-11 23:02:29	zid`	which obviously isn't going to happen
+2014-12-11 23:02:30	-->	BreadProduct_ (~chatzilla@198.23.71.123-static.reverse.softlayer.com) has joined ##c
+2014-12-11 23:02:31	<--	NeoGeo64 (~oxycodone@173-29-37-182.client.mchsi.com) has quit (Remote host closed the connection)
+2014-12-11 23:02:36	-->	Fun (~Fun@unaffiliated/fun) has joined ##c
+2014-12-11 23:02:36	cousteau	zid`, why not?
+2014-12-11 23:02:40	smithw	zid`, yeah, I figured :/
+2014-12-11 23:02:45	zid`	cousteau: It only expands once
+2014-12-11 23:02:45	Fun	hi folks
+2014-12-11 23:03:01	cousteau	wouldn't MY_MACRO3(x) expand to MY_MACRO2(MY_MACRO1(x)) which would in turn expand to whatever?
+2014-12-11 23:03:08	zid`	no
+2014-12-11 23:03:08	Fun	which version of visual studio I need to open vbproj file?
+2014-12-11 23:03:08	zid`	It will expand to the C code "MY_MACRO2(MY_MACRO1(x))"
+2014-12-11 23:03:19	Fun	I tried C++ express it wont open it
+2014-12-11 23:03:20	zid`	It only ever expands to C, not to cpp language
+2014-12-11 23:03:29	-->	kagt (~kagt@108.61.152.252) has joined ##c
+2014-12-11 23:03:34	nullspoon	guidj0s: vim and git.
+2014-12-11 23:03:34	smithw	zid`, actually MY_MACRO2 *does* get expanded, but MY_MACRO1 doesn't
+2014-12-11 23:03:46	zid`	a) vbproj sounds like visual basic, b) this isn't a tool support channel, c) this isn't a C++ channel
+2014-12-11 23:03:55	kesselhaus_	smithw: how about a testcase?
+2014-12-11 23:03:55	cousteau	I think it all depends in the order in which macros are expanded
+2014-12-11 23:03:57	edk	zid`: they're a known network troll
+2014-12-11 23:04:05	zid`	edk: yea, but we let cousteau stay
+2014-12-11 23:04:19	Fun	zid`: well its c
+2014-12-11 23:04:25	Fun	maybe it wants c?
+2014-12-11 23:04:27	zid`	It'd be mean to let cousteau stay but not Fun
+2014-12-11 23:04:46	cousteau	which iiuc is impdef
+2014-12-11 23:04:49	<--	BreadProduct (~chatzilla@66.85.150.74) has quit (Ping timeout: 260 seconds)
+2014-12-11 23:04:49	--	BreadProduct_ is now known as BreadProduct
+2014-12-11 23:04:53	guidj0s	kesselhaus_: Wikidpad's great, except for the fact that it's not distributed in the sense that multiple users cannot access a single page at the same time.
+2014-12-11 23:04:56	cousteau	hey, I don't offtopic that often!
+2014-12-11 23:04:56	<--	KarolisK (~karolis@194.28.233.64) has quit (Quit: Konversation terminated!)
+2014-12-11 23:05:02	<--	CEnnis91 (uid3543@gateway/web/irccloud.com/x-kevfforibuirfmgt) has quit (Quit: Connection closed for inactivity)
+2014-12-11 23:05:08	guidj0s	nullspoon: You should :x.
+2014-12-11 23:05:20	Fun	cousteau:  it says coded under VB.NET so where is the best place to ask about it?
+2014-12-11 23:05:21	Fun	:)
+2014-12-11 23:05:26	edk	guidj0s: so what you're looking for is essentially a renderer bolted on top of a DVCS?
+2014-12-11 23:05:50	cousteau	guidj0s, you mean like google wave?  anyway that's not on topic here nor I see any relation of that with C
+2014-12-11 23:06:01	cousteau	Fun, no idea, maybe #winapi or #windows
+2014-12-11 23:06:03	cousteau	,notc
+2014-12-11 23:06:06	candide	That is not a C issue. This channel exists for discussion of the Standard C Language itself; not tools such as Makefiles, IDEs, compilers (see ##workingset for these things) or random libraries (including OS-specific ones such as POSIX or Windows; see ##posix or #winapi). For general-purpose C discussion, join ##c-general.
+2014-12-11 23:06:21	cousteau	hmm, ,notc only mentions #winapi
+2014-12-11 23:06:31	nullspoon	guidj0s: Wow. No attempt to offend. Vim with syntax highlighting and markdown works very well. Git serves to decentralize, distribute, and document.
+2014-12-11 23:06:44	<--	gegagome (~gegagome@230-124.adsl1.netlojix.net) has quit (Quit: gegagome)
+2014-12-11 23:06:44	-->	hiptobecubic (~john@unaffiliated/hiptobecubic) has joined ##c
+2014-12-11 23:06:56	cousteau	maybe try ##workingset but that's probably more oriented towards open source tools rather than VS
+2014-12-11 23:06:58	nullspoon	guidj0s: Plus there are other editors that have syntaxhighlighting with markdown. Very stripped down, very easy to search.
+2014-12-11 23:07:26	-->	MrCoffee (~coffee@unaffiliated/ridout) has joined ##c
+2014-12-11 23:07:31	kesselhaus_	guidj0s: how about tiddlywiki on a network share or such
+2014-12-11 23:07:45	<--	Zumbido (~Thunderbi@190.172.163.170) has quit (Quit: Zumbido)
+2014-12-11 23:07:56	<--	MrCoffee (~coffee@unaffiliated/ridout) has quit (Client Quit)
+2014-12-11 23:08:00	guidj0s	edk: Basically. It should be reasonably point-n'-clicky, though, since users wouldn't be computer-savvy.
+2014-12-11 23:08:10	<--	Fun (~Fun@unaffiliated/fun) has left ##c
+2014-12-11 23:08:23	guidj0s	kesselhaus_: A network share is the actual scenario. I'll look those up. :-)
+2014-12-11 23:08:33	<--	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Ping timeout: 265 seconds)
+2014-12-11 23:09:19	<--	BreadProduct (~chatzilla@198.23.71.123-static.reverse.softlayer.com) has quit (Read error: Connection reset by peer)
+2014-12-11 23:09:27	<--	haiqus (~haiqus@205.197.176.34) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-12-11 23:09:28	nullspoon	guidj0s: Ah. Easy: Git is definitely not that. Have a look at Zim as well.
+2014-12-11 23:09:36	guidj0s	nullspoon: No worries, I'm just joking. Users would be business analysts who would mistake vim for a "colorful notepad", though.
+2014-12-11 23:09:50	-->	BreadProduct (~chatzilla@50.23.131.222) has joined ##c
+2014-12-11 23:10:28	-->	forbid (~daniel@unaffiliated/forbid) has joined ##c
+2014-12-11 23:10:44	-->	kessel (~kesselhau@ip-77-24-140-14.web.vodafone.de) has joined ##c
+2014-12-11 23:12:17	<--	FunkyAss (~Funky@unaffiliated/funkyass) has quit (Quit: Make my Funk the P-Funk)
+2014-12-11 23:12:55	guidj0s	So, have implementors caught up with C11 yet?
+2014-12-11 23:13:33	kate	i like zim. i recommended it to somebody and they're very happy with it
+2014-12-11 23:13:52	<--	kesselhaus_ (~kesselhau@ip-109-43-217-187.web.vodafone.de) has quit (Ping timeout: 264 seconds)
+2014-12-11 23:14:19	kate	and i wrote a fuse filesystem to present data in its format
+2014-12-11 23:14:25	<--	stakewinner00 (~stakewinn@87.118.15.37.dynamic.jazztel.es) has quit (Remote host closed the connection)
+2014-12-11 23:14:36	nullspoon	guidj0s: Yeah, I can see that not working very well. I've run into a similar problem before. Never did find a very good solution besides zim.
+2014-12-11 23:15:02	guidj0s	kate: Nice.
+2014-12-11 23:15:05	nullspoon	guidj0s: Works on windows as well.
+2014-12-11 23:15:22	guidj0s	nullspoon: Does it require a Python install, though?
+2014-12-11 23:15:27	-->	jimvideo (~jimvideo@184-12-235-91.dr01.brny.ca.frontiernet.net) has joined ##c
+2014-12-11 23:15:30	<--	Munnu (~timo@91-158-128-16.elisa-laajakaista.fi) has quit (Remote host closed the connection)
+2014-12-11 23:16:58	nullspoon	guidj0s: looking at the dependency list on my system, roundabout way it requires python2.
+2014-12-11 23:17:00	-->	zmack (~zmack@84.117.10.56) has joined ##c
+2014-12-11 23:17:18	nullspoon	pygtk, python2-cairo, and python2.
+2014-12-11 23:17:40	-->	gegagome (~gegagome@230-124.adsl1.netlojix.net) has joined ##c
+2014-12-11 23:17:43	-->	gravitation (~gravitati@atlas.phys.columbia.edu) has joined ##c
+2014-12-11 23:17:51	<--	AStorm (~astralsto@unaffiliated/astralstorm) has quit (Ping timeout: 250 seconds)
+2014-12-11 23:17:53	-->	NightTrain (~coffee@unaffiliated/ridout) has joined ##c
+2014-12-11 23:17:59	guidj0s	nullspoon: Yeah, but there's also a Windows installer and no dependency info attached to it. I'll check it out.
+2014-12-11 23:18:10	<--	k-man (~jason@unaffiliated/k-man) has quit (Ping timeout: 245 seconds)
+2014-12-11 23:18:22	<--	BreadProduct (~chatzilla@50.23.131.222) has quit (Ping timeout: 244 seconds)
+2014-12-11 23:18:24	--	icedev_ is now known as icedev
+2014-12-11 23:19:14	-->	k-man (~jason@unaffiliated/k-man) has joined ##c
+2014-12-11 23:19:33	<--	Lowl3v3l (~Lowl3v3l@95.90.213.220) has quit (Quit: Leaving)
+2014-12-11 23:21:09	-->	NeoGeo64 (~oxycodone@173-29-37-182.client.mchsi.com) has joined ##c
+2014-12-11 23:21:38	<--	zmack (~zmack@84.117.10.56) has quit (Ping timeout: 258 seconds)
+2014-12-11 23:23:11	cousteau	guidj0s, re: C11, afaik it's "mostly supported" in GCC now
+2014-12-11 23:23:24	cousteau	(as in "basically as much supported as C99")
+2014-12-11 23:23:59	-->	BreadProduct_ (~chatzilla@50.23.115.122-static.reverse.softlayer.com) has joined ##c
+2014-12-11 23:24:13	guidj0s	Well, that wasn't too long.
+2014-12-11 23:24:50	cousteau	and afaik Visual Studio started moving into supporting C99 last year or so
+2014-12-11 23:24:54	guidj0s	I'll most likely never type -c11, though.
+2014-12-11 23:25:07	guidj0s	Heheh, that sounds like a joke.
+2014-12-11 23:25:54	<--	AngusH (~angus@31.185.247.48) has quit (Quit: Leaving)
+2014-12-11 23:26:37	cousteau	yeah but it wasn't.  In 2013 they decided to start implementing a 1999 thing.
+2014-12-11 23:27:47	--	BreadProduct_ is now known as BreadProduct
+2014-12-11 23:27:50	--	Mode ##c [+o candide] by ChanServ
+2014-12-11 23:27:52	--	Mode ##c [+b *!~chatzilla@50.23.115.122-static.reverse.softlayer.com] by candide
+2014-12-11 23:27:58	<--	dev_as0 (~dev_as0@gateway/tor-sasl/devas0/x-36743519) has quit (Remote host closed the connection)
+2014-12-11 23:28:20	<--	BreadProduct (~chatzilla@50.23.115.122-static.reverse.softlayer.com) has quit (Client Quit)
+2014-12-11 23:28:29	<--	dokma (~dokma@93-141-121-201.adsl.net.t-com.hr) has left ##c ("Leaving")
+2014-12-11 23:28:30	-->	arquebus (~shintaro@c-76-103-213-5.hsd1.ca.comcast.net) has joined ##c
+2014-12-11 23:29:02	<--	ac_slater_ (~weechat@dhcp89-69-173.bbn.com) has quit (Quit: WeeChat 1.0.1)
+2014-12-11 23:29:14	<--	macabre (~ibtjw@unaffiliated/macabre) has quit (Quit: Be back later ...)
+2014-12-11 23:32:56	--	Mode ##c [-o candide] by ChanServ
+2014-12-11 23:33:29	-->	Burgundy (~burgundy@5-12-9-20.residential.rdsnet.ro) has joined ##c
+2014-12-11 23:34:10	batbird	->* 	Pointer to member,   what is that? I don't get it
+2014-12-11 23:34:34	batbird	-> Element selection through pointer. But ->*?
+2014-12-11 23:35:37	<--	nickoe_ (~nickoe@5b96e5fc.cust.ip.gvdnet.dk) has quit (Ping timeout: 245 seconds)
+2014-12-11 23:36:05	Pessimist	batbird, maybe that means -> and *?
+2014-12-11 23:36:17	-->	kerrick (~kerrick@50-196-159-42-static.hfc.comcastbusiness.net) has joined ##c
+2014-12-11 23:37:33	<--	forbid (~daniel@unaffiliated/forbid) has quit (Quit: leaving)
+2014-12-11 23:40:19	-->	diegoviola (~diego@unaffiliated/diegoviola) has joined ##c
+2014-12-11 23:40:45	-->	toothrot (~mux@unaffiliated/toothrot) has joined ##c
+2014-12-11 23:46:32	-->	pestle (~pestle@c-50-137-69-4.hsd1.ct.comcast.net) has joined ##c
+2014-12-11 23:47:54	fizzie	batbird: You want a C++ channel for that.
+2014-12-11 23:48:46	fizzie	(It doesn't mean anything in C.)
+2014-12-11 23:49:21	<--	pestle_ (~pestle@c-50-137-69-4.hsd1.ct.comcast.net) has quit (Ping timeout: 255 seconds)
+2014-12-11 23:50:12	batbird	fizzie: hmm, k thnx
+2014-12-11 23:51:30	-->	Preda- (~preda@dsl-olubrasgw2-54f866-173.dhcp.inet.fi) has joined ##c
+2014-12-11 23:51:37	-->	Jesin (~Jesin@dhcp123-51.eecs.lehigh.edu) has joined ##c
+2014-12-11 23:53:04	-->	Fiji (Fiji@1x-vl938-72-19-73-4.wireless.umass.edu) has joined ##c
+2014-12-11 23:55:22	<--	manizzle (~manizzle@c-69-181-7-109.hsd1.ca.comcast.net) has quit (Ping timeout: 244 seconds)
+2014-12-11 23:56:28	-->	wlxmhls (~hp@124.65.46.34) has joined ##c
+2014-12-11 23:57:04	-->	BreadProduct (~chatzilla@46.19.141.158) has joined ##c
+2014-12-11 23:57:05	--	Mode ##c [+o candide] by ChanServ
+2014-12-11 23:57:08	<--	candide has kicked BreadProduct (Ban evasion)
+2014-12-11 23:57:08	--	Mode ##c [+b *!~chatzilla@46.*] by candide
+2014-12-11 23:57:13	-->	whaletechno (~whaletech@unaffiliated/whaletechno) has joined ##c
+2014-12-11 23:57:56	--	Mode ##c [-b *!~chatzilla@50.23.115.122-static.reverse.softlayer.com] by candide
+2014-12-12 00:00:09	-->	minimus (minimus@ip72-200-195-78.ok.ok.cox.net) has joined ##c
+2014-12-12 00:02:05	<--	kurahaupo (~kurahaupo@118.149.180.69) has quit (Ping timeout: 244 seconds)
+2014-12-12 00:02:16	--	Mode ##c [-o candide] by ChanServ
+2014-12-12 00:03:49	<--	pakcjo (~ircuser@181.197.101.41) has quit (Quit: leaving)
+2014-12-12 00:05:47	<--	N8Fear (~n8fear@dslb-094-222-005-171.094.222.pools.vodafone-ip.de) has quit (Quit: WeeChat 1.0.1)
+2014-12-12 00:06:54	<--	jitta (~jitta@95.90.246.169) has quit (Quit: Stay stressed, then give up.)
+2014-12-12 00:06:59	-->	AlphaOmega82 (~Alfa@CPEbc140153e513-CMbc140153e510.cpe.net.cable.rogers.com) has joined ##c
+2014-12-12 00:09:36	<--	kerrick (~kerrick@50-196-159-42-static.hfc.comcastbusiness.net) has quit (Ping timeout: 255 seconds)
+2014-12-12 00:11:20	<--	nullspoon (~nullspoon@97-122-102-252.hlrn.qwest.net) has quit (Quit: WeeChat 1.0.1)
+2014-12-12 00:16:31	likecolacola	Exercise 4-14. Define a macro (Block structure will help.)swap(t,x,y)that interchanges two arguments of type t.
+2014-12-12 00:16:45	likecolacola	any hint on what's requested on this exercise :P?
+2014-12-12 00:16:59	-->	ioanel (~Icedove@188.25.11.182) has joined ##c
+2014-12-12 00:17:04	<--	TMM (~hp@fsf/member/pdpc.professional.tmm) has quit (Ping timeout: 240 seconds)
+2014-12-12 00:17:24	likecolacola	we just used a swap for qsort(), but i don't think the exercise refers to that kind of swaps...  xd
+2014-12-12 00:18:04	rob``	likecolacola: int a = 1, b = 2; swap(int, a, b); assert(a == 2 && b == 1);
+2014-12-12 00:18:04	<--	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has quit (Ping timeout: 240 seconds)
+2014-12-12 00:20:42	likecolacola	rob``, thanks
+2014-12-12 00:20:44	likecolacola	!
+2014-12-12 00:22:10	likecolacola	is there a type var that hold types?, like type a = int;
+2014-12-12 00:22:26	kate	nope. welcome to C :)
+2014-12-12 00:22:36	-->	TMM (~hp@fsf/member/pdpc.professional.tmm) has joined ##c
+2014-12-12 00:22:36	-->	N8Fear (~n8fear@dslb-094-222-005-171.094.222.pools.vodafone-ip.de) has joined ##c
+2014-12-12 00:23:10	rob``	that's why you need a macro, not a function
+2014-12-12 00:23:23	likecolacola	:P
+2014-12-12 00:23:55	likecolacola	apart from #define MAX 100, i am completely new to #defines... and more, macros :P so this exercise got me puzzled
+2014-12-12 00:24:01	likecolacola	but i will solve it with joy hehe
+2014-12-12 00:24:32	likecolacola	just re read the macro section and figure out
+2014-12-12 00:25:32	-->	shikhout (~shikhin@unaffiliated/shikhin) has joined ##c
+2014-12-12 00:25:38	<--	notadev (~notadev@fu/coder/notadev) has left ##c ("bye")
+2014-12-12 00:28:48	<--	shikhin (~shikhin@unaffiliated/shikhin) has quit (Ping timeout: 260 seconds)
+2014-12-12 00:29:36	likecolacola	kate, thanks for the welcome :>
+2014-12-12 00:31:52	<--	Burgundy (~burgundy@5-12-9-20.residential.rdsnet.ro) has quit (Ping timeout: 264 seconds)
+2014-12-12 00:33:46	cousteau	wasn't there a trick like   #define swap(x,y)  ((x)^=(y)^=(x)^=(y))
+2014-12-12 00:34:55	-->	jdolan (~jdolan@c-50-188-243-111.hsd1.fl.comcast.net) has joined ##c
+2014-12-12 00:34:59	cousteau	gcc warns me about potential UB though
+2014-12-12 00:36:32	--	Mode ##c [+o pragma-] by ChanServ
+2014-12-12 00:37:01	--	Mode ##c [-qqqq pentester!*@* j0b!*@* *!*@fedora/pythonsnake diffusestorm!*@*] by pragma-
+2014-12-12 00:37:26	--	Mode ##c [-bbbb $a:eblip$##fix_your_connection *!~genpaku@107.191.100.185 *!*@ool-2f12ec63.dyn.optonline.net *!~wakawaka@guifications/user/r0bby$##stop_join_flood] by pragma-
+2014-12-12 00:37:47	--	Mode ##c [-bbo *!*@78.84.11.233 *!~chatzilla@46.* pragma-] by pragma-
+2014-12-12 00:37:51	-->	D9 (~un@104.207.136.26) has joined ##c
+2014-12-12 00:37:53	likecolacola	C is so complex
+2014-12-12 00:38:14	likecolacola	xd
+2014-12-12 00:38:54	fstd	,next
+2014-12-12 00:38:55	candide	Another satisfied customer! NEXT!!
+2014-12-12 00:39:07	likecolacola	hahahaha
+2014-12-12 00:39:45	-->	genpaku (~genpaku@107.191.100.185) has joined ##c
+2014-12-12 00:39:50	<--	Preda- (~preda@dsl-olubrasgw2-54f866-173.dhcp.inet.fi) has quit (Ping timeout: 258 seconds)
+2014-12-12 00:40:14	kate	hm. i want two names for things which mean "from" and "to" but are of equal length. src and dst, maybe
+2014-12-12 00:40:29	pragma-	this, that
+2014-12-12 00:40:31	CaZe	likecolacola: You can use: t temp = a; in your block.
+2014-12-12 00:40:57	CaZe	Err, t  temp = x;
+2014-12-12 00:41:25	cousteau	src and dst are good
+2014-12-12 00:41:32	pragma-	or just write it was three statements.
+2014-12-12 00:41:38	pragma-	s/was/as/
+2014-12-12 00:41:46	pragma-	or use commas if you really want it to be one statement.
+2014-12-12 00:41:59	-->	kurahaupo (~kurahaupo@118.149.158.121) has joined ##c
+2014-12-12 00:42:02	-->	zota (~zota@unaffiliated/zota) has joined ##c
+2014-12-12 00:42:05	zota	clear
+2014-12-12 00:42:09	<--	jdolan (~jdolan@c-50-188-243-111.hsd1.fl.comcast.net) has quit (Remote host closed the connection)
+2014-12-12 00:42:11	zota	hey guys
+2014-12-12 00:42:20	-->	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has joined ##c
+2014-12-12 00:42:27	-->	jdolan (~jdolan@c-50-188-243-111.hsd1.fl.comcast.net) has joined ##c
+2014-12-12 00:42:54	pragma-	of course, no real production software is going to use the xor trick because it is unreliable.
+2014-12-12 00:43:07	<--	BSaboia (~BSaboia@186.213.22.166) has quit (Read error: Connection reset by peer)
+2014-12-12 00:43:17	<--	zota (~zota@unaffiliated/zota) has quit (Client Quit)
+2014-12-12 00:43:53	<--	N8Fear (~n8fear@dslb-094-222-005-171.094.222.pools.vodafone-ip.de) has quit (Quit: WeeChat 1.0.1)
+2014-12-12 00:44:43	zid`	I still want macro reserved variables to use
+2014-12-12 00:45:24	smithw	I'm getting a SEGFAULT from *inside* malloc, according to gdb. Should that even happen? Isn't malloc supposed to return NULL if it fails?
+2014-12-12 00:45:58	cousteau	maybe you're getting a segfault from the arguments to malloc?
+2014-12-12 00:45:58	pragma-	not if you break malloc's internal recording keeping by invoking some kind of undefined behavior.
+2014-12-12 00:46:14	CaZe	What are you passing to it?
+2014-12-12 00:46:19	<--	cousteau (~cousteau@80.174.59.74.dyn.user.ono.com) has quit (Quit: Be liberal in what you read, and conservative in what you write)
+2014-12-12 00:46:37	zid`	seven
+2014-12-12 00:46:56	<--	Garner (uid38417@gateway/web/irccloud.com/x-lzutfzfeoqxfofdj) has quit (Quit: Connection closed for inactivity)
+2014-12-12 00:47:36	-->	X-Scale` (~gbabios@2001:0:c38c:c38c:0:edf9:fa61:dd88) has joined ##c
+2014-12-12 00:48:00	likecolacola	CaZe, thanks, i am playing with the macros now :p
+2014-12-12 00:48:16	smithw	I'm testing a MPMC lockless queue I wrote, and I'm comparing malloc/free's perfomance to my own memory pool alloc'ing behavior. My memory pool works fine, but malloc segfaults. If I put a few usleep's in the producer/consumer threads, malloc works. I though malloc was supposed to be thread safe?
+2014-12-12 00:48:23	<--	contingo (~contingo@71.129.125.91.dyn.plus.net) has quit (Quit: contingo)
+2014-12-12 00:48:36	<--	X-Scale (~gbabios@2001:0:c38c:c38c:0:fbf8:a898:d7c3) has quit (Ping timeout: 265 seconds)
+2014-12-12 00:49:20	<--	DiabloHorn (~DiabloHor@unaffiliated/diablohorn) has quit (Remote host closed the connection)
+2014-12-12 00:49:59	-->	N8Fear (~n8fear@dslb-094-222-005-171.094.222.pools.vodafone-ip.de) has joined ##c
+2014-12-12 00:50:01	<--	hyphenated (~hyphenate@103.26.17.55) has quit (Quit: hyphenated)
+2014-12-12 00:50:16	<--	DarkFazy (~Fazy@37.143.113.27) has quit (Quit: Leaving)
+2014-12-12 00:50:36	-->	DarkFazy (~Fazy@37.143.113.27) has joined ##c
+2014-12-12 00:55:59	-->	antons (~antons@199.48.120.2) has joined ##c
+2014-12-12 00:57:28	-->	sp0rkb0mb (~sporkbomb@gateway/tor-sasl/sporkbomb) has joined ##c
+2014-12-12 00:59:11	<--	fstd (~fstd@unaffiliated/fisted) has quit (Remote host closed the connection)
+2014-12-12 00:59:52	-->	Moonlightning (~blackl@unaffiliated/moonlightning) has joined ##c
+2014-12-12 01:00:01	-->	fstd (~fstd@unaffiliated/fisted) has joined ##c
+2014-12-12 01:00:28	Moonlightning	Signed integer over|underflow is well-defined, right?
+2014-12-12 01:02:12	--	Enissay_ is now known as Enissay
+2014-12-12 01:02:22	--	X-Scale` is now known as X-Scale
+2014-12-12 01:02:22	Moonlightning	In particular, is the proper way to iterate over a potentially very large array, `for (size_t i = foo_length - 1; i != SIZE_MAX; --i) do_something_with(foo[i]);`?
+2014-12-12 01:04:00	PoppaVic	it works
+2014-12-12 01:04:08	-->	ninjazach (~zachary@pdpc/supporter/student/zmisc) has joined ##c
+2014-12-12 01:04:31	PoppaVic	if you are worried, use a ptr and increment it.
+2014-12-12 01:05:24	likecolacola	there's so much C programming jobs in my city, i am so exited :P
+2014-12-12 01:05:32	Moonlightning	Hmm, that seems better to me.
+2014-12-12 01:05:42	Moonlightning	Thanks, PoppaVic
+2014-12-12 01:05:48	PoppaVic	np
+2014-12-12 01:05:49	kate	Moonlightning, that is well defined, yes
+2014-12-12 01:06:02	 *	Moonlightning nodnods.
+2014-12-12 01:06:54	<--	arquebus (~shintaro@c-76-103-213-5.hsd1.ca.comcast.net) has quit (Quit: Konversation terminated!)
+2014-12-12 01:06:57	-->	ome (uid36537@gateway/web/irccloud.com/x-poykjehliumsxblc) has joined ##c
+2014-12-12 01:07:15	<--	rcr (~rcr@zymeworks.com) has quit (Remote host closed the connection)
+2014-12-12 01:07:42	<--	Mamizou (~Mamizou@wikipedia/Mamizou) has quit (Quit: Leaving)
+2014-12-12 01:08:00	<--	NightTrain (~coffee@unaffiliated/ridout) has quit (Ping timeout: 260 seconds)
+2014-12-12 01:08:09	<--	N8Fear (~n8fear@dslb-094-222-005-171.094.222.pools.vodafone-ip.de) has quit (Remote host closed the connection)
+2014-12-12 01:08:28	<--	kurahaupo (~kurahaupo@118.149.158.121) has quit (Ping timeout: 260 seconds)
+2014-12-12 01:08:32	-->	NightTrain (~coffee@unaffiliated/ridout) has joined ##c
+2014-12-12 01:08:54	<--	DarkFazy (~Fazy@37.143.113.27) has quit (Quit: Leaving)
+2014-12-12 01:10:41	-->	AStorm (~astralsto@unaffiliated/astralstorm) has joined ##c
+2014-12-12 01:10:46	Moonlightning	for (unsigned char *pointer = &foo[foo_len - 1]; pointer >= foo; --pointer)  // so like this?
+2014-12-12 01:11:10	PoppaVic	if you like
+2014-12-12 01:11:17	<--	jrgill (~jrgill@unaffiliated/jrgill) has quit (Ping timeout: 260 seconds)
+2014-12-12 01:11:21	Moonlightning	Wait, isn't it undefined behavior to have a pointer that points outside the bounds of an array, except if it points at the (nonexistent) element one past the last one?
+2014-12-12 01:11:22	-->	N8Fear (~n8fear@dslb-094-222-005-171.094.222.pools.vodafone-ip.de) has joined ##c
+2014-12-12 01:11:30	Moonlightning	…or was that only /dereferencing/ such a pointer that's undefined behavior?
+2014-12-12 01:12:51	-->	jrgill (~jrgill@unaffiliated/jrgill) has joined ##c
+2014-12-12 01:12:56	<--	heftig (quassel@archlinux/developer/heftig) has quit (Quit: No Ping reply in 180 seconds.)
+2014-12-12 01:13:09	timemage	Moonlightning, nah, just calculating the pointer is a problem.
+2014-12-12 01:13:21	Moonlightning	Bleh.
+2014-12-12 01:13:31	<--	antinomy (~max@2001:a60:1715:b401:88d0:326e:e2e3:351b) has quit (Ping timeout: 272 seconds)
+2014-12-12 01:13:38	CaZe	Signed integer overflow is UB.
+2014-12-12 01:13:49	 *	Moonlightning …blinks.
+2014-12-12 01:14:21	PoppaVic	since size_t ain't signed... next?
+2014-12-12 01:14:52	-->	Mamizou (~Mamizou@wikipedia/Mamizou) has joined ##c
+2014-12-12 01:15:24	pragma-	it's perfectly valid to have a pointer pointing one past the end of an array, but you can't dereference it.
+2014-12-12 01:15:27	-->	heftig (heftig@archlinux/developer/heftig) has joined ##c
+2014-12-12 01:15:42	Moonlightning	Oh, I misread that.
+2014-12-12 01:16:49	pragma-	,c11std one past
+2014-12-12 01:16:51	candide	Displaying 1 of 6 matches: http://www.iso-9899.info/n1570.html#6.5.6p8 [Additive operators] When an expression that has integer type is added to or subtracted from a pointer, the result has the type of the pointer operand. If the pointer operand points to an element of an array object, and the array is large enough, the result points to an element offset from the o... [truncated; see http://sprunge.us/NiVJ for full text.]
+2014-12-12 01:17:44	CaZe	,c11std two lives
+2014-12-12 01:17:45	candide	No such text 'two lives' found in C11 Draft Standard (n1570).
+2014-12-12 01:18:13	<--	AStorm (~astralsto@unaffiliated/astralstorm) has quit (Ping timeout: 264 seconds)
+2014-12-12 01:18:32	<--	donostiarra (~Basque@unaffiliated/basque) has quit (Quit: KVIrc 4.1.3 Equilibrium http://www.kvirc.net/)
+2014-12-12 01:21:22	Moonlightning	The problem here is that I'm going to have a pointer pointing one /before/ the /beginning/ of an array.
+2014-12-12 01:21:42	Moonlightning	…wait a second. Does this even count as an array, for this purpose?
+2014-12-12 01:21:51	Moonlightning	It's an `unsigned char *` that got passed in as a function argument.
+2014-12-12 01:21:52	PoppaVic	so what? you stop when it reaches the dead-zones.
+2014-12-12 01:22:10	Moonlightning	Yeah, but it's UB to even do that last decrement
+2014-12-12 01:22:12	PoppaVic	if you access in the dead-zones, you die. Simple.
+2014-12-12 01:22:46	PoppaVic	a pointer can hold nonviable values as easy as NULL and viable.
+2014-12-12 01:23:11	-->	AStorm (~astralsto@unaffiliated/astralstorm) has joined ##c
+2014-12-12 01:23:15	Moonlightning	…wait a sec.
+2014-12-12 01:23:46	Moonlightning	Okay, is or is not `foo_t *pointer = foo; --pointer;` undefined behavior?
+2014-12-12 01:24:14	PoppaVic	it's a pointer, you decremented it - so what? where it POINTS is bad juju
+2014-12-12 01:24:24	<--	zcram (~zcram@m212-119-154-191.cust.tele2.ee) has quit (Quit: Leaving)
+2014-12-12 01:24:32	-->	desantis (~desantis@c-71-207-213-20.hsd1.al.comcast.net) has joined ##c
+2014-12-12 01:25:23	Moonlightning	But I thought we just established that was UB.
+2014-12-12 01:26:23	PoppaVic	<shrug> if you established that with someone, resolve it.
+2014-12-12 01:26:51	-->	antinomy (~max@2001:a60:1732:2501:911b:e568:bcd8:d751) has joined ##c
+2014-12-12 01:27:11	kate	yes, it is UB
+2014-12-12 01:27:32	kate	(assuming foo is not the middle of an array or somesuch)
+2014-12-12 01:28:48	-->	doppel (~doppel@ip68-96-169-47.lv.lv.cox.net) has joined ##c
+2014-12-12 01:28:54	kate	perhaps more clearly: int a; int *b; b = &a; /* UB: */ b + 1;
+2014-12-12 01:29:23	doppel	oh gawd are we talking about *a and *b again?
+2014-12-12 01:29:29	doppel	heh
+2014-12-12 01:29:32	-->	CEnnis91 (uid3543@gateway/web/irccloud.com/x-otofkqkvgqylzsmt) has joined ##c
+2014-12-12 01:29:36	kate	no...
+2014-12-12 01:29:39	PoppaVic	lack of imagination
+2014-12-12 01:29:44	doppel	good
+2014-12-12 01:29:50	mnbg_	interesting discussion here. i wonder what something like this would evaluate to: int foo[] = {1,2,3}; int *p_1 = &foo[0]; p_1--; p_1+=2
+2014-12-12 01:29:53	doppel	so what is up.
+2014-12-12 01:29:59	-->	pwnz0r (~pwnz0r@c-50-131-172-39.hsd1.ca.comcast.net) has joined ##c
+2014-12-12 01:30:02	-->	marchelzo_ (~marchelzo@HLFXNS016CW-142134090179.dhcp-dynamic.FibreOp.ns.bellaliant.net) has joined ##c
+2014-12-12 01:30:24	kate	mnbg_, UB for p_1--
+2014-12-12 01:30:25	zid`	kate: I thought one past the end of an object was fine, or does that only apply to definite array types?
+2014-12-12 01:30:30	doppel	it would evaluate to 2.
+2014-12-12 01:30:45	kate	zid`, that's a special case for compound objects (afaik just arrays)
+2014-12-12 01:30:55	doppel	well, actually, p_1 would evaluate to &foo[1]
+2014-12-12 01:31:05	zid`	so int a[1] and int a; are different?
+2014-12-12 01:31:05	kate	zid`, there's an unfortunate technicality that every object's storage is defined in terms of an array of length 1
+2014-12-12 01:31:10	kate	zid`, right
+2014-12-12 01:31:22	kate	doppel, no, it is UB
+2014-12-12 01:31:22	sheilong	doppel what's about if p_1 - 1 is an invalid adress ?
+2014-12-12 01:31:32	sheilong	address*
+2014-12-12 01:31:41	-->	Jubb (~Jubb@pool-72-66-106-10.washdc.fios.verizon.net) has joined ##c
+2014-12-12 01:32:02	doppel	kate: really?  it doesn't become &foo[-1] then &foo[1]?
+2014-12-12 01:32:16	<--	gegagome (~gegagome@230-124.adsl1.netlojix.net) has quit (Quit: gegagome)
+2014-12-12 01:32:33	kate	doppel, right - that's not defined behaviour
+2014-12-12 01:32:59	--	oleo is now known as Guest70108
+2014-12-12 01:33:03	Moonlightning	kate: what about in my case, though? Where `b` had been set to the return value of a malloc() before, and in this context had been passed in as an argument?
+2014-12-12 01:33:07	doppel	okay, what if foo++?
+2014-12-12 01:33:10	marchelzo_	Ok so I have a function that takes an int, and I am stepping through it with a debugger. When the function gets called, the value passed to it is 261, and is called c. Then, in this function, a call is made to another function which also takes an int, and c is passed as the argument. But when this function is called, it recieves a value other than c. There is no undefined behavior in between. How could this
+2014-12-12 01:33:12	marchelzo_	happen?
+2014-12-12 01:33:13	kate	Moonlightning, UB
+2014-12-12 01:33:24	<--	pwnz0r (~pwnz0r@c-50-131-172-39.hsd1.ca.comcast.net) has quit (Remote host closed the connection)
+2014-12-12 01:33:31	Moonlightning	Bleh.
+2014-12-12 01:33:37	kate	Moonlightning, what did you expect?
+2014-12-12 01:34:03	Moonlightning	I guess I didn't expect just assigning a pointer to be UB. Dereferencing it, sure, but not just assigning.
+2014-12-12 01:34:17	kate	marchelzo_, it could happen due to some other bug, perhaps. can you isolate the problem in a minimal test case?
+2014-12-12 01:34:18	Moonlightning	##c, how do I iterate backwards over each element of an array (without invoking UB)?
+2014-12-12 01:34:18	mnbg_	rm
+2014-12-12 01:34:42	kate	Moonlightning, you gave a way, earlier - by using an index, and bounds checking it
+2014-12-12 01:34:45	marchelzo_	kate: I can't make runnable code, but I can paste a snippet.
+2014-12-12 01:34:52	-->	oleo__ (~oleo@xdsl-78-35-154-215.netcologne.de) has joined ##c
+2014-12-12 01:35:16	kate	marchelzo_, well if the problem is elsewhere, that won't help much :)
+2014-12-12 01:35:19	mnbg_	hrm, i mean. i guess a pointer could be some wacky type with some wacky semantics defined by a wacky compiler; so that ++ and -- aren't simple arithmetic operations
+2014-12-12 01:35:39	mnbg_	is the only way i can see why p_1--; p_1+=2 would potentially fail
+2014-12-12 01:35:39	Moonlightning	kate: but I can't let that underflow because UB.
+2014-12-12 01:35:48	marchelzo_	kate: But how could the problem be elsewhere? I don't do anything between the first function being called and the second function being called that could invoke UB.
+2014-12-12 01:35:59	Moonlightning	I can't check it against zero, because signed values are always `>= 0`
+2014-12-12 01:36:08	Moonlightning	I can't check it against negative one, because UB
+2014-12-12 01:36:11	<--	Guest70108 (~oleo@xdsl-78-35-181-119.netcologne.de) has quit (Ping timeout: 258 seconds)
+2014-12-12 01:36:13	kate	Moonlightning, you mean unsigned, surely
+2014-12-12 01:36:23	kate	Moonlightning, your wrapping-around was well-defined, that i saw. who told you you had UB there?
+2014-12-12 01:36:36	doppel	++ and -- add or subtract the pointer by the size of type, except for void, which as you all know is an incomplete type.
+2014-12-12 01:36:36	Moonlightning	unsigned *
+2014-12-12 01:36:52	<--	fengshaun (~fengshaun@unaffiliated/fengshaun) has quit (Ping timeout: 245 seconds)
+2014-12-12 01:36:56	kate	marchelzo_, well, let's see what you have
+2014-12-12 01:37:06	Moonlightning	…uhhh…
+2014-12-12 01:37:10	mnbg_	doppel: i'm thiking of funky segmented addrs
+2014-12-12 01:37:19	Moonlightning	kate: hmm, I can't find it. Maybe I misread something.
+2014-12-12 01:37:36	kate	this perhaps? <CaZe> Signed integer overflow is UB.
+2014-12-12 01:37:57	kate	size_t is of course an unsigned type
+2014-12-12 01:37:58	-->	fengshaun (~fengshaun@unaffiliated/fengshaun) has joined ##c
+2014-12-12 01:38:02	mnbg_	arr_t *p_start = begin_of_array; arr_t *p_end = begin_of_array + size_of_array; while (p_end != p_start) { .. } ?
+2014-12-12 01:38:55	-->	gegagome (~gegagome@230-124.adsl1.netlojix.net) has joined ##c
+2014-12-12 01:39:21	Moonlightning	mnbg_: I need to include the first element, too, though.
+2014-12-12 01:39:22	doppel	that would put p_end past the end of the array, i think
+2014-12-12 01:39:31	marchelzo_	kate: http://codepad.org/S3tIgWv3
+2014-12-12 01:39:38	Moonlightning	doppel: /that's/ fine, if it's just one past the end
+2014-12-12 01:39:59	mnbg_	Moonlightning: if it's really a true concern; break in the body if p_end == p_start
+2014-12-12 01:40:34	kate	marchelzo_, why can't you produce a compileable test case for this?
+2014-12-12 01:40:53	kate	marchelzo_, your code must handle the situation where malloc returns NULL
+2014-12-12 01:41:26	marchelzo_	kate: ok, but it's not returning NULL.
+2014-12-12 01:41:29	doppel	i'm guessing this is supposed to put c in the buffer
+2014-12-12 01:41:31	mnbg_	Moonlightning: also, with the != you can always deref p_end[-1] or such
+2014-12-12 01:41:41	kate	marchelzo_, how do you know? this code cannot compile
+2014-12-12 01:41:52	<--	kst (~user@75.85.160.219) has quit (Remote host closed the connection)
+2014-12-12 01:42:07	-->	kst (~user@75.85.160.219) has joined ##c
+2014-12-12 01:42:24	marchelzo_	kate: I stepped through the code that does compile with a debugger and I can see that malloc does not return NULL, yet the function call still is passed the wrong value.
+2014-12-12 01:42:27	 *	mnbg_ finds it annoying when 'buffer' refers to anything other than char* or void*
+2014-12-12 01:42:50	kate	marchelzo_, great. so what's stopping you from producing a test case?
+2014-12-12 01:43:06	<--	dseitz (~dan@ip70-191-237-177.pn.at.cox.net) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-12-12 01:43:17	immibis	marchelzo_: something tells me mappings_filter takes a char/unsigned char/int8_t/uint8_t
+2014-12-12 01:43:19	mnbg_	marchelzo_: as for your last line, seems like classic overflow
+2014-12-12 01:43:21	mnbg_	yep
+2014-12-12 01:43:24	doppel	where is mappings_filter declared?
+2014-12-12 01:43:30	marchelzo_	kate: It takes an int
+2014-12-12 01:43:37	kate	marchelzo_, so?
+2014-12-12 01:43:38	marchelzo_	That was what I thought of first
+2014-12-12 01:43:47	mnbg_	,cc (uint8_t)255 + 6 -> 5
+2014-12-12 01:43:48	candide	mnbg_: error: expected identifier before numeric constant
+2014-12-12 01:43:53	mnbg_	ohcrap. i'm tired
+2014-12-12 01:44:05	immibis	,cc (uint8_t)261
+2014-12-12 01:44:08	candide	immibis: Success (no output).
+2014-12-12 01:44:17	immibis	,cc printf("%i\n", (int)(uint8_t)261);
+2014-12-12 01:44:19	candide	immibis: 5
+2014-12-12 01:44:27	-->	Longlius (~longlius@c-69-247-183-18.hsd1.tn.comcast.net) has joined ##c
+2014-12-12 01:44:36	doppel	he's passing an int, not a uint8_t or a char
+2014-12-12 01:45:02	marchelzo_	a test case would not demonstrate this behavior. I admit that there must be something else causing it, I just don't know what.
+2014-12-12 01:45:14	marchelzo_	In order to make a test case, I would need to know what was causing this.
+2014-12-12 01:45:18	immibis	marchelzo_: make a copy your entire program
+2014-12-12 01:45:24	immibis	marchelzo_: then delete bits until the problem doesn't happen
+2014-12-12 01:45:29	immibis	marchelzo_: then re-add the last bit you deleted
+2014-12-12 01:45:30	kate	marchelzo_, excellent. start with your program, and delete ... right, that :)
+2014-12-12 01:45:39	marchelzo_	That's unreasonable.
+2014-12-12 01:45:50	doppel	how is mappings_filter(c) declared?
+2014-12-12 01:45:50	kate	it's a common technique
+2014-12-12 01:45:56	doppel	er ()
+2014-12-12 01:46:09	marchelzo_	OH MIYASDYHJasHJKSDAKFSDJGFDS
+2014-12-12 01:46:10	marchelzo_	SKLJDHNFkjsdnflsd
+2014-12-12 01:46:15	immibis	if you narrow it down to a few functions, and the problem still happens, then that's a testcase
+2014-12-12 01:46:28	<--	EvilPenguin (~EvilPengu@173.247.204.218) has quit (Quit: My Mac has gone to sleep. ZZZzzz…)
+2014-12-12 01:46:38	doppel	:-) i made someone lose it
+2014-12-12 01:46:44	kate	mappings_filter() missing its prototype? :)
+2014-12-12 01:47:01	marchelzo_	nope, but its prototype says it takes a char..
+2014-12-12 01:47:02	immibis	marchelzo_: or, start a new program, and copy the bits that are relevant (so handleInput, and mappings_filter, and whatever calls handleInput), delete the irrelevant parts (you don't need to get actual input from SDL or whatever - just call handleInput(261))
+2014-12-12 01:47:06	marchelzo_	I am retarded
+2014-12-12 01:47:06	doppel	ah.
+2014-12-12 01:47:13	doppel	there you go.
+2014-12-12 01:47:15	doppel	:-D
+2014-12-12 01:47:42	<--	CJKay (CJKay@gateway/shell/elitebnc/x-zuvveqrwvvtkjlnk) has quit (Remote host closed the connection)
+2014-12-12 01:47:42	 *	doppel stands tall knowing he finally helped
+2014-12-12 01:48:28	marchelzo_	thanks
+2014-12-12 01:48:31	doppel	np
+2014-12-12 01:49:03	marchelzo_	The real question is why I was compiling without warnings
+2014-12-12 01:49:31	kate	good job you made a test case so i could compile it, and see that for you...
+2014-12-12 01:49:39	fstd	you answered that question yourself
+2014-12-12 01:49:40	Moonlightning	-Wall -Wextra -pedantic  # :3
+2014-12-12 01:49:46	marchelzo_	fstd: :)
+2014-12-12 01:50:17	-->	saml_ (~saml@71.190.2.48) has joined ##c
+2014-12-12 01:50:47	<--	project2501a (~gmarselis@lopsa/member/project2501a) has quit (Ping timeout: 244 seconds)
+2014-12-12 01:52:54	 *	doppel wants to play submachine 10.
+2014-12-12 01:57:39	Moonlightning	…no. It can't be impossible to do this.
+2014-12-12 01:57:45	<--	BGL (fourty@75-149-171-58-Washington.hfc.comcastbusiness.net) has quit (Ping timeout: 252 seconds)
+2014-12-12 01:58:04	Moonlightning	C'mon, there's /got/ to be a way to iterate backwards over an array.
+2014-12-12 01:58:14	Moonlightning	That's a really common use case, isn't it? >.>
+2014-12-12 01:58:17	mnbg_	Moonlightning: what's wrong with the solutions i gave you?
+2014-12-12 01:58:20	-->	macabre (~ibtjw@unaffiliated/macabre) has joined ##c
+2014-12-12 01:58:49	Moonlightning	mnbg_: I need to include the first element, so I can't break on `pointer == &foo[0]`
+2014-12-12 01:59:26	-->	llorllale (~llorllale@190.166.124.55) has joined ##c
+2014-12-12 01:59:43	marchelzo_	Moonlightning: for (size_t i = array_length; i != 0; --i) { ...foo[i-1]... }
+2014-12-12 01:59:45	mnbg_	pointer = foo + foo_len; while (pointer != foo) { ptr_tmp = ptr - 1; // handle ptr_tmp; }
+2014-12-12 02:00:42	Moonlightning	Is that really it? >.<
+2014-12-12 02:00:55	bone	or just use an int if your array isn't going to be that large and check for a positive number...
+2014-12-12 02:01:01	Moonlightning	Well. Thanks, marchelzo_, mnbg_
+2014-12-12 02:01:19	bone	er non-negative, rather
+2014-12-12 02:01:32	doppel	you can't check for &foo[-1]?
+2014-12-12 02:01:33	-->	bb010g (uid21050@gateway/web/irccloud.com/x-yfwohlssnkobgifq) has joined ##c
+2014-12-12 02:01:53	Moonlightning	doppel: evaluating is UB
+2014-12-12 02:01:58	doppel	okay, obviously foo[-1] is undefined,
+2014-12-12 02:01:59	Moonlightning	evaluating /that/ is UB *
+2014-12-12 02:02:23	Moonlightning	So are `foo - 1` and `pointer = foo; --pointer;`
+2014-12-12 02:02:54	<--	Lokomotiv (~ASAP@unaffiliated/lokomotiv) has quit (Quit: Ïîëåòåëè!)
+2014-12-12 02:02:58	mnbg_	well, _technically_, so long as the pointer doesn't o out of bounds as a result of the op, there's nothing wrong with doing anything on it
+2014-12-12 02:03:30	doppel	i didn't think there was anything wrong with the pointer going out of bounds, as long as the contents weren't accessed
+2014-12-12 02:03:40	mnbg_	doppel: i didn't think so either
+2014-12-12 02:03:46	mnbg_	another thing you can do, i think, is use uintptr_t
+2014-12-12 02:03:59	doppel	it's just a pointer, it can't know
+2014-12-12 02:04:11	<--	otherflow (~otherflow@unaffiliated/otherflow) has quit (Quit: Quitte)
+2014-12-12 02:04:45	mnbg_	doppel: think segmented addresses and magic pointer types
+2014-12-12 02:04:56	mnbg_	i'm not sure anywhere the standard tells you that a pointer is an integer
+2014-12-12 02:04:59	mnbg_	_HOWEVER_;
+2014-12-12 02:05:10	doppel	it isn't.  it's an address.
+2014-12-12 02:05:22	mnbg_	uintptr_t ui_ptr = &array[0]; ui_ptr--; ui_ptr += 2;
+2014-12-12 02:05:33	mnbg_	would be very much defined behavior :)
+2014-12-12 02:07:04	mnbg_	you know though, i'd really be interested in trying to develop for one of these esoteric platforms
+2014-12-12 02:07:29	Moonlightning	mnbg_: no; that decrement there is UB
+2014-12-12 02:07:33	mnbg_	Moonlightning: why?
+2014-12-12 02:07:42	mnbg_	it's an integer type, plain and simple
+2014-12-12 02:07:48	Moonlightning	mnbg_: having a pointer that points past the bounds of an arr—
+2014-12-12 02:07:51	<--	smithw (~ingsoc@179.153.13.6) has quit (Quit: Leaving)
+2014-12-12 02:07:51	Moonlightning	Wait, what
+2014-12-12 02:07:53	mnbg_	but it's not a pointer
+2014-12-12 02:08:40	Moonlightning	…oh, clever.
+2014-12-12 02:09:40	mnbg_	but i'd honestly be interested in finding platforms that act so strangely :)
+2014-12-12 02:12:29	-->	n30m1nd (~n30m1nd@127.Red-2-136-223.dynamicIP.rima-tde.net) has joined ##c
+2014-12-12 02:12:49	n30m1nd	hello! anyone with any experience on NOTIFYICONDATA struct?
+2014-12-12 02:13:38	n30m1nd	nobody?
+2014-12-12 02:13:40	fstd	what the hell is that.
+2014-12-12 02:13:48	sheilong	NOTIFYICONDATA struct?
+2014-12-12 02:13:55	fstd	also, struct names in all caps
+2014-12-12 02:13:58	 *	fstd assumes winapi
+2014-12-12 02:14:00	n30m1nd	yes
+2014-12-12 02:14:07	n30m1nd	winchimpi
+2014-12-12 02:14:11	n30m1nd	:)
+2014-12-12 02:14:36	fstd	see ##winapi or so
+2014-12-12 02:14:43	n30m1nd	there's a channel?
+2014-12-12 02:14:49	-->	slushpuppy (~slush@175.136.32.243) has joined ##c
+2014-12-12 02:14:51	n30m1nd	thanks then, sorry for taking yer time!
+2014-12-12 02:15:07	n30m1nd	ohyou.jpg
+2014-12-12 02:15:15	 *	mnbg_ finds the windows way of naming things fairly consistent..
+2014-12-12 02:15:23	n30m1nd	see ##ohyou.jpg as well
+2014-12-12 02:15:41	n30m1nd	my problem is with callback messages anyway
+2014-12-12 02:15:42	immibis	mnbg_: too bad it's not consistent with C itself, or the C runtime extensions
+2014-12-12 02:16:01	immibis	like how there's a CreateThread, but you actually have to use _beginthread to start a thread
+2014-12-12 02:16:12	mnbg_	oh yeah, that :(
+2014-12-12 02:17:05	<--	gravitation (~gravitati@atlas.phys.columbia.edu) has quit (Quit: gravitation)
+2014-12-12 02:17:18	fstd	it seems consistently retarded
+2014-12-12 02:17:46	CaZe	mnbg_: You have no guarantee that ui_ptr + 1 the is array + 1
+2014-12-12 02:17:53	CaZe	s/the//
+2014-12-12 02:17:58	-->	threeifbywhiskey (~3ifbyw@unaffiliated/threeifbywhiskey) has joined ##c
+2014-12-12 02:18:13	CaZe	And uintptr is optional anyways.
+2014-12-12 02:18:32	mnbg_	CaZe: true; though you do have the guarantee that ptr = ui_ptr; ptr+1; // valid
+2014-12-12 02:18:37	immibis	fstd: and, instead of trying to fix it, they create 9001 different incompatible things with their own standard libraries
+2014-12-12 02:19:01	PoppaVic	winchimps? amusing
+2014-12-12 02:19:40	threeifbywhiskey	Are system(...) and pclose(popen(...)) functionally equivalent?
+2014-12-12 02:19:53	<--	guidj0s (~guidjos@oftn/member/guidj0s) has quit (Quit: leaving)
+2014-12-12 02:20:01	CaZe	mnbg_: int a; uintptr ui_ptr = &a + 1; int *ptr = ui_ptr; ptr + 1 /* not valid */
+2014-12-12 02:20:02	<--	antinomy (~max@2001:a60:1732:2501:911b:e568:bcd8:d751) has quit (Ping timeout: 244 seconds)
+2014-12-12 02:20:36	mnbg_	CaZe: well, yeah, because ptr doesn't point to a valid address
+2014-12-12 02:21:05	mnbg_	CaZe: but what you _can_ do with uintptr_t that you _cant_ with pointers is temporarily do arithmetic which makes it "Point" to a bad address
+2014-12-12 02:21:20	CaZe	mnbg_: It does.
+2014-12-12 02:21:27	CaZe	mnbg_: It just can't be dereferenced.
+2014-12-12 02:21:50	mnbg_	CaZe: ptr in your example is &a + 2
+2014-12-12 02:21:53	fstd	threeifbywhiskey: apart from one being C and the other being POSIX, they differ at least in their returned value, on a first glance
+2014-12-12 02:21:59	CaZe	mnbg_: Yes, but you have no guarantee what that will map to when you try and convert it to an actual pointer.
+2014-12-12 02:22:22	immibis	mnbg_: and isn't &a + 2 invalid?
+2014-12-12 02:22:23	PoppaVic	I swear I tried to tell folks "invalid address" (which is perfectly legal) an hour or so ago - are they STILL rehashing this nonsense?
+2014-12-12 02:22:34	<--	ninjazach (~zachary@pdpc/supporter/student/zmisc) has quit (Ping timeout: 258 seconds)
+2014-12-12 02:22:34	<--	robink (~quassel@unaffilated/robink) has quit (Ping timeout: 258 seconds)
+2014-12-12 02:22:45	CaZe	mnbg_: ptr is &a + 1.
+2014-12-12 02:24:14	mnbg_	hrm, but what are you trying to say?
+2014-12-12 02:25:09	mnbg_	not that any of this matters; it's just a safe way of converting a pointer to a potentially alternate representation, modifying that copy, restoring it back again, and converting it back to the original pointer
+2014-12-12 02:25:21	CaZe	mnbg_: You can't perform any operation on a uintptr value, and expect it to convert back to a valid pointer.
+2014-12-12 02:25:23	-->	nell (~alu@unaffiliated/alusion) has joined ##c
+2014-12-12 02:25:41	-->	robink (~quassel@unaffilated/robink) has joined ##c
+2014-12-12 02:26:00	mnbg_	CaZe: i can perform as many operations as i want on it, so long as when i try tyo convert it back to the valid pointer, it has the same numerical value it started with
+2014-12-12 02:26:08	mnbg_	since it's just an unsigned integer
+2014-12-12 02:26:34	CaZe	mnbg_: Yes, not modifying it, in effect.
+2014-12-12 02:27:08	mnbg_	CaZe: _but_ you can't do that with just a pointer, according to the above
+2014-12-12 02:27:38	CaZe	mnbg_: Where above?
+2014-12-12 02:28:05	CaZe	Oh, I forgot, uintptr only works with void *, too.
+2014-12-12 02:28:18	-->	out0xCF8 (~out0xCF8@user-0c8hr4u.cable.mindspring.com) has joined ##c
+2014-12-12 02:28:41	mnbg_	CaZe: you can cast any pointer to void and back :)
+2014-12-12 02:29:03	CaZe	mnbg_: The conversion to void * is implicit.
+2014-12-12 02:29:04	zid`	CaZe: What's the point of uintptr if you can't do any operations on it?
+2014-12-12 02:29:36	CaZe	zid`: Not much point.
+2014-12-12 02:29:49	CaZe	zid`: I supose it's useful if you want to see if two pointer values are the same.
+2014-12-12 02:29:59	mnbg_	the context is from this guy asking how to iterate over an array, and then ensued a discussion of not being able to use a pointer that doesn't point to valid memory, _even if not dereferencing it_
+2014-12-12 02:30:01	zid`	I don't see.. any point? maybe to get around void * being underspecified to deal with void *** etc?
+2014-12-12 02:30:31	mnbg_	so e.g int *pint = &intarray; pint--;
+2014-12-12 02:30:41	CaZe	mnbg_: Yes, that's undefined.
+2014-12-12 02:30:57	CaZe	Assuming intarray is actually not an array at all.
+2014-12-12 02:31:05	zid`	It'd be nice if it were legal to write malloc in C somehow
+2014-12-12 02:31:09	<--	zima (zima@173.182.129.48) has quit (Quit: zima)
+2014-12-12 02:31:18	mnbg_	haha
+2014-12-12 02:31:37	CaZe	zid`: void *malloc(size_t n) { return NULL; }
+2014-12-12 02:31:48	zid`	They should relax a bunch of restrictions for unhosted imo
+2014-12-12 02:32:53	CaZe	zid`: Write an implementation of malloc that will return pointers into a static 10 byte buffer.
+2014-12-12 02:33:02	CaZe	Should be easy enough.
+2014-12-12 02:33:35	CaZe	Or even a 1-byte buffer.
+2014-12-12 02:33:50	<--	ioanel (~Icedove@188.25.11.182) has quit (Remote host closed the connection)
+2014-12-12 02:33:54	mnbg_	malloc returns need to be aligned tough
+2014-12-12 02:34:23	doppel	i'm not sure exactly where in the standard it says that a pointer past the first or last array is undefined
+2014-12-12 02:34:56	CaZe	doppel: I think it's in the additive operators section.
+2014-12-12 02:35:17	doppel	okay, gonna check the c11 draft
+2014-12-12 02:36:23	CaZe	,c11std 6.5.6p8
+2014-12-12 02:36:25	candide	 http://www.iso-9899.info/n1570.html#6.5.6p8 [Additive operators] When an expression that has integer type is added to or subtracted from a pointer, the result has the type of the pointer operand. If the pointer operand points to an element of an array object, and the array is large enough, the result points to an element offset from the original element such that ... [truncated; see http://sprunge.us/CSGS for full text.]
+2014-12-12 02:36:29	doppel	the c99 standard mentions that p + 1 where p = last element, is defined as pointing one element past the last element.  it also mentions that it shall not be used as the operand of a * operator
+2014-12-12 02:37:00	Xgc	doppel: That's correct.
+2014-12-12 02:37:24	doppel	so the pointer itself is still defined, just not the thing pointed to
+2014-12-12 02:38:47	doppel	so if p = last element, p + 1 = one past, *(p + 1) = undefined
+2014-12-12 02:39:01	<--	Kevin-_- (~kevinmelk@66.86.135.95) has quit (Ping timeout: 272 seconds)
+2014-12-12 02:39:15	CaZe	Yes, obviously.
+2014-12-12 02:39:32	CaZe	,c99std 6.5.6p8
+2014-12-12 02:39:34	doppel	so then why can't you evaluate p for &foo[-1]?
+2014-12-12 02:39:35	candide	 http://www.iso-9899.info/n1256.html#6.5.6p8 [Additive operators] When an expression that has integer type is added to or subtracted from a pointer, the result has the type of the pointer operand. If the pointer operand points to an element of an array object, and the array is large enough, the result points to an element offset from the original element such that ... [truncated; see http://sprunge.us/MiOj for full text.]
+2014-12-12 02:39:35	-->	Ravana (~Ravana@unaffiliated/ravana) has joined ##c
+2014-12-12 02:40:05	CaZe	You missed that sentence right in the middle there.
+2014-12-12 02:40:09	CaZe	"...otherwise, the behavior is undefined.
+2014-12-12 02:40:16	<--	ChoiKyuSang (~AdiIRC@unaffiliated/choikyusang) has quit (Read error: Connection timed out)
+2014-12-12 02:40:28	threeifbywhiskey	I think doppel is more wondering at the lack of symmetry.
+2014-12-12 02:40:54	<--	gegagome (~gegagome@230-124.adsl1.netlojix.net) has quit (Quit: gegagome)
+2014-12-12 02:40:55	-->	Lokomotiv (~ASAP@unaffiliated/lokomotiv) has joined ##c
+2014-12-12 02:41:00	-->	kadoban_ (~mud@68.3.81.129) has joined ##c
+2014-12-12 02:41:04	<--	kadoban (~mud@ip68-3-81-129.ph.ph.cox.net) has quit (Ping timeout: 240 seconds)
+2014-12-12 02:41:16	threeifbywhiskey	One prior could be just as occasionally useful as one past.
+2014-12-12 02:41:19	CaZe	Because array iterating loops are usually written: while (*p++)
+2014-12-12 02:41:41	CaZe	Or some variation thereof.
+2014-12-12 02:41:42	-->	ChoiKyuSang (~AdiIRC@unaffiliated/choikyusang) has joined ##c
+2014-12-12 02:41:54	threeifbywhiskey	So the standardization of one past was a concession to convention?
+2014-12-12 02:42:15	<--	tb01110100 (~thomas@unaffiliated/tb01110100) has quit (Ping timeout: 244 seconds)
+2014-12-12 02:42:21	-->	Goplat (~goplat@reactos/developer/Goplat) has joined ##c
+2014-12-12 02:42:47	CaZe	That's what I've heard.
+2014-12-12 02:42:49	<--	llorllale (~llorllale@190.166.124.55) has quit (Ping timeout: 250 seconds)
+2014-12-12 02:42:54	doppel	yeah, i'm just not seeing how my understanding of pointer arithmetic contradicts what's there in the standard.
+2014-12-12 02:43:02	-->	mathgeekvx (~mathgeekv@c-a9a571d5.123-3-64736c10.cust.bredbandsbolaget.se) has joined ##c
+2014-12-12 02:43:33	CaZe	doppel: "otherwise, the behavior is undefined.
+2014-12-12 02:43:33	doppel	but if it's getting too annoying (which it was to at least one person) maybe we should just forget it
+2014-12-12 02:43:38	CaZe	oops.
+2014-12-12 02:44:20	doppel	you mean about not producing an overflow?
+2014-12-12 02:44:21	CaZe	doppel: "If both the pointer operand and the result point to elements of the same array object, or one past the last element of the array object, the evaluation shall not produce an overflow; otherwise, the behavior is undefined."
+2014-12-12 02:44:23	<--	n30m1nd (~n30m1nd@127.Red-2-136-223.dynamicIP.rima-tde.net) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2014-12-12 02:45:12	CaZe	doppel: &foo[-1] is &*(foo + -1)
+2014-12-12 02:45:28	CaZe	doppel: It is the (foo + -1) part here that is under consideration.
+2014-12-12 02:45:41	doppel	wouldn't foo + -1 be foo - 1?
+2014-12-12 02:46:05	CaZe	foo obviously points into the array, but what about the pointer value that's obtained from adding -1 to foo? DOes that also point into the array or one past the end of the array?
+2014-12-12 02:46:10	doppel	i see.
+2014-12-12 02:46:30	CaZe	No, it does not, and therefore by that sentence, it is UB.
+2014-12-12 02:46:47	<--	nell (~alu@unaffiliated/alusion) has quit (Quit: WeeChat 1.1-dev)
+2014-12-12 02:47:09	<--	Anaphaxeton (~georgios@unaffiliated/anaphaxeton) has quit (Quit: WeeChat 1.0.1)
+2014-12-12 02:47:42	doppel	foo - 1 doesn't point one prior to the array?
+2014-12-12 02:48:04	CaZe	No, but let's say it does -- so what?
+2014-12-12 02:48:37	-->	BSWolf (~bs_wolf@cpe-76-167-251-16.san.res.rr.com) has joined ##c
+2014-12-12 02:48:58	-->	N8Fear_ (~n8fear@dslb-094-222-027-194.094.222.pools.vodafone-ip.de) has joined ##c
+2014-12-12 02:49:50	<--	D9 (~un@104.207.136.26) has quit (Quit: Leaving)
+2014-12-12 02:51:12	<--	asakura (~asakura@gateway/tor-sasl/asakura) has quit (Quit: asakura)
+2014-12-12 02:51:36	<--	N8Fear (~n8fear@dslb-094-222-005-171.094.222.pools.vodafone-ip.de) has quit (Ping timeout: 255 seconds)
+2014-12-12 02:51:51	<--	jdolan (~jdolan@c-50-188-243-111.hsd1.fl.comcast.net) has quit (Remote host closed the connection)
+2014-12-12 02:52:09	-->	Zumbido (~Thunderbi@190.172.163.170) has joined ##c
+2014-12-12 02:52:51	<--	Zumbido (~Thunderbi@190.172.163.170) has quit (Client Quit)
+2014-12-12 02:53:24	batbird	what is the "parsing" part of compiling doing?
+2014-12-12 02:54:33	CaZe	Building syntax trees and such.
+2014-12-12 02:54:35	-->	zmack (~zmack@84.117.10.56) has joined ##c
+2014-12-12 02:56:14	-->	phinxy (~tehhhd@unaffiliated/phinxy) has joined ##c
+2014-12-12 02:59:00	<--	zmack (~zmack@84.117.10.56) has quit (Ping timeout: 245 seconds)
+2014-12-12 02:59:59	-->	Kevin-_- (~kevinmelk@66.86.135.95) has joined ##c
+2014-12-12 03:01:04	-->	asakura (~asakura@gateway/tor-sasl/asakura) has joined ##c
+2014-12-12 03:02:38	-->	gravitation (~gravitati@atlas.phys.columbia.edu) has joined ##c
+2014-12-12 03:03:33	dardevelin	CaZe, ping. did you saw my message earlier ?
+2014-12-12 03:03:44	kate	batbird, finding that lexical tokens are in a valid order. anything else is a side-effect
+2014-12-12 03:04:56	batbird	thanks! :)
+2014-12-12 03:05:03	-->	jdolan (~jdolan@c-50-188-243-111.hsd1.fl.comcast.net) has joined ##c
+2014-12-12 03:05:07	<--	CapitalSigma (~patrick@73.36.171.152) has quit (Quit: Lost terminal)
+2014-12-12 03:05:09	batbird	what is the part that builds the syntax tree called then?
+2014-12-12 03:06:01	<--	desantis (~desantis@c-71-207-213-20.hsd1.al.comcast.net) has quit (Quit: desantis)
+2014-12-12 03:07:01	fstd	/o\
+2014-12-12 03:07:44	<--	doppel (~doppel@ip68-96-169-47.lv.lv.cox.net) has quit (Quit: ChatZilla 0.9.91 [Firefox 34.0.5/20141126041045])
+2014-12-12 03:09:17	dardevelin	,cc const char *demo(void) {return "somestring"; } void sample(const char **v) { } int main(void) { const char *init[] = {"1","2", demo() "3" }; sample(init); return 0;}
+2014-12-12 03:09:18	candide	dardevelin: error: expected '}' before string constant
+2014-12-12 03:10:13	<--	qnavry (~zyxwvuts@unaffiliated/qnavry) has quit (Quit: Leaving.)
+2014-12-12 03:10:42	dardevelin	,cc const char* demo(void){ return "somestring"; } void sample(const char **v){ } const char *init[] = {"1","2", demo() "3" }; sample(init);
+2014-12-12 03:10:44	candide	dardevelin: Same output.
+2014-12-12 03:13:13	kate	batbird, there are usually two kind of tree going on; both done during parsing. concrete syntax trees are usually implicit during the parse, rather than being created as a datastructure
+2014-12-12 03:13:47	kate	batbird, an AST is usually made whilst walking through that CST, and then output to whatever stages are next
+2014-12-12 03:14:29	<--	bluehavana (uid2820@gateway/web/irccloud.com/x-ehnlrtepsigaoink) has quit (Quit: Connection closed for inactivity)
+2014-12-12 03:14:37	kate	batbird, if you're interested in that sort of stuff, i recommend Appel's Modern Compiler Implementation in C
+2014-12-12 03:15:24	batbird	thanks :)
+2014-12-12 03:15:50	<--	schleppel (~quassel@141.39.226.237) has quit (Read error: Connection reset by peer)
+2014-12-12 03:16:12	<--	Haxxa (~Harrison@cpe-120-149-49-246.oirx3.win.bigpond.net.au) has quit (Quit: ZNC - http://znc.in)
+2014-12-12 03:16:18	kate	you're welcome
+2014-12-12 03:17:29	-->	IWishIKnew (~IWishIKne@ip68-224-135-32.lv.lv.cox.net) has joined ##c
+2014-12-12 03:20:11	<--	Cabanossi (~Cabanossi@p4FFB1AC6.dip0.t-ipconnect.de) has quit (Ping timeout: 272 seconds)
+2014-12-12 03:20:25	<--	Left_Turn (~Left_Turn@unaffiliated/turn-left/x-3739067) has quit (Remote host closed the connection)
+2014-12-12 03:20:27	-->	Haxxa (~Harrison@CPE-120-149-49-246.oirx3.win.bigpond.net.au) has joined ##c
+2014-12-12 03:21:23	<--	batbird (~lolwhat@gateway/tor-sasl/lolwhat) has quit (Ping timeout: 250 seconds)
+2014-12-12 03:21:25	-->	perdent (ampharmex@2a00:dcc0:eda:3748:247:48:123:b33f) has joined ##c
+2014-12-12 03:24:59	<--	ionelmc (sid20175@python/site-packages/ionelmc) has left ##c
+2014-12-12 03:26:24	-->	Cabanossi (~Cabanossi@p4FFB1A18.dip0.t-ipconnect.de) has joined ##c
+2014-12-12 03:28:07	<--	robink (~quassel@unaffilated/robink) has quit (Ping timeout: 258 seconds)
+2014-12-12 03:32:56	<--	Zentdayn (~Zentdayn@43.198.54.77.rev.vodafone.pt) has quit (Quit: * poof *)
+2014-12-12 03:34:53	-->	Dr_Coke (~Dr_Coke@60-242-153-150.static.tpgi.com.au) has joined ##c
+2014-12-12 03:37:11	-->	kerrick (~kerrick@50-196-159-42-static.hfc.comcastbusiness.net) has joined ##c
+2014-12-12 03:38:15	<--	Boohbah (~Boohbah@gateway/tor-sasl/boohbah) has quit (Remote host closed the connection)
+2014-12-12 03:41:12	<--	diegoviola (~diego@unaffiliated/diegoviola) has quit (Quit: WeeChat 1.0.1)
+2014-12-12 03:41:23	-->	Boohbah (~Boohbah@gateway/tor-sasl/boohbah) has joined ##c
+2014-12-12 03:42:29	<--	MathGod (~matthew@2604:6000:6dc3:3000:21a:92ff:fe10:3dd7) has quit (Quit: leaving)
+2014-12-12 03:43:03	<--	Dr_Coke (~Dr_Coke@60-242-153-150.static.tpgi.com.au) has quit (Quit: Leaving)
+2014-12-12 03:44:18	-->	JoshSyn (~swoorup@d122-111-251-45.per801.wa.optusnet.com.au) has joined ##c
+2014-12-12 03:46:18	-->	brentru (~brentru@h109add63654b.res.umassd.edu) has joined ##c
+2014-12-12 03:47:19	-->	abgood (~lvjun@218.189.26.4) has joined ##c
+2014-12-12 03:48:11	<--	jdolan (~jdolan@c-50-188-243-111.hsd1.fl.comcast.net) has quit (Remote host closed the connection)
+2014-12-12 03:48:27	-->	jdolan (~jdolan@2601:3:8200:11a7:7c87:45b8:ea50:468d) has joined ##c
+2014-12-12 03:50:00	-->	MathGod (~matthew@2604:6000:6dc3:3000:21a:92ff:fe10:3dd7) has joined ##c
+2014-12-12 03:50:16	brentru	Hey guys
+2014-12-12 03:50:21	brentru	My code (http://pastie.org/private/uyvadeims0iqisromgmga) is supposed to convert an input into binary. However, the itoa function doesn't seem to be doing what it's supposed to..or running at all. I appreciate all help in advance
+2014-12-12 03:50:40	PoppaVic	read the manpage?
+2014-12-12 03:50:45	PoppaVic	use the alternatives?
+2014-12-12 03:50:52	PoppaVic	thrash and flail?
+2014-12-12 03:51:02	brentru	I've been flailing for a few hours
+2014-12-12 03:51:20	brentru	I just can't figure this out for the life of me, first time programming in C. Taking a course for it. Very lost and confused.
+2014-12-12 03:51:24	fluter	brentru, itoa?
+2014-12-12 03:51:35	brentru	fluter: Yes.
+2014-12-12 03:51:42	brentru	_itoa
+2014-12-12 03:52:34	ElectricSheep	I don't think _itoa will be found in any manpages
+2014-12-12 03:52:39	brentru	*supposed to convert an input of specified base into a new base (db), the itoa function just isn't working correctly. I assume it's because of my implementation of it.
+2014-12-12 03:52:39	ElectricSheep	(Thanks, Microsoft)
+2014-12-12 03:52:44	brentru	ElectricSheep: :o
+2014-12-12 03:52:58	PoppaVic	yet another reason to avoid MS
+2014-12-12 03:53:30	ElectricSheep	Multiple-sclerosis is bad news.
+2014-12-12 03:53:31	brentru	I'm all for MS bashing, but I'd just like some help if anyone's able to diagnose it.
+2014-12-12 03:53:39	fluter	brentru, please replace itoa with sprintf or similar
+2014-12-12 03:53:44	nitrix	Why are lines #54 and #57 not consistent?
+2014-12-12 03:54:11	brentru	fluter: I'm using it to convert a number to a base value
+2014-12-12 03:54:18	brentru	nitrix: I was only testing 1 2 and 3
+2014-12-12 03:55:00	brentru	fluter: sprintf won't assist with base conversions, itoa will.
+2014-12-12 03:55:29	ElectricSheep	Do you know that ASCII has a very convenient layout that makes that entire switch statement extraneous
+2014-12-12 03:55:34	<--	Haxxa (~Harrison@CPE-120-149-49-246.oirx3.win.bigpond.net.au) has quit (Quit: ZNC - http://znc.in)
+2014-12-12 03:55:54	brentru	ElectricSheep: I did not.
+2014-12-12 03:57:02	-->	Haxxa (~Harrison@cpe-120-149-49-246.oirx3.win.bigpond.net.au) has joined ##c
+2014-12-12 03:57:19	ElectricSheep	ASCII '0' is decimal 48, '1' is decimal 49 (48 + 1), '2' is decimal 50 (48 + 2) ... etc
+2014-12-12 03:57:57	fluter	brentru, you can use %d for base 10, %o for base 8, and %x for hexadecimal, only only need to implement a funtion to print binary
+2014-12-12 03:58:06	<--	likecolacola (~4354@86.Red-88-10-167.dynamicIP.rima-tde.net) has quit (Remote host closed the connection)
+2014-12-12 03:58:08	fluter	s/only/you/
+2014-12-12 03:58:21	brentru	fluter: It won't convert that though, only output it differently, right?
+2014-12-12 03:58:49	Chris	That property is independent of ASCII. C guarantees that x-'0' is 0 for all decimal digits.
+2014-12-12 03:58:55	<--	freakazoid0223 (~matt@pool-98-115-118-153.phlapa.fios.verizon.net) has quit (Ping timeout: 244 seconds)
+2014-12-12 03:59:30	PoppaVic	strto[u]l
+2014-12-12 03:59:30	fluter	brentru, what do you mean converting? it makes a string representation out of the value you supplied.
+2014-12-12 03:59:48	PoppaVic	oh, iTOa,, nm
+2014-12-12 03:59:55	fluter	itoa is not standard.
+2014-12-12 03:59:58	brentru	the goal is to convert something to another base.
+2014-12-12 04:00:10	<--	kagt (~kagt@108.61.152.252) has quit (Quit: Leaving)
+2014-12-12 04:00:19	brentru	s[] is the input number with base sb and d[] is the output with base db
+2014-12-12 04:00:39	PoppaVic	strings, yeah. the math is easy
+2014-12-12 04:01:18	<--	Trondby (Trondby@unaffiliated/trondby) has quit (Ping timeout: 244 seconds)
+2014-12-12 04:01:36	fluter	brentru, but your goal is to print them as strings, at line 99
+2014-12-12 04:01:49	brentru	Correct.
+2014-12-12 04:02:14	<--	abgood (~lvjun@218.189.26.4) has quit (Quit: leaving)
+2014-12-12 04:02:50	ElectricSheep	http://msdn.microsoft.com/en-us/library/yakksftt.aspx
+2014-12-12 04:02:53	candide	Title of ElectricSheep's link: _itoa, _i64toa, _ui64toa, _itow, _i64tow, _ui64tow
+2014-12-12 04:06:09	ElectricSheep	Well, hell
+2014-12-12 04:06:16	<--	macabre (~ibtjw@unaffiliated/macabre) has quit (Quit: Be back later ...)
+2014-12-12 04:06:18	ElectricSheep	if (db = 10) { ...
+2014-12-12 04:06:22	ElectricSheep	No wonder why it doesn't work
+2014-12-12 04:08:14	PoppaVic	hehe
+2014-12-12 04:09:13	ElectricSheep	I suppose that is why some workplace coding standards dictation comparisons like that be written if ( 10 == db ) { ...
+2014-12-12 04:11:09	-->	Curtisbeef (~Curtisbee@li247-62.members.linode.com) has joined ##c
+2014-12-12 04:12:23	pragma-	most compilers will warn you about if (x = 10)
+2014-12-12 04:12:34	pragma-	if (10 == x) is fucking ugly.
+2014-12-12 04:12:42	ElectricSheep	It is ugly
+2014-12-12 04:12:50	ElectricSheep	But guaranteed to generate an error
+2014-12-12 04:12:53	ElectricSheep	Still ugly
+2014-12-12 04:13:08	-->	jlf (~user@pdpc/supporter/active/jlf) has joined ##c
+2014-12-12 04:13:58	<--	Orion] (~nname@unaffiliated/orion/x-3970838) has quit
+2014-12-12 04:14:04	-->	dseitz (~dan@ip70-191-237-177.pn.at.cox.net) has joined ##c
+2014-12-12 04:15:42	<--	jlf (~user@pdpc/supporter/active/jlf) has quit (Remote host closed the connection)
+2014-12-12 04:16:07	<--	NightTrain (~coffee@unaffiliated/ridout) has quit (Quit: Lost terminal)
+2014-12-12 04:18:50	<--	shikhout (~shikhin@unaffiliated/shikhin) has quit (Ping timeout: 265 seconds)
+2014-12-12 04:21:31	<--	gravitation (~gravitati@atlas.phys.columbia.edu) has quit (Quit: gravitation)
+2014-12-12 04:21:42	<--	fluter (~fluter@fedora/fluter) has quit (Ping timeout: 250 seconds)
+2014-12-12 04:22:03	<--	hiptobecubic (~john@unaffiliated/hiptobecubic) has quit (Ping timeout: 250 seconds)
+2014-12-12 04:22:53	Jubb	just #define if(x,y,z) if (z,y,x)
+2014-12-12 04:23:09	Jubb	and then you have the best of both worlds
+2014-12-12 04:25:28	<--	X-Scale (~gbabios@2001:0:c38c:c38c:0:edf9:fa61:dd88) has quit (Remote host closed the connection)
+2014-12-12 04:27:00	<--	jzk (~eccehomo@ec2-54-176-48-31.us-west-1.compute.amazonaws.com) has quit (Ping timeout: 255 seconds)
+2014-12-12 04:28:59	-->	killertester (~igor@pppoe32h29.ppp.kmv.ru) has joined ##c
+2014-12-12 04:30:50	-->	vishwin (~archlinux@wikimedia/O) has joined ##c
+2014-12-12 04:31:12	-->	fluter (~fluter@fedora/fluter) has joined ##c
+2014-12-12 04:31:39	pragma-	fluter: no.
+2014-12-12 04:31:58	<--	IWishIKnew (~IWishIKne@ip68-224-135-32.lv.lv.cox.net) has quit (Quit: Quit:  Hexchat)
+2014-12-12 04:32:18	<--	Plasmastar (Plasma@unaffiliated/plasmastar) has quit (Ping timeout: 244 seconds)
+2014-12-12 04:32:22	fluter	pragma-, no what?
+2014-12-12 04:33:20	<--	supay (sid47179@gateway/web/irccloud.com/x-miklpgjdfwrgxpcf) has quit (Ping timeout: 244 seconds)
+2014-12-12 04:33:37	zid`	just no
+2014-12-12 04:33:49	<--	tsuyoi (tsuyoi@shellium/member/giantpanda) has quit (Excess Flood)
+2014-12-12 04:34:03	-->	supay (sid47179@gateway/web/irccloud.com/x-bfgugkvvzdcayctw) has joined ##c
+2014-12-12 04:34:08	fluter	no
+2014-12-12 04:34:14	fluter	:P
+2014-12-12 04:34:27	-->	tsuyoi (tsuyoi@shellium/member/giantpanda) has joined ##c
+2014-12-12 04:35:00	--	kadoban_ is now known as kadoban
+2014-12-12 04:37:20	pragma-	fluter: What would cause existence to exist, and how did that thing exist before existence existed?
+2014-12-12 04:38:48	fluter	pragma-, Hmm, that is a philosophy problem.
+2014-12-12 04:39:09	-->	Plasmastar (Plasma@unaffiliated/plasmastar) has joined ##c
+2014-12-12 04:40:22	fluter	pragma-, existence is an abstract, it's not a concrete object.
+2014-12-12 04:40:37	 *	pragma- pinches fluter.
+2014-12-12 04:41:16	pragma-	Did that feel abstract?
+2014-12-12 04:41:49	fluter	Yes, it's abstract!
+2014-12-12 04:41:59	fluter	pragma-, Give it harder.
+2014-12-12 04:42:09	pragma-	Perv.
+2014-12-12 04:42:15	-->	zoso (~arvind@unaffiliated/arvind-khadri/x-2237230) has joined ##c
+2014-12-12 04:43:26	-->	zmack (~zmack@84.117.10.56) has joined ##c
+2014-12-12 04:45:12	-->	gravitation (~gravitati@atlas.phys.columbia.edu) has joined ##c
+2014-12-12 04:45:34	-->	zenay (~zenay@190.163.79.165) has joined ##c
+2014-12-12 04:46:29	-->	ARCADIVS (~RMM@75-138-6-205.dhcp.mntv.al.charter.com) has joined ##c
+2014-12-12 04:46:32	<--	saml_ (~saml@71.190.2.48) has quit (Quit: Leaving)
+2014-12-12 04:46:56	<--	kobain (~kobain@unaffiliated/kobain) has quit (Quit: KVIrc 4.1.3 Equilibrium http://www.kvirc.net/)
+2014-12-12 04:47:34	<--	brentru (~brentru@h109add63654b.res.umassd.edu) has quit (Quit: ᕬᕫᕬᕫᕬ)
+2014-12-12 04:48:04	<--	zmack (~zmack@84.117.10.56) has quit (Ping timeout: 264 seconds)
+2014-12-12 04:52:51	-->	AkashicLegend (~maxprower@unaffiliated/akashiclegend) has joined ##c
+2014-12-12 04:54:04	<--	zenay (~zenay@190.163.79.165) has left ##c
+2014-12-12 04:56:21	-->	brentru (~brentru@h109add63654b.res.umassd.edu) has joined ##c
+2014-12-12 04:56:27	brentru	Hey guys, I think I made some progress
+2014-12-12 04:56:28	brentru	http://pastie.org/private/bmbh74xxbrbvuwynip9pa
+2014-12-12 04:56:33	brentru	Thanks to your help
+2014-12-12 04:57:15	brentru	However, the buffer keeps printing
+2014-12-12 04:57:21	brentru	I'm not sure how to stop it...
+2014-12-12 04:57:37	PoppaVic	\0
+2014-12-12 04:57:43	brentru	Where ?
+2014-12-12 04:57:56	PoppaVic	define a c string
+2014-12-12 04:58:06	brentru	?
+2014-12-12 04:58:16	brentru	shouldn't I add \0 to the end of my buffer though?
+2014-12-12 04:58:48	<--	marchelzo_ (~marchelzo@HLFXNS016CW-142134090179.dhcp-dynamic.FibreOp.ns.bellaliant.net) has quit (Quit: WeeChat 1.0)
+2014-12-12 04:58:54	PoppaVic	<PoppaVic> define a c string
+2014-12-12 04:59:02	brentru	how/what is that
+2014-12-12 04:59:24	-->	Garner (uid38417@gateway/web/irccloud.com/x-fxdlmzaygoehkatr) has joined ##c
+2014-12-12 05:00:06	<--	asc232 (~Keith@190.51.51.107) has quit (Read error: Connection reset by peer)
+2014-12-12 05:00:36	PoppaVic	ahh. You have another issue or three as well.
+2014-12-12 05:00:49	<--	Kevin-_- (~kevinmelk@66.86.135.95) has quit (Ping timeout: 264 seconds)
+2014-12-12 05:00:55	<--	ome (uid36537@gateway/web/irccloud.com/x-poykjehliumsxblc) has quit (Quit: Connection closed for inactivity)
+2014-12-12 05:01:28	brentru	Where?
+2014-12-12 05:01:45	<--	toothrot (~mux@unaffiliated/toothrot) has quit (Read error: Connection reset by peer)
+2014-12-12 05:01:57	brentru	PoppaVic: ?
+2014-12-12 05:02:20	PoppaVic	hey, nail those that got you this far
+2014-12-12 05:02:35	brentru	I'm not understanding?
+2014-12-12 05:03:00	-->	toothrot (~mux@unaffiliated/toothrot) has joined ##c
+2014-12-12 05:03:05	<--	Wamanuz (~wamanuz@s213-103-209-102.cust.tele2.se) has quit (Remote host closed the connection)
+2014-12-12 05:03:29	-->	Wamanuz (~wamanuz@s213-103-209-102.cust.tele2.se) has joined ##c
+2014-12-12 05:03:40	brentru	It's really late here, I'm not sure if I'm not understanding or what..I've been working on this for hours...
+2014-12-12 05:03:57	-->	vinleod (~vinleod@71-214-112-145.ptld.qwest.net) has joined ##c
+2014-12-12 05:04:14	<--	Fiji (Fiji@1x-vl938-72-19-73-4.wireless.umass.edu) has quit (Quit: Leaving)
+2014-12-12 05:04:20	<--	yokel (~yokel@unaffiliated/contempt) has quit (Ping timeout: 244 seconds)
+2014-12-12 05:04:36	Boohbah	fuckin pastie
+2014-12-12 05:04:41	<--	Vivekananda_y510 (~vvikramjh@pool-96-234-225-219.bltmmd.fios.verizon.net) has quit (Quit: Leaving)
+2014-12-12 05:05:11	brentru	ffs...
+2014-12-12 05:05:39	-->	yokel (~yokel@unaffiliated/contempt) has joined ##c
+2014-12-12 05:06:41	<--	x1 (~x@gateway/tor-sasl/commandercody/x-44464735) has quit (Ping timeout: 250 seconds)
+2014-12-12 05:07:15	brentru	PoppaVic: Any help or...?
+2014-12-12 05:08:01	PoppaVic	not ideal, but it works http://codepad.org/VCqygKUw
+2014-12-12 05:08:51	PoppaVic	find what works, what's poor/bad, and why that "works"
+2014-12-12 05:08:52	<--	jdolan (~jdolan@2601:3:8200:11a7:7c87:45b8:ea50:468d) has quit (Remote host closed the connection)
+2014-12-12 05:09:13	PoppaVic	compare and contrast to your solution - mutate a better solution
+2014-12-12 05:10:00	-->	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has joined ##c
+2014-12-12 05:12:00	-->	x1 (~x@gateway/tor-sasl/commandercody/x-44464735) has joined ##c
+2014-12-12 05:12:00	CaZe	brentru: It's already stored in base 2.
+2014-12-12 05:12:13	brentru	CaZe: I know! I can't print it though...it keeps going
+2014-12-12 05:12:33	PoppaVic	your math is wonky <shrug>
+2014-12-12 05:12:46	<--	rrn (~rrn@unaffiliated/rrn) has quit (Quit: Konversation terminated!)
+2014-12-12 05:12:48	<--	zoso (~arvind@unaffiliated/arvind-khadri/x-2237230) has quit (Ping timeout: 244 seconds)
+2014-12-12 05:13:00	-->	rrn (~rrn@unaffiliated/rrn) has joined ##c
+2014-12-12 05:13:00	CaZe	brentru: I mean: int n;
+2014-12-12 05:13:05	brentru	CaZe: I'm so lost...
+2014-12-12 05:13:16	<--	rrn (~rrn@unaffiliated/rrn) has quit (Read error: Connection reset by peer)
+2014-12-12 05:13:22	CaZe	brentru: n is already in base 2.
+2014-12-12 05:13:46	brentru	n?
+2014-12-12 05:14:08	CaZe	brentru: What's your actual assignment?
+2014-12-12 05:14:10	brentru	There is no n...
+2014-12-12 05:14:24	brentru	CaZe: Convert to base any base from a specified base
+2014-12-12 05:14:31	brentru	so I first get it into base 10
+2014-12-12 05:14:57	CaZe	brentru: int num;
+2014-12-12 05:15:08	CaZe	brentru: Why?
+2014-12-12 05:15:25	brentru	so I can easily modify it from there
+2014-12-12 05:15:26	brentru	http://codepad.org/TaBzpDWA
+2014-12-12 05:15:44	brentru	there's my whole code so far, I'm really tired and appreciate the help. As I said earlier, this is my first C experience
+2014-12-12 05:15:47	brentru	course
+2014-12-12 05:16:19	-->	m4ho (~m4ho@p20030046094DD825F387FE7262020C28.dip0.t-ipconnect.de) has joined ##c
+2014-12-12 05:16:24	CaZe	brentru: Can you show the assignment?
+2014-12-12 05:17:07	brentru	CaZe: queried
+2014-12-12 05:20:26	-->	jdolan (~jdolan@c-50-188-243-111.hsd1.fl.comcast.net) has joined ##c
+2014-12-12 05:21:06	perdent	Having some trouble, here is the string i am trying to pull the nick from:
+2014-12-12 05:21:07	perdent	:Null!~null@222.222.222.222
+2014-12-12 05:21:08	perdent	the string is contained in a variable
+2014-12-12 05:21:09	<--	King_Hual (~Hual@unaffiliated/king-hual/x-1207580) has quit (Ping timeout: 272 seconds)
+2014-12-12 05:21:15	perdent	Not quite sure how to read after token : and stop reading at the !
+2014-12-12 05:21:16	--	Mode ##c [+o candide] by ChanServ
+2014-12-12 05:21:17	--	Mode ##c [+b *!ampharmex@2a00:dcc0:eda:3748:247:48:123:b33f] by candide
+2014-12-12 05:22:19	--	Mode ##c [-b *!ampharmex@2a00:dcc0:eda:3748:247:48:123:b33f] by candide
+2014-12-12 05:22:21	perdent	I am coding in C and this is a TCP connection over sockets to an IRC server. I will include some sample code to work with so its better understood what im trying to do: http://pastebin.com/5V02fUgK
+2014-12-12 05:22:45	PoppaVic	perdent: Not a C issue. This channel exists for discussion of the Standard C Language itself (pick a standard). For tools such as Makefiles, IDEs, compilers, let alone random libs. See ##workingset, ##posix, #winapi... or #networking.
+2014-12-12 05:22:47	perdent	That particular code will interprete the variable "recvline" and print it in the irc channel so i can see exactly what is passed through the socket. The resulting output is below, i have messed a little with it for identity purposes:
+2014-12-12 05:22:55	perdent	OUT::Null!~null@127-0-0-1.blah.blah.com
+2014-12-12 05:23:03	Boohbah	brentru: what happens when s is greater than LONG_MAX?
+2014-12-12 05:23:28	perdent	PoppaVic, It is C
+2014-12-12 05:24:14	PoppaVic	sockets are not, so.. See the topic, post to the recommended sites. Good luck.
+2014-12-12 05:25:02	brentru	Boohbah: That's not pertient to my issue currently
+2014-12-12 05:25:50	Boohbah	brentru: nevermind, i'm confused
+2014-12-12 05:26:19	--	Mode ##c [-o candide] by ChanServ
+2014-12-12 05:28:46	--	perdent is now known as kulgal
+2014-12-12 05:30:59	<--	metalight (~q@37.49.128.164) has quit (Remote host closed the connection)
+2014-12-12 05:34:49	-->	bluehavana (uid2820@gateway/web/irccloud.com/x-lrvppfjpbqjyhihe) has joined ##c
+2014-12-12 05:38:27	-->	Haswell (~Haswell@unaffiliated/haswell) has joined ##c
+2014-12-12 05:39:02	-->	hiptobecubic (~john@unaffiliated/hiptobecubic) has joined ##c
+2014-12-12 05:40:45	-->	KarolisK (~karolis@194.28.233.64) has joined ##c
+2014-12-12 05:42:49	-->	fatalhalt (~fatalhalt@c-71-201-7-76.hsd1.il.comcast.net) has joined ##c
+2014-12-12 05:42:50	<--	fatalhalt (~fatalhalt@c-71-201-7-76.hsd1.il.comcast.net) has quit (Max SendQ exceeded)
+2014-12-12 05:43:31	-->	fatalhalt (~fatalhalt@c-71-201-7-76.hsd1.il.comcast.net) has joined ##c
+2014-12-12 05:45:44	-->	dj_pi (~dj@c-107-5-25-243.hsd1.mi.comcast.net) has joined ##c
+2014-12-12 05:48:56	<--	Jesin (~Jesin@dhcp123-51.eecs.lehigh.edu) has quit (Quit: Leaving)
+2014-12-12 05:50:48	-->	sre-su (~sre-su@unaffiliated/sre-su) has joined ##c
+2014-12-12 05:51:15	pragma-	kulgal: copy the string (or don't if you don't care if it gets modified). point a pointer to the start of the string. increment the pointer by one. point another pointer at that location, then increment it until you find a '!' or end of string.  write a 0 into the location where the pointer ends up at.  your first pointer now points at a string representing the nick portion.  done.
+2014-12-12 05:51:23	-->	subrina (~IceChat7@64.187.171.112) has joined ##c
+2014-12-12 05:54:20	<--	jimvideo (~jimvideo@184-12-235-91.dr01.brny.ca.frontiernet.net) has quit (Quit: Good night every body.)
+2014-12-12 05:55:52	<--	tcsc (~tcsc@c-76-118-148-98.hsd1.ma.comcast.net) has quit (Quit: This computer has gone to sleep)
+2014-12-12 05:58:46	-->	jzk (~eccehomo@ec2-54-176-48-31.us-west-1.compute.amazonaws.com) has joined ##c
+2014-12-12 05:59:19	-->	robink (~quassel@unaffilated/robink) has joined ##c
+2014-12-12 06:05:17	<--	hiptobecubic (~john@unaffiliated/hiptobecubic) has quit (Ping timeout: 258 seconds)
+2014-12-12 06:06:10	<--	oleo__ (~oleo@xdsl-78-35-154-215.netcologne.de) has quit (Quit: Verlassend)
+2014-12-12 06:07:00	-->	jlf (~user@pdpc/supporter/active/jlf) has joined ##c
+2014-12-12 06:09:22	<--	dseitz (~dan@ip70-191-237-177.pn.at.cox.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-12-12 14:26:40	--	irc: disconnected from server
+2014-12-12 14:55:24	--	##c: ##c-unregistered :Forwarding to another channel
+2014-12-12 15:06:31	--	irc: disconnected from server

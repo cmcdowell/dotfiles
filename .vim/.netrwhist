@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/chris/.vim'
+let g:netrw_dirhist_2='/home/chris/.vim/colors'
+let g:netrw_dirhist_3='/home/chris/Programming/javascript_projects/search-engine-cw'
+let g:netrw_dirhist_4='/home/chris/Programming/javascript_projects'
+let g:netrw_dirhist_5='/home/chris/Programming/javascript_projects/search-engine-cw'
+let g:netrw_dirhist_6='/home/chris/Programming/vim-snippets/UltiSnips'
+let g:netrw_dirhist_7='/home/chris/vimwiki'
+let g:netrw_dirhist_8='/home/chris/Programming/javascript_projects/mitunes/MiTunes'
+let g:netrw_dirhist_9='/home/chris/Programming/javascript_projects/email_confirm'

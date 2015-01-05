@@ -1,0 +1,523 @@
+2014-10-15 19:57:49	-->	Nectarly (~chris@falk-egg-224-210.halls.student.lut.ac.uk) has joined #Node.js
+2014-10-15 19:57:49	--	Topic for #Node.js is "Current Stable v0.10.32, Unstable v0.11.14 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index"
+2014-10-15 19:57:49	--	Topic set by tjfontaine (~tjfontain@unaffiliated/tjfontaine) on Mon, 29 Sep 2014 18:06:53
+2014-10-15 19:57:49	--	Nicks #Node.js: [@Aria @AvianFlu @baudehlo @brycebaril @feross @konobi @ljharb @MI6 @mscdex @ogd @timoxley @tjfontaine @TooTallNate @trevnorris @xyxne [muttox] \mSg ^esc _3rdEden __main__ __TheEwok__ __trev _br_ _jack_ _kud _rai _ritchie_ _|d0m|_ `Denis a0viedo AAA_awright AaronMT abrkn_ accelerate acdanger AciD`` acidjazz admc Adr1 ADreWilliams adrianlang Aeq Aerospark aewing ahbritto Aikar airtonix_ aisipos Ajans ajpiano akiva akoenig akp al1o alanhoff alexwhitman AlexZan Alina-malina Alpha64 alphonse23_ alxgnon Amaan amatecha amcoder ampex anderskristo andrefs Andrevan andreypopp__ andwun anildigital anthonyR antonw antoxyz AphelionZ apipkin apx aquinas AR45 arachne araujo arielserafini armyriad arnorhs arteced artemm artgoeshere artisangoose Artpicre Asandari asdf` aseidl asheinfeld asherkin ashnur Asiajey assia_t Astro- asturel atatsu auganov automata avdi Avon aWinterman Ax_SeS Azbruh_ BAKfr BaNzounet baranaby basiclases basro__ batmanuel bayed Baz__ bbankes Bberl bberry bbloom_ bdunavant bear beardtree beawesomeinstead beckyconning ben_alman benatkin bender_unit beng1 bensternthal bentruyman bhldev bhughes bic2k BigCat2K Bilge BillCriswell billy bios blackjid BlackYoup bLaind blakehall blissdev Blkt_ Blorb bmcquee bo Bob_Gneu bobmcw bobwilliams bodisiw boltR BombStrike Bonuspunkt booga boomography booo bove bpierre bradgignac braincrash brainproxy brainv brett19 brettlangdon brian___ brianloveswords brianseeders brittanystoroz brucem buzzduck bytemask_ c4milo CaffeineAddict caitp callumacrae calvinmetcalf capella-da-star captain_morgan carldanley_znc carlhako Cassyblanca casual Cathy ccbmx ccohn cebor cedricziel ceej cfq chapel charuru chavezgu Cheery chenghiz chiel_ chiper chjj choop chovy chrisdickinson chrisshattuck Christian2 christianboehlke chromatome CIDIC cipher___ ciwolsey cjimti cjwelborn clamstar clarkk clarle ClarusCogitatio claudiyoh climbup Cloudflare_ cmwelsh codelahoma coderdad_ coffey coleb comma8 connor_goodwolf Connorhd_ connrs conradev copongcopong CornishPasty coryasaurus Couto CptCleve1 cpup crashsystems creationix crodas cryptojuice ctgriffiths ctorp culthero culturelabs curfont Cutzenfreund cxreg Cyph3r D-Boy d4w33d daed daedeloth daffl dainis daleharvey damir__ danecando danemacmillan danfinch danfinlay_ danielfilho danjenkins danmactough danneu DannyFritz danoo DANtheBEASTman DanZimm darach Darkwater Darryl Davey david_brent David_Hernandez davros_ dawolf dbackslash dbck dcamp de_henne dec deedubs deeebug DelphiWorld dermot derrzzaa Dev0n devdazed dfoolz- dfucci_ DiegoMax_ diffalot digiwano Diogo disnet____ djoot djQuery dman777_alter dmarr dmz dodobas doki_pen domeh Domenic dook Dr3amc0d3r|away dra Draggor drags Dramors drawesome drodger DrPizza drudge dseitz dshaw_ dubban dvorkbjel dvz_ Dwarf dwayne e2xistz e^ipi Earthnail ebi ebryn ec ecksun ed209 edoloughlin edude03 edwardly edy Efrem ehlovader eighty4 eins78 ejnahc Elisha ellell emilsedgh empee emraldinho enaqx enntee eno epa_ Ephemeral ePirat erikg erkmell Erriond esatterw1 Esya euoia euphoria Evanlec EvilJStoker EvilPacket exp10r3r ey3ball eyebraus EyePulp Ezku f4lk0n fabienf faddah fas fastman faugusztin featheryahn febits felipeduardo felixjet_ felixn FernandoBasso Fetch FIFOd[a] finnp FIQ Fishrock123 Fistful_of_coins fivetanley fiws|meh fixl flgr fn00dle FooBarWidget ForbesLindesay fourq frdmn frecel freedrull Friss frkout FruitieX FunnyLookinHat Furai furier Fusl gabeio- gandalfpimp garndt Garo__ garren gcann gcg gdesouza Geertje123 Gege genial gf3 ggherdov gh0st ghostbar gig3m giganticus Gildarts gildean Gilgameshkun gingermusketeer girishr glebihan gleki gnarf Gottox gozala grantbow gratimax Grebrez GreenJello Gregor grep_away groundwater gsd Guest19827 Guest28060 Guest34004 Guest52370 Guest53264 Guest54703 Guest6760 gurke_ guybrush GvJordan Gwl gyaresu_ h4cc hackygolucky hahaguys Haifeng hairlesshobo halfhalo HannahWolfe happyface_ hareth harrisonm harthur hartsock harttho Havvy hays hell_razer henriquev herenow herme5 heroux heroux_ heyimwill heytrav hfp_work hguux hipsterslapfigh- hipsterslapfight hlfw0rd hmoney hollusion Holomorphism howitdo htmldrum hvgotcodes hydrajump hydrospell[l] i0rn iAmerikan ianl iarna iH8Pickles ikanobori_ iksik ilya im0b ImBcmDth_ imslavko indexzero Industrial insel instence Internet13 inukshuk iondrip ips|malc irclogger_com ircretary ironfroggy_ irrev_greg iShortBus it0a itruslove IvailoStoianov ivan\ ivan` IvanBlagdan ivanoats_ IvanoffC_ j0ni j4jackj jabbslad______ jadne jagoda jakecraige JakeSays jakutis jalcine James_T jamesd_ jameskyburz jamespw Jamy jan____ Janhouse janne Janzeh japherwocky jareddlc jaredrhine_ jarib jas- jasonrm jayne jbeaudry jbenet jbpros JBreit jburkhart jcrugzz jdeeburke jdewald jdj_dk jedgar jednorozec jee jeffisabelle jeffspies jeffw198___ Jellydog JelmerD jennmoneydollars jergason jeroentbt jesusabdullah jfojtl jga jgornick jharbaugh jheady1 jhermann jhihn_ jimmyhillis jimmyz2 jiskiras JJJan jkeiper jkridner jlyndon jmar777 jmckind jmfcool___ jmimi jmonay JmZ jn jnollette joaofelix jocafa joelsmith joeyday__ joeytwiddle johnkpaul Johnny- johwir joliss_ jolros jolts Jonathan1cClare Jonathan2cClare jongleberry JonGretar_ jonmorehouse joshfinnie joshie joshontheweb joshskidmore joshtau joshthecoder jplock jrdn jreading jrhe_ jsec jsha jsjs jso JSON_voorheez jspeaks jtw julianduque juliangruber julien-f julienb julienb__ jumpman justicefries juul k1ng k308de k3k kaichanvong Kaijo Kaimei kakashiAL Kaltiz kalypso kalz kanzure kaplejon kaspertidemann katlogic_ katsh katylava kavon kborchers Keanu73 keksike- kelt_ kenansulayman KenanY kentcdodds Kester kevinfagan kevireilly kex KicStart killtheliterate king313 KingDragon KiNgMaR kitallis kjeldahl kluka Klumben knownasilya KnownSyntax koell kojack1 koldirg koqueue kraft kreiggers krisbrown kriskowal kroogs krotscheck Kruppe Kruxoman kshep kud kudos kumavis kumavis_ kuuranne_ kuzetsa kwmiebach kyoushuu L0j1k l3kn L8D_ L_star ladekjaer lampe2 lanceball lebster Lee1092 LeftWing__ lektrik leonardo leptonix_ leTwitch Levite lewdev lightsofapollo__ lijnen lilleman linojon llakey_ lmorchard lnong loglaunch_ lolzabawa Lorentz Lorthirk LouisT loz--_ lrvick lsv LucasTT lud luite lukekarrys Lunar_Lamp Lunchy m-bodmer m0 M2Ys4U m_gol macabre machty Mack Mackseraner MacWinner Madison mads maegeri mafintosh magic mahesh_ maletor MalfaitRobin maltris_ ManneW manuelbieh maoyteey mape maqr Maqs marcadde1 marcello3d marcoasbreuk marienz marionebl_ markand markin marklite markour Marsup martamccasland martintrojer mary5030 master5o1 master5o1|work mateu mathiasbynens matkl matt_c mattattaque matthoiland matti3 mattmcclure mawe mboelter mburns Mchl McJesus McKay mclee McMAGIC--Copy mdel meandi_1 medice medikoo-bot medusa mekwall mennea MerlinDMC merpnderp mertimor- meso meta|dreamforce mezod mhernandez1 mhilmi Mia micro_ mikaelb mikegerwitz MikeS_ mikolalysenko_ milena milkandtang mils miqui MistahKurtz MitchW mityaz mitzip mize mjijackson MKCone`Office mkitson mko mlegenhausen mlocher mlpug mmalecki mndyncl mnilsson Mniot moniker_ monokrome morenoh149 morficus mpajor MrBaboon mrbitsandbytes MrDHat_ mrkake mrkishi mrkurt Mso150 mspier msx mtree mtscout6 mtsr mu MuffinMan` Musk mvsastry mwak MxG_ myndzi N1c0tux naccall nail_ Naive nanashiRei NanoArrow nathan7 nathanbz nathanr Natim ndru_ Nectarly Ned_ neilf_____ netameta_ netwoodle nhuerta4 nicelife nicetry niclone nightfly ninegrid NinjaBanjo_ ninkotech__ njbair nkohari no9 nodedfree NodeNagant NoirSoldats NoNMaDDeN noobee nopper NormySan noxoc nsm nStensen nszceta nthgergo nuck nuizzy null_radix nullrouted nya octetcloud odin_ odyniec oemia oetjenj oieesah Okaria okic okuryu oldclone olekenneth olfox Olivier| olli- ollie omnidan Omnilord OneAngryDBA oohnoitz Orbitrix orionstein oroce orospakr othiym23 Outsider_______ overra owenb____ oyho____ p0sixpsc_ p15 PabloAngello__ Pagan palid paperElectron parshap_ paskl pastry patrickarlt patrio patsToms paul__ paul_k PaulCapestany paulstatezny_ peckermanzzz Peeter____ peol percival petka_ petris petschm Pezmc_ ph8 ph88 Phibs phishy phI||Ip Phloxx phpnode phuh pickels1 PierreM pirateghost pkiller plantoschka Platini platonic pluma plutoniix pmooney poorman porchrat poutine prawnsalad prbc_ pretentiousgit prettyrobots Proditor progrock_ PROJAK_SX prometh proppy protodave psacrifice pswizzle_ psyprus purr pxz Pyrus qard-appneta qbit qdk qpls_ quackgyver quattro_ queequeg2 rafaelcaceres raj rakm ramitos randallagordon raoul raphie ratsupremacy Raynos raypulver raz rbs rcombs rcs real_ate ReAnna redonkulus ree reid relling rempah rendar renetool rf rhalff rho rhodesjason rhonabwy rhysyngsun richiebkr rick68_ ricket rickharrison rickibalboa rigel rigor789|away Riviera rkgarcia rmg robbie-away robertknight robertkowalski RobertLaptop robertmaxrees robey robmorrissey robmozart rockbot__ roddy_ roelmonnens RogerWS_ ronc RoryHughes rossdm rossk rounce rphillips rtucker88 Rubennn rud RushPL rusticode rvagg rwaldron rwbg rwjblue ryan_stevens rymate1234 ryst s34n s3shs s5fs s_e sadtaco Sammy8806 SamuraiJack sandelius sandinmyjoints_ sapiosexual savardc sayakb sballesteros schredder scott_gonzalez scottalan scrollback sdboyer sdiawara sdouble SDr seanmerron seanmonstar SebastianFlyte Sebastien-L secondjeff SecretAg1nt Segrel sejo Sembiance sente setec sfa_ sfr^ Sgeo Shadda shakinha_ shama shamanime shane___ shanse Sharaal Shayanjm sheldon____ shennyg____ shesek shiftins shindakun shrop siddart sigurding silvers_ simeon simius simonbusborg sinwave SirCmpwn sirecote SirFunk siruf Sixmsj Sixthly siyb_ skarn skift skip_freely Slashbunny slaskis Slaytorson Sleepy_C1der SM0TVI smoothcode snapwich solexious Someguy123 somenick Sonderblade Sonicrida sonofdirt SorcerousFox SoreGums Sorella sorensen sorribas SoulBlade sp00x SP33D spacepluk spalger spatialbrew SpiceMan spicyramen_ spion Spr0cket spronk sputnik13 spydeee srijay ssarah SSgtSpoon sspi stalled Starduster stef Steve_Jobs stevegill__ StevenMcD StevePotayTeo StolenToast stoned Stoob_ stpn stride strmpnk studiotate stylus substack sudo_aptGet sukima_ sunfun sunoano sunu SupaHam SuperPhly superusr Sven_vB sverrej swajr Swayz swen swills Synecy syntaxc4 t_kjaergaard tanepiper__ tantalum tapout tariq786 tassmjau Taylor- tbr TDJACR tehmoon Teknix tellnes Teltaria1 terinjokes terribleplan tezla tfnico___ tg tgies tgkokk thanpolas The_Fly TheAceOfHearts thealphanerd thebishop thedonut_ TheLink TheMoonMaster TheNumb therealk_ therealklanni Thhethssmuz thomassgn thykka tiguser tillbaks tilleps timasche- timeless timm_ timmywil timtch tinster titusfoo tlhunter3 tmeister tobie Tomashe tomaw tomazb tomku tomlane tonist top4o topaxi topwobble torgeir tourniquet towski Transfusion tranzfuse trepatud- trodrigues tropican1 troter_ truff tsunamie Tug Tuhis tvw twisted` txdv tyler99 tylerdmace Tyop u0m3_ uber ufear_ UniOn unreal-dude upgrayeddd uris77 ValicekB varibull varmais vassagus Vbitz vcoinminer______ verscienta vespakoen vikinghug vinnix vinnymac viperZ28 vire__ vlad_starkov vlnx voidstar VoidWhisperer_ voodootikigod voxadam wa7son wadey WakiMiko wallerdev WaltGiroir wanderfuss wang wangbus wao wavded_ wcummings webguynow Websoftwarez WebSpirit weeb1e wereHamster wgolden whaley whatupderek whitsan Willis wiseboy wizonesolutions woah wookiehangover Woololo WorkingClassDev wraithgar ws2k3 wwicks wycats xdarklight XDS2010 XemsDoom xenogis xeoncore|away xer0x xet7 xiplias Xiti xocel xonev xSmurf xyNNNoff yacc YamakasY yanick yano yaru22 ybit3 yeah568 YetiInva1er yhpark_talk_____ yorick yoshokatana ypks Yrie yunong yuskesh_ Ywa zacharypch Zak_ zap zapu Zaxnyd zbzzn zeekay zeiris Zenithar Zerot zhesto zinco_ zivc Zolmeister zonetti zsentinel zyla zymurgy Zyrri zz_joeybaker zz_karupa |QSR|]
+2014-10-15 19:57:49	--	Channel #Node.js: 1363 nicks (15 ops, 0 halfops, 0 voices, 1348 normals)
+2014-10-15 19:57:49	--	URL for #node.js: http://nodejs.org/
+2014-10-15 19:57:49	DelphiWorld	guys i'm using twit module
+2014-10-15 19:57:51	--	Mode #Node.js [+Ccnt]
+2014-10-15 19:57:51	--	Channel created on Sat, 30 Jan 2010 07:48:24
+2014-10-15 19:57:52	DelphiWorld	npm install twit
+2014-10-15 19:57:54	<--	buzzduck (~buzzduck@121.174.84.102) has quit (Ping timeout: 246 seconds)
+2014-10-15 19:57:54	<--	gabeio- (~gabeio@ool-182d69ba.dyn.optonline.net) has quit (Ping timeout: 246 seconds)
+2014-10-15 19:57:54	<--	timm_ (~timm@76.77.66.100) has quit (Ping timeout: 246 seconds)
+2014-10-15 19:57:54	<--	maqr (~maqr@httpcraft/hax) has quit (Ping timeout: 246 seconds)
+2014-10-15 19:57:54	<--	hays (~hays@unaffiliated/hays) has quit (Ping timeout: 246 seconds)
+2014-10-15 19:57:54	<--	renetool (~quassel@h2197858.stratoserver.net) has quit (Ping timeout: 246 seconds)
+2014-10-15 19:57:55	<--	substack (~substack@104.131.0.235) has quit (Ping timeout: 246 seconds)
+2014-10-15 19:57:58	-->	mrmoneyc (~mrmoneyc@198.199.98.216) has joined #Node.js
+2014-10-15 19:58:00	-->	oNeDaL (~oNeDaL@unaffiliated/onedal) has joined #Node.js
+2014-10-15 19:58:01	DelphiWorld	can someone help me with a tutorial i found?
+2014-10-15 19:58:04	-->	hays (~hays@unaffiliated/hays) has joined #Node.js
+2014-10-15 19:58:21	-->	FasTTo (~FasTTo@207.242.48.114) has joined #Node.js
+2014-10-15 19:58:25	-->	renetool (~quassel@h2197858.stratoserver.net) has joined #Node.js
+2014-10-15 19:58:28	-->	isaacs (~isaacs@173.203.97.118) has joined #Node.js
+2014-10-15 19:58:28	--	Mode #Node.js [+o isaacs] by ChanServ
+2014-10-15 19:58:29	<--	FasTTo (~FasTTo@207.242.48.114) has quit (Client Quit)
+2014-10-15 19:58:29	-->	cce (~cce@50.56.54.167) has joined #Node.js
+2014-10-15 19:58:30	<--	cce (~cce@50.56.54.167) has quit (Changing host)
+2014-10-15 19:58:30	-->	cce (~cce@pdpc/supporter/silver/cce) has joined #Node.js
+2014-10-15 19:58:34	-->	weylin (~weylin@162.243.82.92) has joined #Node.js
+2014-10-15 19:58:35	-->	heavystorm (~heavystor@ec2-50-17-252-102.compute-1.amazonaws.com) has joined #Node.js
+2014-10-15 19:58:46	<--	redonkulus (~redonkulu@2001:4998:effd:600:68e9:ca50:338:3f12) has quit (Quit: Leaving.)
+2014-10-15 19:58:54	-->	maqr (~maqr@httpcraft/hax) has joined #Node.js
+2014-10-15 19:58:54	<--	killtheliterate (~killtheli@12.10.190.123) has quit (Read error: Connection reset by peer)
+2014-10-15 19:58:56	-->	rapzo (~ruipedro@doris.12feettallstudio.com) has joined #Node.js
+2014-10-15 19:58:57	-->	jamenlang (~jlang@209.193.90.172) has joined #Node.js
+2014-10-15 19:58:58	-->	limulus_ (~eric@yucca.limulus.net) has joined #Node.js
+2014-10-15 19:59:05	-->	saapas (saapas@xob.kapsi.fi) has joined #Node.js
+2014-10-15 19:59:09	-->	Kingdutch (~kingdutch@cookiemonster.alexandervarwijk.com) has joined #Node.js
+2014-10-15 19:59:18	-->	DJDan (~DJDan@115-64-177-188.static.tpgi.com.au) has joined #Node.js
+2014-10-15 19:59:25	-->	ncthom91 (~ncthom91@173.252.71.129) has joined #Node.js
+2014-10-15 19:59:26	-->	jypie (~jypie@107-209-198-135.lightspeed.irvnca.sbcglobal.net) has joined #Node.js
+2014-10-15 19:59:29	-->	gkatsev (~gkatsev@oftn/board/gkatsev) has joined #Node.js
+2014-10-15 19:59:30	-->	whyhankee (~whyhankee@194.109.153.10) has joined #Node.js
+2014-10-15 19:59:33	-->	substack (~substack@104.131.0.235) has joined #Node.js
+2014-10-15 19:59:35	<--	jiskiras (~jiskiras@c-71-199-7-57.hsd1.ut.comcast.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-15 19:59:38	-->	jorb (~jorb@pool-96-255-238-163.washdc.fios.verizon.net) has joined #Node.js
+2014-10-15 19:59:53	-->	Bwild (~irc@static-72-67-52-110.lsanca.fios.verizon.net) has joined #Node.js
+2014-10-15 19:59:54	--	whyhankee is now known as Guest27976
+2014-10-15 19:59:55	-->	neataroni (~neataroni@c-67-171-200-129.hsd1.or.comcast.net) has joined #Node.js
+2014-10-15 20:00:05	<--	bmcquee (~bmcquee@216.207.42.140) has quit (Remote host closed the connection)
+2014-10-15 20:00:10	-->	przemoc (~przemoc@unaffiliated/przemoc) has joined #Node.js
+2014-10-15 20:00:27	<--	a0viedo (ba170621@gateway/web/freenode/ip.186.23.6.33) has quit (Quit: Page closed)
+2014-10-15 20:00:30	-->	hswolff (~hswolff@cpe-74-68-123-30.nyc.res.rr.com) has joined #Node.js
+2014-10-15 20:00:30	<--	sudo_aptGet (~sudo_aptG@200.99.26.2) has quit (Remote host closed the connection)
+2014-10-15 20:00:43	-->	bmcquee (~bmcquee@216.207.42.140) has joined #Node.js
+2014-10-15 20:00:45	<--	emraldinho (~emraldinh@pool-71-183-212-153.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2014-10-15 20:00:59	<--	vassagus (~vassagus@186.4.2.162) has quit (Remote host closed the connection)
+2014-10-15 20:01:11	-->	a0viedo (ba170621@gateway/web/freenode/ip.186.23.6.33) has joined #Node.js
+2014-10-15 20:01:26	-->	mrbz (~mrbz@ec2-184-72-25-165.us-west-1.compute.amazonaws.com) has joined #Node.js
+2014-10-15 20:01:28	<--	mvsastry (~mvsastry@116.75.81.117) has quit
+2014-10-15 20:01:45	-->	Somatt (famic@debug.sh) has joined #Node.js
+2014-10-15 20:01:51	-->	C0deMaver1ck_ (~C0deMaver@do.computer.scientists.wear.lab.coats.calebalbritton.com) has joined #Node.js
+2014-10-15 20:02:03	-->	Sir_Ragnarok (~irc@kralizec.serverhamster.com) has joined #Node.js
+2014-10-15 20:02:05	-->	cianomaidin (~cianomaid@109.76.238.166) has joined #Node.js
+2014-10-15 20:02:06	<--	jergason (uid17129@gateway/web/irccloud.com/x-qidpachjtqzkmjit) has quit (Quit: Connection closed for inactivity)
+2014-10-15 20:02:08	-->	tripu (~tripu@apache2-yak.mug.dreamhost.com) has joined #Node.js
+2014-10-15 20:02:14	-->	wallzero (~webmaster@37.235.50.13) has joined #Node.js
+2014-10-15 20:02:28	-->	YoY (~YoY@ltl56-2-88-169-169-201.fbx.proxad.net) has joined #Node.js
+2014-10-15 20:02:35	-->	astaves (~astaves@teamtrack.in) has joined #Node.js
+2014-10-15 20:02:40	-->	nlf (~nathan@gibson.unneeded.info) has joined #Node.js
+2014-10-15 20:02:40	<--	hell_razer (~textual@host-176-38-97-10.la.net.ua) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-15 20:02:41	<--	dshaw_ (~Adium@2601:9:7b80:504:551a:a80d:39f4:a3c1) has quit (Quit: Leaving.)
+2014-10-15 20:02:42	-->	roger_raymond (~roger_ray@linode.lynch-raymond.com) has joined #Node.js
+2014-10-15 20:02:43	-->	gdbz (~gdbz@i286.org) has joined #Node.js
+2014-10-15 20:02:43	-->	rgl (~rgl@a95-94-80-42.cpe.netcabo.pt) has joined #Node.js
+2014-10-15 20:02:47	-->	Lee- (~lee@unaffiliated/lee-) has joined #Node.js
+2014-10-15 20:02:48	kevireilly	DelphiWorld: is there a specific question or issue?
+2014-10-15 20:02:49	-->	gabeio (~gabeio@ool-182d69ba.dyn.optonline.net) has joined #Node.js
+2014-10-15 20:02:53	-->	orbsio (~orbsio@static-50-53-152-124.bvtn.or.frontiernet.net) has joined #Node.js
+2014-10-15 20:02:54	-->	adrrr (51dc8e84@gateway/web/freenode/ip.81.220.142.132) has joined #Node.js
+2014-10-15 20:02:56	-->	shapeshed (~shapeshed@drake.shapeshed.com) has joined #Node.js
+2014-10-15 20:02:59	<--	mary5030 (~mary5030@72.32.115.233) has quit (Remote host closed the connection)
+2014-10-15 20:03:03	-->	FMJaggy (~FMJaggy@107.170.37.224) has joined #Node.js
+2014-10-15 20:03:11	-->	shoky (uuuggg@37.19.118.105) has joined #Node.js
+2014-10-15 20:03:12	--	orbsio is now known as Guest66428
+2014-10-15 20:03:13	--	gabeio is now known as Guest62246
+2014-10-15 20:03:16	<--	hlfw0rd (~hlfw0rd@74.118.235.99) has quit (Quit: Leaving)
+2014-10-15 20:03:37	DelphiWorld	kevireilly: just some small action like if you want to copy for me some code and pastebin it for me cause i can't copy from huge page using screen reader
+2014-10-15 20:03:37	-->	hlfw0rd (~hlfw0rd@74.118.235.99) has joined #Node.js
+2014-10-15 20:03:52	-->	aboudreault (~aboudreau@osgeo/member/aboudreault) has joined #Node.js
+2014-10-15 20:04:35	-->	redonkulus (~redonkulu@nat/yahoo/x-ncicsoscnddcrepg) has joined #Node.js
+2014-10-15 20:04:46	<--	gurke_ (~gurke_@unaffiliated/gurke/x-4318971) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-15 20:04:48	-->	`bob (~bob@vil93-23-78-198-210-74.fbx.proxad.net) has joined #Node.js
+2014-10-15 20:04:57	-->	Mso150_g (~ctlM@80.83.239.59) has joined #Node.js
+2014-10-15 20:04:57	<--	redonkulus (~redonkulu@nat/yahoo/x-ncicsoscnddcrepg) has quit (Client Quit)
+2014-10-15 20:05:06	<--	bmcquee (~bmcquee@216.207.42.140) has quit (Ping timeout: 260 seconds)
+2014-10-15 20:05:06	<--	Mso150 (~ctlM@80.83.239.126) has quit (Ping timeout: 260 seconds)
+2014-10-15 20:05:07	<--	OneAngryDBA (~textual@cpe-67-243-185-253.nyc.res.rr.com) has quit (Ping timeout: 260 seconds)
+2014-10-15 20:05:23	-->	zz_romb (~romb@89.28.252.102) has joined #Node.js
+2014-10-15 20:05:30	--	zz_romb is now known as romb
+2014-10-15 20:05:32	<--	romb (~romb@89.28.252.102) has quit (Changing host)
+2014-10-15 20:05:32	-->	romb (~romb@unaffiliated/romb) has joined #Node.js
+2014-10-15 20:06:16	-->	freeone3000 (~temp@Syncleus/dev/freeone3000) has joined #Node.js
+2014-10-15 20:06:17	kevireilly	DelphiWorld: https://github.com/ttezel/twit/blob/master/examples/bot.js
+2014-10-15 20:06:29	-->	kriskropd (~kris@unaffiliated/kriskropd) has joined #Node.js
+2014-10-15 20:06:32	-->	Austin___ (~austin@cpc68707-hudd11-2-0-cust1016.4-1.cable.virginm.net) has joined #Node.js
+2014-10-15 20:06:37	<--	artemm (~artemm@153-249-178-94.pool.ukrtel.net) has quit (Ping timeout: 255 seconds)
+2014-10-15 20:06:46	DelphiWorld	kevireilly: no no
+2014-10-15 21:04:31		irc: disconnected from server
+2014-10-15 21:04:56	-->	Nectarly (~chris@falk-egg-224-210.halls.student.lut.ac.uk) has joined #Node.js
+2014-10-15 21:04:56	--	Topic for #Node.js is "Current Stable v0.10.32, Unstable v0.11.14 | Channel Mission Statement: http://bit.ly/node-irc-mission-statement | Channel Info: http://nodeirc.info | Channel Logs: http://logs.nodejs.org/node.js/index"
+2014-10-15 21:04:56	--	Topic set by tjfontaine (~tjfontain@unaffiliated/tjfontaine) on Mon, 29 Sep 2014 18:06:53
+2014-10-15 21:04:56	--	Nicks #Node.js: [@Aria @AvianFlu @baudehlo @brycebaril @feross @isaacs @konobi @ljharb @MI6 @mscdex @ogd @timoxley @tjfontaine @TooTallNate @trevnorris @xyxne [muttox] \mSg ^esc _3rdEden __joshua__ __main__ __TheEwok__ _br_ _jack_ _kud _rai _ritchie_ _|d0m|_ `bob `Denis a0viedo AAA_awright AaronMT aboudreault abrkn_ accelerate acdanger AciD`` acidjazz acoyfellow admc Adr1 ADreWilliams adrianlang Aeq aewing ahbritto Aikar airtonix_ aisipos Ajans ajpiano akiva akoenig akp al1o alanhoff alexwhitman AlexZan Alina-malina Alpha64 alphonse23_ alxgnon Amaan amatecha amcoder ampex anderskristo andrefs Andrevan andreypopp__ andwun anildigital anthonyR antonw antoxyz AphelionZ apipkin apx aquinas arachne araujo arielserafini armyriad arnorhs arteced artemm artgoeshere artisangoose Artpicre Asandari asdf` aseidl asheinfeld asherkin ashnur astaves Astro- asturel atatsu auganov Austin___ automata avdi Avon avree aWinterman Ax_SeS Azbruh_ b1nd BAKfr BaNzounet baranaby basiclases basro__ batmanuel Baz__ bbankes Bberl bberry bbloom_ bdunavant bear beardtree beawesomeinstead beckyconning ben_alman benatkin bender_unit beng1 bensternthal bentruyman bgerami bhldev bhughes bic2k BigCat2K_ Bilge BillCriswell billy bios blackjid BlackYoup bLaind blakehall blissdev Blkt_ Blorb bmcquee bo Bob_Gneu bobmcw bobwilliams bodisiw boltR BombStrike Bonuspunkt booga boomography booo bove bpierre bradgignac bradleymeck braincrash brainproxy brainv brett19 brettlangdon briandela brianloveswords brianseeders brittanystoroz brucem buzzduck Bwild bytemask_ C0deMaver1ck_ c4milo CaffeineAddict cagedwisdom caitp callumacrae calvinmetcalf captain_morgan carldanley_znc carlhako Cassyblanca casual Cathy ccbmx cce ccohn cebor cedricziel ceej cfq chapel charuru Cheery chenghiz chiel_ chindley chiper chjj chovy chrisdickinson chrisshattuck Christian2 christianboehlke chromatome CIDIC cipher___ ciwolsey cjimti cjwelborn clamstar clarkk clarle ClarusCogitatio claudiyoh climbup Cloudflare_ cmwelsh codelahoma coderdad_ coffey coleb comma8 connor_goodwolf Connorhd_ connrs conradev Coornail_ copongcopong CornishPasty coryasaurus Couto CptCleve1 cpup crashsystems creationix crodas cryptojuice ctgriffiths ctorp culthero culturelabs curfont Cutzenfreund cxreg Cyph3r D-Boy d4w33d daed daedeloth daffl dainis daleharvey damir__ danecando danemacmillan danfinch danfinlay_ danielfilho danjenkins danmactough danneu DannyFritz danoo DANtheBEASTman DanZimm darach Darkwater Darryl Davey david_brent David_Hdez|AFK davros_ dawolf dbackslash dbck dcamp de_henne dec deedubs deeebug Deejay_ DelphiWorld dermot derrzzaa Dev0n devdazed dfoolz- dfucci_ diamonds DiegoMax_ diffalot digiwano Diogo diosney disnet____ DJDan djoot djQuery dman777_alter dmarr dmitriiabramov dmz dodobas doki_pen domeh Domenic dook Dr3amc0d3r|away dra Draggor drags Dramors drawesome drodger drpal DrPizza drudge dseitz dubban dvorkbjel dvz_ Dwarf dwayne e2xistz e^ipi Earthnail ebi ebryn ec ecksun ed209 edoloughlin edude03 edwardly edy Efrem ehlovader eighty4 eins78 ejnahc Elisha ellell emilsedgh empee enaqx enntee eno epa_ Ephemeral ePirat erikg erkmell Erriond esatterw1 Esya euoia euphoria Evanlec EvilJStoker EvilPacket exp10r3r ey3ball eyebraus Ezku f4lk0n fabienf faddah fas fastman fatalhalt faugusztin featheryahn febits felipeduardo felixjet_ felixn FernandoBasso Fetch FIFOd[a] finnp FIQ Fishrock123 Fistful_of_coins fivetanley fiws|meh flgr Floatingman Floyd_ FMJaggy fn00dle FooBarWidget ForbesLindesay fourq frdmn frecel freedrull freeone3000 Friss frkout FruitieX FunnyLookinHat Furai furier Fusl gandalfpimp gangleri garndt Garo__ garren gcann gcg gdbz Geertje123 Gege genial gf3 ggherdov gh0st ghostbar gig3m giganticus Gildarts gildean Gilgameshkun gingermusketeer gkatsev glebihan gleki gnarf Gottox gozala grantbow gratimax Grebrez GreenJello Gregor grep_away groundwater gsd Guest19827 Guest27976 Guest28060 Guest52370 Guest53264 Guest54703 Guest62246 Guest66428 Guest6760 guybrush GvJordan Gwl gyaresu_ h4cc hackygolucky hahaguys Haifeng hairlesshobo halfhalo HannahWolfe happyface_ hareth harrisonm harthur hartsock harttho Havvy hays heavystorm henriquev herenow herme5 heroux heroux_ heyimwill heytrav hfp_work hguux hipsterslapfigh- hipsterslapfight hlfw0rd Holomorphism howitdo hswolff htmldrum hueniverse hvgotcodes hydrajump hydrospell[l] i0rn ianl iarna iH8Pickles ikanobori_ iksik ilya im0b ImBcmDth_ imslavko indexzero Industrial insel instence Internet13 inukshuk iondrip ips|malc irclogger_com ircretary ironfroggy_ irrev_greg iShortBus it0a itruslove ivan\ ivan` IvanBlagdan ivanoats_ IvanoffC_ ixaxaar j0ni j4jackj jabbslad______ jadne jagoda JakeSays jakutis jalcine jamenlang James_T jamesd_ jameskyburz jamespw Jamy jan____ Janhouse janne Janzeh japherwocky jareddlc jaredrhine_ jarib jasonrm jayne jbeaudry jbenet jbpros JBreit jburkhart jcrugzz jdeeburke jdewald jdj_dk jedgar jednorozec jee jeffisabelle jeffspies jeffw198___ Jellydog JelmerD jennmoneydollars jerev_away jergason jeroentbt jesusabdullah jfojtl jga jgornick jharbaugh jhermann jhihn_ jimmyhillis jimmyz2 JJJan jjmalina jkeiper jkridner jlyndon jmar777 jmckind jmfcool___ jmimi jmonay JmZ jn jnollette joaofelix jocafa joelsmith joeyday__ joeytwiddle johnkpaul Johnny- johwir joliss_ jolros jolts Jonathan1cClare Jonathan2cClare jongleberry JonGretar_ jontmorehouse jorb joshfinnie joshie joshontheweb joshskidmore joshtau joshthecoder jplock jrdn jreading jrhe_ jsec jsha jsjs jso JSON_voorheez jspeaks jtw julianduque juliangruber julien-f julienb julienb__ jumpman justicefries juul jypie k1ng k308de k3k kaichanvong Kaijo Kaimei kakashiAL Kaltiz kalypso kalz kantakt kanzure kaplejon kaspertidemann katlogic_ katsh katylava kavon kborchers keksike- kelt_ kenansulayman KenanY kentcdodds Kester kevinfagan kevireilly kex KicStart king313 KingDragon Kingdutch KiNgMaR kitallis kjeldahl kluka Klumben knownasilya KnownSyntax koell kojack1 koldirg koqueue kraft kreiggers krisbrown kriskropd kroogs krotscheck Kruppe Kruxoman kshep kud kudos kumavis kumavis_ kuuranne_ kuzetsa kwmiebach kyoushuu L0j1k l3kn L8D_ L_star ladekjaer lampe2 lanceball Latros-OS lebster Lee- Lee1092 LeftWing__ lektrik leonardo leptonix_ leTwitch Levite lewdev lightsofapollo__ lijnen lilleman limulus_ linojon lipizzan llakey_ lmorchard lnong loglaunch_ lolzabawa Lorentz Lorthirk LouisT loz--_ lrvick lsv LucasTT lud luite lukekarrys Lunar_Lamp Lunchy lw m-bodmer m0 M2Ys4U m_gol macabre machty Mack Mackseraner MacWinner Madison mads maegeri mafintosh magic mahesh_ MalfaitRobin maltris_ ManneW manuelbieh maoyteey mape maqr Maqs marcadde1 marcello3d marcoasbreuk marienz marionebl_ markand markin marklite markour Marsup martamccasland martintrojer mary5030 master5o1 master5o1|work mateu mathiasbynens matkl matt_c mattattaque matthoiland mattmcclure mawe mboelter mburns Mchl McJesus McKay mclee mclenithan McMAGIC--Copy mdel meandi_1 medice medikoo-bot medusa mekwall mennea MerlinDMC merpnderp mertimor- meso meta|dreamforce mezod mfunkie mhernandez1 mhilmi Mia micro_ mikaelb mikegerwitz MikeS_ mikolalysenko_ milena milkandtang mils miqui MistahKurtz MitchW mityaz mitzip mize mjijackson MKCone`Office mkitson mko mlegenhausen mlocher mlpug mmalecki mndyncl mnilsson Mniot moniker_ monokrome morenoh149 morficus mpajor MrBaboon mrbitsandbytes mrbz MrDHat_ mrkake mrkishi mrkurt mrmoneyc Mso150 mspier msx mtree mtscout6 mtsr mu MuffinMan` mwak MxG_ myndzi N1c0tux naccall nail_ Naive nanashiRei NanoArrow nathan7 nathanbz nathanr Natim ncthom91 ndrei ndru_ neataron_ Nectarly Ned_ neilf_____ netameta_ netwoodle nhuerta4 nicelife nicetry niclone nightfly ninegrid NinjaBanjo_ ninkotech__ njbair nkohari nlf no9 nodedfree NodeNagant NoirSoldats nonks NoNMaDDeN noobee nopper NormySan noxoc nsm nStensen nszceta nthgergo nuck nuizzy null_radix nullrouted nya octetcloud odin_ odyniec oemia oetjenj oieesah Okaria okic okuryu oldclone olekenneth olfox Olivier| olli- ollie omnidan Omnilord OneAngryDBA oNeDaL oohnoitz Orbitrix orik orionstein oroce orospakr othiym23 Outsider_______ overra ovnicraft owenb____ oyho____ p0sixpsc_ p15 PabloAngello__ Pagan palid paperElectron parshap_ paskl pastry patrickarlt patrio patsToms paul__ paul_k PaulCapestany paulstatezny_ peckermanzzz Peeter____ peol percival petka_ petris petschm Pezmc_ ph8 ph88 Phibs phishy phI||Ip Phloxx_ phpnode phuh pickels1 PierreM pirateghost pkiller plantoschka Platini platonic pluma plutoniix pmooney poorman porchrat pouloss poutine prawnsalad prbc pretentiousgit prettyrobots Proditor progrock_ PROJAK_SX prometh proppy protodave przemoc psacrifice pswizzle_ psyprus purr pxz Pyrus qard-appneta qbit qdk qpls_ quackgyver quattro_ queequeg2 rafaelcaceres raj rakm ramitos randallagordon raoul raphie rapzo ratsupremacy Raynos raypulver raz rbs rcombs rcs real_ate ReAnna ree reid relling rempah rendar renetool rf rgl rhalff rho rhodesjason rhonabwy rhysyngsun richiebkr rick68_ ricket rickharrison rickibalboa rigel rigor789|away Riviera rkgarcia robbie-away robertknight robertkowalski RobertLaptop robertmaxrees robey robmorrissey robmozart roddy_ roger_raymond RogerWS_ romb ronc RoryHughes rossdm rossk rounce rphillips rtucker88 Rubennn rud RushPL rvagg rwaldron rwbg rwjblue ryan_stevens rymate1234 ryst s34n s3shs s5fs s_e saapas sadtaco Sammy8806 SamuraiJack sandelius sandinmyjoints_ sapiosexual sarlalian savardc sayakb sballesteros schredder scott_gonzalez scottalan scrollback sdboyer sdiawara sdouble SDr seanmerron seanmonstar SebastianFlyte Sebastien-L secondjeff SecretAg1nt Segrel sejo Sembiance sente setec sfa_ sfr^ Sgeo Shadda shakinha_ shama shamanime shane___ shanse shapeshed Sharaal Shayanjm sheldon____ shennyg____ shesek shiftins shindakun shoky shrop siddart silvers_ simius simonbusborg sinwave Sir_Ragnarok SirCmpwn sirecote SirFunk siruf Sixmsj Sixthly siyb_ skaag skarn Skeit_ skift skip_freely Slashbunny slaskis Slaytorson Sleepy_C1der SM0TVI smoothcode snapwich solexious Somatt Someguy123 somenick Sonderblade Sonicrida sonofdirt SorcerousFox SoreGums Sorella sorensen sorribas SoulBlade sp00x SP33D spacepluk spalger spatialbrew SpiceMan spicyramen_ spion Spr0cket spronk sputnik13 spydeee srijay SSgtSpoon sspi stalled Starduster stef Steve_Jobs stevegill__ StevenMcD StevePotayTeo StolenToast stoned Stoob_ stpn stride strmpnk studiotate stylus substack sudo_aptGet sukima_ sunfun sunoano sunu SupaHam SuperPhly superusr Sven_vB sverrej swajr Swayz swen swills Synecy syntaxc4 t_kjaergaard tanepiper__ tantalum tapout tassmjau Taylor- tbr tbrock TDJACR tehmoon Teknix tellnes Teltaria1 terinjokes terribleplan tezla tfnico___ tg tgies tgkokk thanpolas The_Fly TheAceOfHearts thebishop thedonut_ TheLink TheMoonMaster TheNumb therealk_ therealklanni Thhethssmuz thomassgn thykka tiguser tillbaks tilleps timasche- timeless timm_ timmywil timtch tinster titusfoo tlhunter3 tmeister tobie Tomashe tomaw tomazb tomku tomlane tonist top4o topaxi topwobble torgeir tourniquet towski Transfusion tranzfuse trepatud- trevorlandau tripu trodrigues tropican1 troter_ truff tsunamie Tug Tuhis tvw twisted` txdv tyler99 tylerdmace Tyop u0m3_ uber ufear_ umib0zu UniOn unreal-dude upgrayeddd uris77 ValicekB varibull varmais vassagus Vbitz vcoinminer______ verscienta vespakoen vikinghug vinnix vinnymac viperZ28 vire__ vlad_starkov vlnx voidstar VoidWhisperer_ voodootikigod voxadam wa7son wadey WakiMiko wallerdev wallzero WaltGiroir wanderfuss wang wangbus wao wavded wcummings webguynow Websoftwarez WebSpirit weeb1e wereHamster weylin wgolden whaley whatupderek Willis wizonesolutions woah wookiehangover WorkingClassDev wraithgar ws2k3 wwicks wycats xdarklight XDS2010 XemsDoom xenogis xeoncore|away xer0x xet7 xiplias Xiti xocel xonev xSmurf xyNNNoff yacc YamakasY yanick yano yaru22 ybit3 yeah568 YetiInva1er yhpark_talk_____ yorick yoshokatana YoY ypks Yrie yunong yuskesh_ Ywa zacharypch Zak_ zap zapu Zaxnyd zbzzn zeekay zeiris Zenithar Zerot zhesto zinco_ zivc Zolmeister zonetti zsentinel zyla zymurgy Zyrri zz_joeybaker zz_karupa |QSR|]
+2014-10-15 21:04:56	--	Channel #Node.js: 1400 nicks (16 ops, 0 halfops, 0 voices, 1384 normals)
+2014-10-15 21:04:56	--	URL for #node.js: http://nodejs.org/
+2014-10-15 21:05:04	--	Mode #Node.js [+Ccnt]
+2014-10-15 21:05:04	--	Channel created on Sat, 30 Jan 2010 07:48:24
+2014-10-15 21:05:18	<--	danecando (~danecando@8.31.240.20) has quit (Quit: Computer has gone to sleep.)
+2014-10-15 21:05:20	@baudehlo	haha
+2014-10-15 21:05:27	-->	Dylan_ (b84462d2@gateway/web/freenode/ip.184.68.98.210) has joined #Node.js
+2014-10-15 21:05:32	<--	robmorrissey (~robmorris@cpc26-brig15-2-0-cust123.3-3.cable.virginm.net) has quit (Quit: Computer has gone to sleep.)
+2014-10-15 21:05:34	-->	mtscout6_ (~mtscout6@64.55.129.114) has joined #Node.js
+2014-10-15 21:05:45	<--	tmeister (~tmeister@189.247.32.27) has quit (Quit: tmeister)
+2014-10-15 21:05:51	<--	Ywa (~Ywa@mailout.limetric.com) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:05:54	Dylan_	Can any one tell me what happens to the (err) object when using 'co'?
+2014-10-15 21:06:16	-->	shaker (~shaker@123.63.85.165) has joined #Node.js
+2014-10-15 21:06:17	-->	naneau (~naneau@unaffiliated/naneau) has joined #Node.js
+2014-10-15 21:06:29	-->	EhevuTov (~EhevuTov@24-148-20-58.c3-0.stn-ubr1.chi-stn.il.cable.rcn.com) has joined #Node.js
+2014-10-15 21:07:03	-->	alvaro_o (~alvaro@187.210.148.27) has joined #Node.js
+2014-10-15 21:07:09	-->	grodt (~grodt@2601:0:a800:52:38b3:eb2a:1eed:c1be) has joined #Node.js
+2014-10-15 21:07:14	<--	mtscout6_ (~mtscout6@64.55.129.114) has quit (Remote host closed the connection)
+2014-10-15 21:07:22	JmZ	anyone know of a good node lib to read jpegs and pngs? down to the pixel level (e.g. colour information and such for a particular pixel)
+2014-10-15 21:07:24	<--	spatialbrew (~spatialbr@173-21-66-192.client.mchsi.com) has quit (Remote host closed the connection)
+2014-10-15 21:07:27	<--	lw (~lw@bas15-toronto12-1168007537.dsl.bell.ca) has quit (Quit: s)
+2014-10-15 21:07:40	<--	rgl (~rgl@a95-94-80-42.cpe.netcabo.pt) has quit (Ping timeout: 240 seconds)
+2014-10-15 21:07:46	<--	briandela (~briandela@wsctc-208-115-94-229.smartcity.com) has quit (Remote host closed the connection)
+2014-10-15 21:07:46	<--	mtscout6 (~mtscout6@64.55.129.114) has quit (Read error: Connection reset by peer)
+2014-10-15 21:07:48	-->	mtscout6_ (~mtscout6@64.55.129.114) has joined #Node.js
+2014-10-15 21:08:40	-->	Ywa (~Ywa@mailout.limetric.com) has joined #Node.js
+2014-10-15 21:08:45	-->	simb (~simb@c-76-27-203-165.hsd1.or.comcast.net) has joined #Node.js
+2014-10-15 21:09:30	<--	ncthom91 (~ncthom91@173.252.71.129) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:09:30	pouloss	backend dev is fuckin' hard
+2014-10-15 21:09:32	-->	briandela (~briandela@wsctc-208-115-94-229.smartcity.com) has joined #Node.js
+2014-10-15 21:09:35	<--	hareth (~kapit@ram75-1-78-192-223-109.fbxo.proxad.net) has quit (Quit: hareth)
+2014-10-15 21:09:41	<--	naneau (~naneau@unaffiliated/naneau) has quit (Client Quit)
+2014-10-15 21:09:43	-->	thealphanerd (~thealphan@pdpc/supporter/student/thealphanerd) has joined #Node.js
+2014-10-15 21:09:54	<--	ryan_stevens (~ryan_stev@199-83-221-11.PUBLIC.monkeybrains.net) has quit (Quit: ryan_stevens)
+2014-10-15 21:09:57	JmZ	s/hard/fun
+2014-10-15 21:10:12	<--	briandela (~briandela@wsctc-208-115-94-229.smartcity.com) has quit (Remote host closed the connection)
+2014-10-15 21:10:19	<--	sudo_aptGet (~sudo_aptG@200.99.26.2) has quit (Remote host closed the connection)
+2014-10-15 21:10:21	-->	jiskiras (~jiskiras@71.199.7.57) has joined #Node.js
+2014-10-15 21:10:41	-->	Ergo (~ergo@194.247.62.73) has joined #Node.js
+2014-10-15 21:10:45	katlogic_	Shayanjm: It's not that bad. Thanks to web being so open, when one is choosing the online bank, one can just right click and check the source code.
+2014-10-15 21:10:50	katlogic_	theres often a strong correlation.
+2014-10-15 21:10:59	-->	piscisaureus (~otwo@92-108-58-97.dynamic.upc.nl) has joined #Node.js
+2014-10-15 21:11:11	--	Mode #Node.js [+o piscisaureus] by ChanServ
+2014-10-15 21:11:14	Shayanjm	katlogic_: how often have you properly vetted your service provider's source code?
+2014-10-15 21:11:14	katlogic_	your new Date() "random" seeds on iphone didnt impress me, blockchain.info.
+2014-10-15 21:11:17	-->	DiegoMax (~diego@pc-55-206-83-200.cm.vtr.net) has joined #Node.js
+2014-10-15 21:11:24	-->	kriskowal (~kris@8.26.157.128) has joined #Node.js
+2014-10-15 21:11:27	<--	Sebastien-L (~sebastien@2a01:e35:8b47:7ab0:cdcc:d3fd:72bc:caff) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:11:31	Shayanjm	and how many people are capable of checking through an entire financial institution's source?
+2014-10-15 21:11:38	Shayanjm	FOSS is not the issue.
+2014-10-15 21:11:51	katlogic_	Shayanjm: Of course you can see only the frontend side.
+2014-10-15 21:11:59	katlogic_	But even that is often good indicator.
+2014-10-15 21:12:02	Shayanjm	it's the fact that these entities are built by people with little to no knowledge of how financial institutions are actually run and maintained
+2014-10-15 21:12:07	<--	Dylan_ (b84462d2@gateway/web/freenode/ip.184.68.98.210) has quit (Ping timeout: 246 seconds)
+2014-10-15 21:12:11	Shayanjm	katlogic_: I'll wait for some real regulation.
+2014-10-15 21:12:17	katlogic_	Shayanjm: Indeed
+2014-10-15 21:12:29	-->	Swizec (~swizec@188-230-171-71.dynamic.t-2.net) has joined #Node.js
+2014-10-15 21:12:57	<--	ixaxaar (~ixaxaar@171.51.138.160) has quit (Ping timeout: 258 seconds)
+2014-10-15 21:13:22	<--	iondrip (~nibbler@93.180.104.64) has quit (Quit: Leaving)
+2014-10-15 21:13:30	--	Guest27976 is now known as whyhankee
+2014-10-15 21:13:35	<--	Aeq (~aeq@5.18.56.239) has quit
+2014-10-15 21:13:47	<--	tomlane (laney@Is.It.Dead.PanicBNC.org) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:14:03	<--	woah (~woah@75-101-111-82.dedicated.static.sonic.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-15 21:14:33	<--	shaker (~shaker@123.63.85.165) has quit (Remote host closed the connection)
+2014-10-15 21:14:34	<--	Latros-OS (~textual@fctnnbsc30w-198164210247.dhcp-dynamic.FibreOp.nb.bellaliant.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-15 21:14:39	<--	NormySan (~NormySan@212.85.89.123) has quit (Read error: Connection reset by peer)
+2014-10-15 21:14:49	-->	rmg (~rmg@184.65.58.166) has joined #Node.js
+2014-10-15 21:15:07	-->	shaker (~shaker@93.95.204.90) has joined #Node.js
+2014-10-15 21:15:08	-->	tmeister (~tmeister@189.247.32.27) has joined #Node.js
+2014-10-15 21:15:11	-->	choop (~choop@c-50-147-253-126.hsd1.ga.comcast.net) has joined #Node.js
+2014-10-15 21:15:21	<--	DiegoMax_ (~diego@pc-55-206-83-200.cm.vtr.net) has quit (Ping timeout: 272 seconds)
+2014-10-15 21:15:33	<--	SamuraiJack (~nickolay@109.172.78.110) has quit (Quit: Konversation terminated!)
+2014-10-15 21:15:35	-->	EyePulp (~eyepulp@38.89.245.83) has joined #Node.js
+2014-10-15 21:15:41	-->	tomlane (laney@Is.It.Dead.PanicBNC.org) has joined #Node.js
+2014-10-15 21:15:52	<--	DelphiWorld (~TheVoicer@openvpn/user/DelphiWorld) has left #Node.js ("I'm a happy Miranda NG user! Get it here: http://miranda-ng.org/")
+2014-10-15 21:16:06	pouloss	baudehlo: the problem is I don't understand all security as u said but I have to do it on my own that's why I asked for the most secure way to handle session in nodejs
+2014-10-15 21:16:17	<--	bmcquee (~bmcquee@161.170.193.104) has quit (Remote host closed the connection)
+2014-10-15 21:16:27	freeone3000	katlogic_: I doubt that lawyers will go after a properly-implemented bitcoin bank. After all, cryptocurrencies are about anonimity. So obviously, your bank is a website without any public information invested in it. So you just accept deposits, and ... actually, no, we're good, stop there.
+2014-10-15 21:16:27	-->	encod3 (~encod3@a83-163-98-141.adsl.xs4all.nl) has joined #Node.js
+2014-10-15 21:16:46	<--	WaltGiroir (~walt@168-215-245-19.static.twtelecom.net) has quit (Quit: WaltGiroir)
+2014-10-15 21:16:57	Shayanjm	pouloss: our answer is: don't do it until you understand how it works
+2014-10-15 21:17:00	katlogic_	freeone3000: Luckily, people often do at least that much of due dilegence.
+2014-10-15 21:17:03	<--	psacrifice (psacrifice@Have.I.Gone.Mad.PanicBNC.org) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:17:16	katlogic_	freeone3000: If there are no traceable dox to site operator, it will be called out on it.
+2014-10-15 21:17:21	katlogic_	save for obvious darkmarkets etc
+2014-10-15 21:17:32	<--	umib0zu (~jalil@ndcpat25.partners.org) has quit (Quit: Ex-Chat)
+2014-10-15 21:17:39	-->	TripTastic (~Trip@72.25.59.16) has joined #Node.js
+2014-10-15 21:17:53	<--	gangleri (~gangleri@46.165.210.17) has quit (Ping timeout: 272 seconds)
+2014-10-15 21:18:35	<--	JBreit (~Trip@h71.61.21.98.dynamic.ip.windstream.net) has quit (Ping timeout: 244 seconds)
+2014-10-15 21:18:37	<--	damir__ (~damir@cpe-212-85-175-204.cable.telemach.net) has quit (Ping timeout: 255 seconds)
+2014-10-15 21:18:45	-->	sudo_aptGet (~sudo_aptG@200.99.26.2) has joined #Node.js
+2014-10-15 21:18:47	--	simb is now known as simb|away
+2014-10-15 21:18:57	-->	orbsio (~textual@ec2-50-112-162-223.us-west-2.compute.amazonaws.com) has joined #Node.js
+2014-10-15 21:19:11	-->	psacrifice (psacrifice@2a01:4f8:d13:311::3) has joined #Node.js
+2014-10-15 21:19:21	pouloss	Shayanjm: I just want to understand how it works
+2014-10-15 21:19:30	<--	jiskiras (~jiskiras@71.199.7.57) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-15 21:19:40	<--	tyler99 (~textual@pool-96-252-144-250.tampfl.fios.verizon.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-15 21:19:40	Shayanjm	pouloss: that's a big topic - better served if you do your own research and come back with more specific questions about implementation.
+2014-10-15 21:19:43	-->	samfalkner (~samfalkne@inet-aumc03-o.oracle.com) has joined #Node.js
+2014-10-15 21:19:45	Shayanjm	or there is always ##security
+2014-10-15 21:19:55	<--	ed209 (~ed209@165.225.128.67) has quit (Remote host closed the connection)
+2014-10-15 21:19:57	<--	mlpug (~mlpug__@dsl-espbrasgw1-54fa7d-198.dhcp.inet.fi) has quit (Remote host closed the connection)
+2014-10-15 21:20:05	katlogic_	as for understanding how it truly works, best is to try to break it
+2014-10-15 21:20:06	-->	ed209 (~ed209@165.225.128.67) has joined #Node.js
+2014-10-15 21:20:07	<--	Thhethssmuz (~Thhethssm@cm-176.74.209.190.customer.telag.net) has quit (Remote host closed the connection)
+2014-10-15 21:20:24	katlogic_	there are various challenges (ie legal) around, along with tutorials
+2014-10-15 21:20:25	-->	everjeje (uid25240@gateway/web/irccloud.com/x-hgyolrhwyillknoz) has joined #Node.js
+2014-10-15 21:20:35	<--	Phloxx_ (~quassel@p4FFE8AE9.dip0.t-ipconnect.de) has quit (Remote host closed the connection)
+2014-10-15 21:20:36	-->	demoman (~demoman@d51a5da76.access.telenet.be) has joined #Node.js
+2014-10-15 21:20:36	pouloss	ok thanks
+2014-10-15 21:20:40	<--	TheAceOfHearts (~TheAceOfH@50.247.73.165) has quit (Quit: Leaving.)
+2014-10-15 21:20:49	freeone3000	I'm attempting to implement a user management system for a website. Company policy stuck me with mean.io. What's a good library for putting authentication in front of client pages, and having separate auth for admin pages?
+2014-10-15 21:21:17	@baudehlo	we don't want to sound like debbie downer pouloss, but this stuff is hard and if you do it wrong you're leaving your customers a huge liability.
+2014-10-15 21:21:18	-->	ryan_stevens (~ryan_stev@199-83-221-11.PUBLIC.monkeybrains.net) has joined #Node.js
+2014-10-15 21:21:39	<--	jdj_dk (~jdj_dk@178.21.88.161) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:21:43	pouloss	by the way all I do is legal ^^
+2014-10-15 21:21:45	-->	girishr (~girishr@99-127-224-46.lightspeed.sntcca.sbcglobal.net) has joined #Node.js
+2014-10-15 21:22:06	Shayanjm	freeone3000: you can use passport and just build your authentication schemes however you want
+2014-10-15 21:22:17	-->	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2014-10-15 21:22:19	<--	mahesh_ (~Mahesh@122.175.14.210) has quit (Ping timeout: 272 seconds)
+2014-10-15 21:22:27	<--	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Max SendQ exceeded)
+2014-10-15 21:22:29	freeone3000	Shayanjm: Nothing like JaaS where I can just gen a bit of XML to define my realms backed by a provider?
+2014-10-15 21:22:37	pouloss	yeah I'm gann
+2014-10-15 21:22:53	Shayanjm	freeone3000: Similar concept, probably easier to handle granularity with passport though
+2014-10-15 21:22:56	pouloss	yeah I'm gonna choose beween thees and JWT
+2014-10-15 21:23:04	-->	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2014-10-15 21:23:04	pouloss	*this
+2014-10-15 21:23:05	freeone3000	Shayanjm: Cool, looking into it. Thanks.
+2014-10-15 21:23:12	-->	allain (~allain@CPE788df7e1c8d1-CM788df7e1c8d0.cpe.net.cable.rogers.com) has joined #Node.js
+2014-10-15 21:23:16	<--	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Max SendQ exceeded)
+2014-10-15 21:23:30	<--	trevorlandau (~trev@69.2.124.20) has quit (Remote host closed the connection)
+2014-10-15 21:23:35	<--	Mso150 (~ctlM@80.83.239.9) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:23:46	-->	jdj_dk (~jdj_dk@178.21.88.161) has joined #Node.js
+2014-10-15 21:23:54	-->	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2014-10-15 21:23:59	--	danmactough is now known as danmactough_
+2014-10-15 21:24:03	<--	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Max SendQ exceeded)
+2014-10-15 21:24:16	<--	enaqx (~enaqx@user-206.98.infomir.com.ua) has quit (Ping timeout: 244 seconds)
+2014-10-15 21:24:24	<--	simb|away (~simb@c-76-27-203-165.hsd1.or.comcast.net) has quit (Quit: Leaving...)
+2014-10-15 21:24:37	-->	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2014-10-15 21:24:50	<--	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Max SendQ exceeded)
+2014-10-15 21:24:54	-->	samugc47 (~kvirc@200.Red-88-2-121.staticIP.rima-tde.net) has joined #Node.js
+2014-10-15 21:25:13	<--	oemia (~oemia@24.114.29.222) has quit (Ping timeout: 258 seconds)
+2014-10-15 21:25:24	-->	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2014-10-15 21:25:30	<--	Deejay_ (~textual@48.229.208.46.dyn.plus.net) has quit (Quit: Computer has gone to sleep.)
+2014-10-15 21:25:35	<--	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Max SendQ exceeded)
+2014-10-15 21:25:38	-->	gdesouza (~gdesouza@c-67-170-37-107.hsd1.wa.comcast.net) has joined #Node.js
+2014-10-15 21:25:42	<--	dermot (~dermot@75-149-217-85-Illinois.hfc.comcastbusiness.net) has quit (Read error: Connection reset by peer)
+2014-10-15 21:25:43	bradleymeck	freeone3000: no XML dbs for node (with no intent to start using them), also realms are specific to javaland. ldap is pretty gnarly but a good way if you want serious user management
+2014-10-15 21:26:02	--	danmactough_ is now known as danmactough
+2014-10-15 21:26:06	freeone3000	bradleymeck: Well, realms are part of the HTTP Authentication specification, so I'd say "java land" is a bit overspecific.
+2014-10-15 21:26:14	-->	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has joined #Node.js
+2014-10-15 21:27:18	-->	ningu (~unamuno@c-76-126-137-228.hsd1.ca.comcast.net) has joined #Node.js
+2014-10-15 21:27:32	-->	rockbot__ (~rockbot__@70-36-227-20.dsl.dynamic.fusionbroadband.com) has joined #Node.js
+2014-10-15 21:27:43	<--	jypie (~jypie@107-209-198-135.lightspeed.irvnca.sbcglobal.net) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-15 21:28:10	bradleymeck	freeone3000: realms in http auth are completely separated from user auth in general
+2014-10-15 21:28:21	bradleymeck	realms usually refer to ldap ou's for me
+2014-10-15 21:28:22	-->	ericf (~ericf@98.139.248.67) has joined #Node.js
+2014-10-15 21:28:50	-->	jvrousseau (~jvroussea@outgoing.norman.wdtinc.com) has joined #Node.js
+2014-10-15 21:29:00	<--	Skeit_ (~Lingo@69.80.101.88) has quit (Ping timeout: 250 seconds)
+2014-10-15 21:29:22	<--	gdesouza (~gdesouza@c-67-170-37-107.hsd1.wa.comcast.net) has quit (Remote host closed the connection)
+2014-10-15 21:29:26	<--	kriskowal (~kris@8.26.157.128) has quit (Ping timeout: 244 seconds)
+2014-10-15 21:29:37	freeone3000	bradleymeck: Yeah, we're looking into LDAP.
+2014-10-15 21:29:40	-->	gdesouza (~gdesouza@c-67-170-37-107.hsd1.wa.comcast.net) has joined #Node.js
+2014-10-15 21:29:55	samugc47	Hi all, im working on a web app with node and i and now storing current time when user do a login. I don't know why but on my console with nodejs the value obtained with new Date is ok, but now the same when running it on my app. could anyone help? thanks
+2014-10-15 21:30:21	<--	fabienf (~fabien@d54C0B508.access.telenet.be) has quit (Quit: fabienf)
+2014-10-15 21:30:32	bradleymeck	not even sure how http auth would deal with having multiple realms on the same page...
+2014-10-15 21:30:35	<--	Floyd_ (Floyd_@2a00:d880:3:1::e8d1:53ef) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:30:37	-->	ahtik (~ahtik@46.115.144.41) has joined #Node.js
+2014-10-15 21:30:41	-->	karlmikko (~karlmikko@14-200-58-230.static.tpgi.com.au) has joined #Node.js
+2014-10-15 21:30:46	-->	hugorodrigues (~hugorodri@a89-153-144-246.cpe.netcabo.pt) has joined #Node.js
+2014-10-15 21:30:51	samugc47	i wanted to say not the same**
+2014-10-15 21:30:56	freeone3000	bradleymeck: Poorly, since it's per request.
+2014-10-15 21:30:59	<--	sandelius (~textual@81-226-132-78-no69.tbcn.telia.com) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-15 21:31:16	__joshua__	samugc47:  are you saying its giving a incorrect date?
+2014-10-15 21:31:31	<--	jerev_away (jerev@Challenge.Accepted.PanicBNC.eu) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:31:32	samugc47	yes _joshua
+2014-10-15 21:31:32	<--	edy (~edy@kohana/user/edy) has quit (Quit: (null))
+2014-10-15 21:31:32	-->	jiskiras (~jiskiras@c-71-199-7-57.hsd1.ut.comcast.net) has joined #Node.js
+2014-10-15 21:31:36	<--	jiskiras (~jiskiras@c-71-199-7-57.hsd1.ut.comcast.net) has quit (Max SendQ exceeded)
+2014-10-15 21:31:42	<--	brianloveswords (~brianlove@pool-100-2-12-3.nycmny.fios.verizon.net) has quit (Quit: Computer has gone to sleep.)
+2014-10-15 21:31:50	__joshua__	elaborate.  is it 0?
+2014-10-15 21:31:54	samugc47	i have tried new Date().toLocaleString() also with no lucky
+2014-10-15 21:31:55	pouloss	that's just for gamble
+2014-10-15 21:31:59	-->	edy (~edy@kohana/user/edy) has joined #Node.js
+2014-10-15 21:32:05	-->	briandela (~briandela@wsctc-208-115-94-229.smartcity.com) has joined #Node.js
+2014-10-15 21:32:05	-->	jiskiras (~jiskiras@c-71-199-7-57.hsd1.ut.comcast.net) has joined #Node.js
+2014-10-15 21:32:07	-->	simb (~simb@c-76-27-203-165.hsd1.or.comcast.net) has joined #Node.js
+2014-10-15 21:32:08	pouloss	in a game
+2014-10-15 21:32:09	<--	jiskiras (~jiskiras@c-71-199-7-57.hsd1.ut.comcast.net) has quit (Max SendQ exceeded)
+2014-10-15 21:32:16	<--	danemacmillan (~danemacmi@unaffiliated/danemacmillan) has quit (Ping timeout: 240 seconds)
+2014-10-15 21:32:20	-->	Ziggy79 (~zzzzzzzzz@5ED18046.cm-7-2c.dynamic.ziggo.nl) has joined #Node.js
+2014-10-15 21:32:22	<--	chrisshattuck (~chrisshat@96-18-101-205.cpe.cableone.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-15 21:32:32	samugc47	0? what you mean?
+2014-10-15 21:32:37	-->	jiskiras (~jiskiras@c-71-199-7-57.hsd1.ut.comcast.net) has joined #Node.js
+2014-10-15 21:32:42	-->	chrisshattuck (~chrisshat@96-18-101-205.cpe.cableone.net) has joined #Node.js
+2014-10-15 21:33:03	bradleymeck	what is the result of .toLocaleString
+2014-10-15 21:33:06	ningu	samugc47: what is incorrect about the date?
+2014-10-15 21:33:09	bradleymeck	and what do you expect it to be
+2014-10-15 21:33:21	-->	oemia (~oemia@24.114.29.222) has joined #Node.js
+2014-10-15 21:33:35	samugc47	i get two hours less
+2014-10-15 21:33:53	<--	mennea (~textual@31.210.186.23) has quit (Read error: Connection reset by peer)
+2014-10-15 21:34:11	__joshua__	and what is your timezone?
+2014-10-15 21:34:24	samugc47	i am on ES, gmt+1 i think
+2014-10-15 21:34:26	-->	silent1297 (~silent129@HSI-KBW-046-005-162-008.hsi8.kabel-badenwuerttemberg.de) has joined #Node.js
+2014-10-15 21:34:27	<--	sonofdirt (~sonofdirt@74.203.179.225) has quit (Remote host closed the connection)
+2014-10-15 21:34:29	-->	mennea (~textual@31.210.186.23) has joined #Node.js
+2014-10-15 21:34:33	-->	TheAceOfHearts (~TheAceOfH@50.247.73.165) has joined #Node.js
+2014-10-15 21:34:47	__joshua__	EST?
+2014-10-15 21:34:52	samugc47	spain
+2014-10-15 21:34:54	samugc47	es-ES
+2014-10-15 21:34:55	__joshua__	ah
+2014-10-15 21:35:13	-->	Ishikawayoshi (~Alex@2.95.117.102) has joined #Node.js
+2014-10-15 21:35:36	ningu	samugc47: you are running new Date() from the node console on the same server as your app?
+2014-10-15 21:35:44	__joshua__	so either western or central europe
+2014-10-15 21:35:48	samugc47	yes
+2014-10-15 21:35:58	samugc47	and there are a difference of two hours
+2014-10-15 21:36:18	__joshua__	running *nix?
+2014-10-15 21:36:21	samugc47	i don't know why but my node app detect another timezone
+2014-10-15 21:36:22	<--	edy (~edy@kohana/user/edy) has quit (Ping timeout: 265 seconds)
+2014-10-15 21:36:26	-->	wavded_ (~wavded@71-87-5-18.static.eucl.wi.charter.com) has joined #Node.js
+2014-10-15 21:36:35	freeone3000	samugc47: Random guess here. The server has another timezone set.
+2014-10-15 21:36:36	samugc47	no _joshua i am not using nix now
+2014-10-15 21:36:42	__joshua__	if so, whats result of 'date' program
+2014-10-15 21:36:45	<--	mtsr (~mtsr@52D969E0.cm-11-1b.dynamic.ziggo.nl) has quit (Quit: This computer has gone to sleep)
+2014-10-15 21:36:47	__joshua__	oh nvm
+2014-10-15 21:37:09	ningu	samugc47: what OS?
+2014-10-15 21:37:14	samugc47	debian
+2014-10-15 21:37:19	-->	ncthom91 (~ncthom91@173.252.71.129) has joined #Node.js
+2014-10-15 21:37:25	-->	trevorlandau (~trev@69.2.124.20) has joined #Node.js
+2014-10-15 21:37:33	__joshua__	oh, *nix.  so run 'date'
+2014-10-15 21:37:48	samugc47	date now on my app are 20:36 and now here is 22:36
+2014-10-15 21:37:57	<--	Cassyblanca (~Cassy@207-118-71-116.dyn.centurytel.net) has quit (Quit: My MacBook has gone to sleep. ZZZzzz…)
+2014-10-15 21:38:20	samugc47	ah your talking about unix like, yes
+2014-10-15 21:38:32	samugc47	i believed you are refer to nginx
+2014-10-15 21:38:32	<--	AvianFlu (~avianflu@static-71-183-236-66.nycmny.fios.verizon.net) has quit (Quit: Leaving)
+2014-10-15 21:38:59	<--	jmar777 (~jmar777@64.20.30.66) has quit
+2014-10-15 21:39:00	<--	karlmikko (~karlmikko@14-200-58-230.static.tpgi.com.au) has quit (Read error: Connection reset by peer)
+2014-10-15 21:39:18	samugc47	on my so i give the correct time
+2014-10-15 21:39:21	<--	wavded (~wavded@71-87-5-18.static.eucl.wi.charter.com) has quit (Ping timeout: 245 seconds)
+2014-10-15 21:39:29	-->	Latros-OS (~textual@fctnnbsc30w-198164160245.dhcp-dynamic.FibreOp.nb.bellaliant.net) has joined #Node.js
+2014-10-15 21:39:36	-->	josdeha_rt (~josdehart@535299F3.cm-6-3c.dynamic.ziggo.nl) has joined #Node.js
+2014-10-15 21:39:40	FIFOd[a]	I thought I read somewhere that node.js is greedy about memory and will use as much memory as it can on a system. Did I make this up or is this documented somewhere?
+2014-10-15 21:39:41	-->	maletor (~maletor@unaffiliated/maletor) has joined #Node.js
+2014-10-15 21:39:51	-->	AvianFlu (~avianflu@static-71-183-236-66.nycmny.fios.verizon.net) has joined #Node.js
+2014-10-15 21:39:51	--	Mode #Node.js [+o AvianFlu] by ChanServ
+2014-10-15 21:40:03	-->	Floyd_ (Floyd_@2a00:d880:3:1::e8d1:53ef) has joined #Node.js
+2014-10-15 21:40:17	-->	karlmikko (~karlmikko@14-200-58-230.static.tpgi.com.au) has joined #Node.js
+2014-10-15 21:40:22	samugc47	there are any command to force the timezone on Date()?
+2014-10-15 21:40:55	__joshua__	afraid not.  unless you use moment or something.  i would only deal with UTC if i was you
+2014-10-15 21:41:09	<--	macabre (~ibtjw@unaffiliated/macabre) has quit (Quit: Going offline, see ya! (www.adiirc.com))
+2014-10-15 21:41:34	samugc47	its weird, maybe this change are produced by another middleware installed, like session?
+2014-10-15 21:41:40	<--	ncthom91 (~ncthom91@173.252.71.129) has quit (Ping timeout: 240 seconds)
+2014-10-15 21:41:41	-->	Brythos (Brythos@2a03:8600:1003:301::1013) has joined #Node.js
+2014-10-15 21:41:59	-->	jduhls (~jduhls@75.76.125.132) has joined #Node.js
+2014-10-15 21:42:19	-->	hareth (~kapit@ram75-1-78-192-223-109.fbxo.proxad.net) has joined #Node.js
+2014-10-15 21:42:22	-->	kenperkins (~textual@nat60-100.net.kcls.org) has joined #Node.js
+2014-10-15 21:42:24	-->	lloydde_ (~lloydde@38.104.194.102) has joined #Node.js
+2014-10-15 21:42:27	<--	avree (~avree@unaffiliated/avree) has quit (Quit: Computer has gone to sleep.)
+2014-10-15 21:42:42	-->	Notte (~Portos-@ppp-216-16.30-151.libero.it) has joined #Node.js
+2014-10-15 21:42:45	kevireilly	samugc47: it might be best to just use Date.now() for the unix timestamp / epoch
+2014-10-15 21:43:01	-->	hugorodr_ (~hugorodri@a89-153-144-246.cpe.netcabo.pt) has joined #Node.js
+2014-10-15 21:43:09	-->	bit_twit (~bit_twit@188.26.206.252) has joined #Node.js
+2014-10-15 21:43:11	-->	abraxas (~abraxas@113x33x180x18.ap113.ftth.ucom.ne.jp) has joined #Node.js
+2014-10-15 21:43:23	<--	gdesouza (~gdesouza@c-67-170-37-107.hsd1.wa.comcast.net) has quit (Remote host closed the connection)
+2014-10-15 21:43:29	samugc47	how can i parse it?
+2014-10-15 21:43:46	-->	avree (~avree@unaffiliated/avree) has joined #Node.js
+2014-10-15 21:44:01	-->	gdesouza (~gdesouza@c-67-170-37-107.hsd1.wa.comcast.net) has joined #Node.js
+2014-10-15 21:44:10	bradleymeck	samugc47: http://stackoverflow.com/questions/8083410/how-to-set-default-timezone-in-node-js
+2014-10-15 21:44:16	<--	Taylor- (~Taylor@c-50-154-187-9.hsd1.fl.comcast.net) has left #Node.js
+2014-10-15 21:44:18	-->	bmcquee (~bmcquee@161.170.193.104) has joined #Node.js
+2014-10-15 21:44:20	<--	sudo_aptGet (~sudo_aptG@200.99.26.2) has quit (Remote host closed the connection)
+2014-10-15 21:44:21	-->	jerev_away (jerev@Challenge.Accepted.PanicBNC.eu) has joined #Node.js
+2014-10-15 21:44:32	<--	rmg (~rmg@184.65.58.166) has quit (Remote host closed the connection)
+2014-10-15 21:44:39	bradleymeck	samugc47: Date.now() is number of milliseconds since 1970
+2014-10-15 21:45:00	samugc47	oh thanks, i am going to try it
+2014-10-15 21:45:11	-->	mtscout6 (~mtscout6@64.55.129.114) has joined #Node.js
+2014-10-15 21:45:25	-->	kfenn (~kfenn@ip-81-23-63-12.ask4internet.com) has joined #Node.js
+2014-10-15 21:45:26	-->	Taylor (~Taylor@unaffiliated/taylor) has joined #Node.js
+2014-10-15 21:45:29	<--	Taylor (~Taylor@unaffiliated/taylor) has quit (Excess Flood)
+2014-10-15 21:46:27	<--	hugorodrigues (~hugorodri@a89-153-144-246.cpe.netcabo.pt) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:46:28	-->	atheken (~atheken@pool-108-2-161-12.phlapa.fios.verizon.net) has joined #Node.js
+2014-10-15 21:46:38	-->	redonkulus (~redonkulu@2001:4998:effd:600:3b:fba0:af27:f1ab) has joined #Node.js
+2014-10-15 21:46:41	<--	ahtik (~ahtik@46.115.144.41) has quit (Quit: Leaving)
+2014-10-15 21:46:46	<--	lloydde_ (~lloydde@38.104.194.102) has quit (Ping timeout: 250 seconds)
+2014-10-15 21:46:56	-->	ahtik (~ahtik@46.115.144.41) has joined #Node.js
+2014-10-15 21:47:02	samugc47	same problem with process.env.TZ = 'Europe/Amsterdam'
+2014-10-15 21:47:13	samugc47	its really weird
+2014-10-15 21:47:16	<--	hugorodr_ (~hugorodri@a89-153-144-246.cpe.netcabo.pt) has quit (Ping timeout: 240 seconds)
+2014-10-15 21:47:29	samugc47	so, i am using express
+2014-10-15 21:47:50	<--	FernandoBasso (~FernandoB@189.27.162.247.dynamic.adsl.gvt.net.br) has quit (Quit: another damn uni class...)
+2014-10-15 21:47:50	<--	abraxas (~abraxas@113x33x180x18.ap113.ftth.ucom.ne.jp) has quit (Ping timeout: 258 seconds)
+2014-10-15 21:48:06	<--	naccall (~anunakki@2601:6:3d00:67c:644c:8cb0:c1f4:97) has quit (Read error: Connection reset by peer)
+2014-10-15 21:48:15	bradleymeck	samugc47: please set the variable before starting up the node process
+2014-10-15 21:48:19	<--	mtscout6_ (~mtscout6@64.55.129.114) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:48:27	<--	gdesouza (~gdesouza@c-67-170-37-107.hsd1.wa.comcast.net) has quit (Ping timeout: 265 seconds)
+2014-10-15 21:48:31	-->	dstarnes (~dstarnes@adsl-74-242-175-203.mem.bellsouth.net) has joined #Node.js
+2014-10-15 21:48:39	-->	tilgovi (~randall@couchdb/committer/tilgovi) has joined #Node.js
+2014-10-15 21:48:46	-->	assia_t (~assia_t@74.212.183.186) has joined #Node.js
+2014-10-15 21:48:46	bradleymeck	setting env vars once node has started is 1. problematic 2. an anti-pattern
+2014-10-15 21:49:10	-->	rob_parkhill (~rob_parkh@66-203-179-253.ded.execulink.com) has joined #Node.js
+2014-10-15 21:49:10	samugc47	thanks guy
+2014-10-15 21:49:51	samugc47	same problem
+2014-10-15 21:49:52	-->	Taylor (~Taylor@unaffiliated/taylor) has joined #Node.js
+2014-10-15 21:50:06	<--	kfenn (~kfenn@ip-81-23-63-12.ask4internet.com) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:50:10	<--	miqui (quassel@nat/hp/x-hyjftktmbxibbego) has quit (Remote host closed the connection)
+2014-10-15 21:50:17	<--	encod3 (~encod3@a83-163-98-141.adsl.xs4all.nl) has quit
+2014-10-15 21:50:20	<--	trevorlandau (~trev@69.2.124.20) has quit (Ping timeout: 240 seconds)
+2014-10-15 21:51:25	bradleymeck	whats the full string that you are seeing
+2014-10-15 21:51:36	<--	tbrock (~textual@74.113.166.198) has quit (Quit: Computer has gone to sleep.)
+2014-10-15 21:51:47	samugc47	2014-10-15T20:48:32.039Z, now
+2014-10-15 21:51:55	<--	jagoda (~jjagoda@216.82.234.65) has quit (Remote host closed the connection)
+2014-10-15 21:51:59	<--	josdeha_rt (~josdehart@535299F3.cm-6-3c.dynamic.ziggo.nl) has quit (Quit: josdeha_rt)
+2014-10-15 21:53:12	<--	dstarnes (~dstarnes@adsl-74-242-175-203.mem.bellsouth.net) has quit (Ping timeout: 258 seconds)
+2014-10-15 21:53:16	<--	rob_parkhill (~rob_parkh@66-203-179-253.ded.execulink.com) has quit (Ping timeout: 240 seconds)
+2014-10-15 21:53:37	<--	acdanger (~aemonmalo@98.218.229.175) has quit (Remote host closed the connection)
+2014-10-15 21:53:52	samugc47	sorry
+2014-10-15 21:54:07	samugc47	solved, the problem is when the date is stored on my mongodb
+2014-10-15 21:54:29	-->	shaker_ (~shaker@123.63.85.165) has joined #Node.js
+2014-10-15 21:54:54	-->	zhodge (~zach@209.242.169.194) has joined #Node.js
+2014-10-15 21:54:55	-->	crewshin (~crewshin@pool-74-100-141-7.lsanca.fios.verizon.net) has joined #Node.js
+2014-10-15 21:54:57	<--	prbc (~prbc@ec2-54-245-237-145.us-west-2.compute.amazonaws.com) has quit (Remote host closed the connection)
+2014-10-15 21:55:07	samugc47	sorry for the inconvenience, and thanks a lot!
+2014-10-15 21:55:13	-->	Lecherito (uid30063@gateway/web/irccloud.com/x-jtgmnpczmyxpbpre) has joined #Node.js
+2014-10-15 21:55:44	__joshua__	lol
+2014-10-15 21:55:47	hvgotcodes	hey im using request module, i want to see those requests in charles
+2014-10-15 21:55:53	hvgotcodes	i set proxy to localhost:8888
+2014-10-15 21:55:54	<--	mary5030 (~mary5030@72.32.115.233) has quit (Remote host closed the connection)
+2014-10-15 21:55:56	hvgotcodes	but nothing appears
+2014-10-15 21:56:00	hvgotcodes	in charles
+2014-10-15 21:56:02	--	xeoncore|away is now known as xeoncore
+2014-10-15 21:56:05	samugc47	:$:$:$:$....
+2014-10-15 21:56:22	<--	jvrousseau (~jvroussea@outgoing.norman.wdtinc.com) has quit (Quit: (null))
+2014-10-15 21:57:07	bradleymeck	hvgotcodes: did you include http:// in your setting?
+2014-10-15 21:57:16	<--	pouloss (51dc8e84@gateway/web/freenode/ip.81.220.142.132) has quit (Ping timeout: 246 seconds)
+2014-10-15 21:57:17	<--	atheken (~atheken@pool-108-2-161-12.phlapa.fios.verizon.net) has quit (Quit: atheken)
+2014-10-15 21:57:23	<--	tourniquet (~Tournique@host-static-89-41-65-137.moldtelecom.md) has quit (Quit: Leaving)
+2014-10-15 21:57:32	-->	formind (~papidev@catv-78-139-25-9.catv.broadband.hu) has joined #Node.js
+2014-10-15 21:57:39	<--	shaker (~shaker@93.95.204.90) has quit (Ping timeout: 260 seconds)
+2014-10-15 21:57:49	hvgotcodes	bradleymeck: yes proxy: ‘http://localhost:8888'
+2014-10-15 21:58:40	-->	acdanger (~aemonmalo@98.218.229.175) has joined #Node.js
+2014-10-15 21:59:00	<--	moniker_ (~moniker@173-160-76-65-atlanta.hfc.comcastbusiness.net) has quit (Ping timeout: 272 seconds)
+2014-10-15 21:59:03	-->	kriskowal (~kris@8.26.157.128) has joined #Node.js
+2014-10-15 21:59:08	<--	ccohn (~ccohn@50-90-135-167.res.bhn.net) has quit (Remote host closed the connection)
+2014-10-15 21:59:11	-->	danecando (~danecando@c-71-57-164-138.hsd1.fl.comcast.net) has joined #Node.js
+2014-10-15 21:59:48	-->	ccohn (~ccohn@50-90-135-167.res.bhn.net) has joined #Node.js
+2014-10-15 21:59:53	-->	medoix (~medoix@203.191.203.182) has joined #Node.js
+2014-10-15 22:00:03	<--	medoix (~medoix@203.191.203.182) has quit (Max SendQ exceeded)
+2014-10-15 22:00:08	<--	nszceta (~nszceta@95.211.191.41) has quit (Quit: Textual IRC Client: www.textualapp.com)
+2014-10-15 22:00:41	-->	medoix (~medoix@203.191.203.182) has joined #Node.js
+2014-10-15 22:00:41	<--	medoix (~medoix@203.191.203.182) has quit (Read error: Connection reset by peer)
+2014-10-15 22:00:48	<--	formind (~papidev@catv-78-139-25-9.catv.broadband.hu) has quit (Client Quit)
+2014-10-15 22:01:04	<--	samugc47 (~kvirc@200.Red-88-2-121.staticIP.rima-tde.net) has quit (Quit: KVIrc 4.2.0 Equilibrium http://www.kvirc.net/)
+2014-10-15 22:01:22	-->	medoix (~medoix@203.191.203.182) has joined #Node.js
+2014-10-15 22:01:24	<--	medoix (~medoix@203.191.203.182) has quit (Read error: Connection reset by peer)
+2014-10-15 22:01:53	hvgotcodes	bradleymeck: any other ideres?
+2014-10-15 22:02:02	-->	medoix (~medoix@203.191.203.182) has joined #Node.js
+2014-10-15 22:02:05	<--	medoix (~medoix@203.191.203.182) has quit (Max SendQ exceeded)
+2014-10-15 22:02:15	-->	sudo_aptGet (~sudo_aptG@200.142.126.94) has joined #Node.js
+2014-10-15 22:02:27	zhodge	are you all proud of me and my first npm module?? https://www.npmjs.org/package/bestgres :D
+2014-10-15 22:02:41	zhodge	for those postgres users out there let me know if it’s wildly unnecessary hehe
+2014-10-15 22:02:42	-->	medoix (~medoix@203.191.203.182) has joined #Node.js
+2014-10-15 22:03:00	<--	mhernandez1 (~mhernande@static-98-116-12-149.nycmny.fios.verizon.net) has quit (Remote host closed the connection)
+2014-10-15 22:03:30	-->	wallerdev_ (~wallerdev@208.185.20.30) has joined #Node.js
+2014-10-15 22:03:42	<--	wallerdev (~wallerdev@208.185.20.30) has quit (Ping timeout: 255 seconds)
+2014-10-15 22:03:42	--	wallerdev_ is now known as wallerdev
+2014-10-15 22:04:00	<--	Elisha (~elisha@tm.213.143.68.74.nm.telemach.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-15 22:04:01	<--	briandela (~briandela@wsctc-208-115-94-229.smartcity.com) has quit (Remote host closed the connection)
+2014-10-15 22:04:11	<--	x1337807x (~x1337807x@207-170-205-178.static.twtelecom.net) has quit (Quit: My MacBook Pro has gone to sleep. ZZZzzz…)
+2014-10-15 22:04:18	-->	rgl (~rgl@a95-94-80-42.cpe.netcabo.pt) has joined #Node.js
+2014-10-15 22:04:31	<--	sudo_aptGet (~sudo_aptG@200.142.126.94) has quit (Read error: Connection reset by peer)
+2014-10-15 22:04:42	-->	sudo_aptGet (~sudo_aptG@200.99.26.2) has joined #Node.js
+2014-10-15 22:05:15	-->	cure_ (~cure@rrcs-97-79-215-10.sw.biz.rr.com) has joined #Node.js
+2014-10-15 22:05:40	--	cure_ is now known as Guest99581
+2014-10-15 22:05:58	<--	timm_ (~timm@76.77.66.100) has quit (Ping timeout: 272 seconds)
+2014-10-15 22:06:41	-->	doug_ (~doug@ERMLON6511W-LP130-03-1177937426.dsl.bell.ca) has joined #Node.js
+2014-10-15 22:06:47	ningu	zhodge: https://www.npmjs.org/package/any-db-transaction
+2014-10-15 22:06:47	-->	cure__ (~cure@rrcs-97-79-215-10.sw.biz.rr.com) has joined #Node.js
+2014-10-15 22:06:55	-->	rgl_ (~rgl@a95-94-80-42.cpe.netcabo.pt) has joined #Node.js
+2014-10-15 22:06:57	<--	f4lk0n (~f4lk0n@r253-pw-timbo.ibys.com.br) has quit (Quit: Saindo)
+2014-10-15 22:07:00	<--	hareth (~kapit@ram75-1-78-192-223-109.fbxo.proxad.net) has quit (Quit: hareth)
+2014-10-15 22:07:00	<--	BigCat2K_ (~bigcat2k@c-76-113-220-250.hsd1.mn.comcast.net) has quit (Remote host closed the connection)
+2014-10-15 22:07:38	<--	jongleberry (~jongleber@static-108-38-253-66.lsanca.fios.verizon.net) has quit (Remote host closed the connection)
+2014-10-15 22:07:43	-->	BigCat2K (~bigcat2k@c-76-113-220-250.hsd1.mn.comcast.net) has joined #Node.js
+2014-10-15 22:07:44	<--	rgl (~rgl@a95-94-80-42.cpe.netcabo.pt) has quit (Read error: Connection reset by peer)
+2014-10-15 22:07:59	-->	dstarnes (~dstarnes@adsl-74-242-175-203.mem.bellsouth.net) has joined #Node.js
+2014-10-15 22:08:06	<--	Guest52370 (~cure@rrcs-97-79-215-10.sw.biz.rr.com) has quit (Ping timeout: 245 seconds)
+2014-10-15 22:08:10	-->	satazor (~satazor@102.99.136.95.rev.vodafone.pt) has joined #Node.js
+2014-10-15 22:08:10	-->	jongleberry (~jongleber@static-108-38-253-66.lsanca.fios.verizon.net) has joined #Node.js
+2014-10-15 22:08:50	<--	BigCat2K (~bigcat2k@c-76-113-220-250.hsd1.mn.comcast.net) has quit (Read error: Connection reset by peer)
+2014-10-15 22:09:04	-->	BigCat2K (~bigcat2k@c-76-113-220-250.hsd1.mn.comcast.net) has joined #Node.js
+2014-10-15 22:09:48	<--	p0sixpsc_ (~spect0r@p5B278F97.dip0.t-ipconnect.de) has quit (Quit: bye)
+2014-10-15 22:09:56	<--	topwobble (~topwobble@73.163.174.42) has quit (Quit: topwobble)
+2014-10-15 22:10:00	<--	demoman (~demoman@d51a5da76.access.telenet.be) has quit (Remote host closed the connection)
+2014-10-15 22:10:06	hvgotcodes	i got the proxy to work — the destination url was https
+2014-10-15 22:10:12	<--	jongleberry (~jongleber@static-108-38-253-66.lsanca.fios.verizon.net) has quit (Read error: No route to host)
+2014-10-15 22:10:14	hvgotcodes	is there a way to get it to accept https?
+2014-10-15 22:10:28	<--	BillCriswell (~billcrisw@mail.whatscookin.com) has quit (Remote host closed the connection)
+2014-10-15 22:10:32	-->	jongleberry (~jongleber@static-108-38-253-66.lsanca.fios.verizon.net) has joined #Node.js
+2014-10-15 22:10:38	<--	Guest99581 (~cure@rrcs-97-79-215-10.sw.biz.rr.com) has quit (Ping timeout: 260 seconds)
+2014-10-15 22:10:39	<--	cagedwisdom (~X@124-170-79-135.dyn.iinet.net.au) has quit (Remote host closed the connection)
+2014-10-15 22:11:00	<--	acdanger (~aemonmalo@98.218.229.175) has quit (Remote host closed the connection)
+2014-10-15 22:11:42	<--	mjijackson (~michael@173.247.201.231) has quit (Quit: mjijackson)
+2014-10-15 22:12:07	@MI6	joyent/node: Fedor Indutny v0.10 * 707cc25 : test: fix test-crypto-stream (+1 more commits) - http://git.io/MDboXw
+2014-10-15 22:12:15	-->	Peder_ (~quassel@host86-171-202-105.range86-171.btcentralplus.com) has joined #Node.js
+2014-10-15 22:13:21	<--	KicStart (~User@gateway/tor-sasl/kicstart) has quit (Quit: Leaving.)
+2014-10-15 22:13:38	<--	faddah (~faddah@76.115.19.249) has quit (Quit: { south park cartman voice } screw you guys... i'm... outta here! RESPECT MAH AUTHORITAY!)
+2014-10-15 22:14:09	-->	WaltGiroir (~walt@199.115.184.47) has joined #Node.js
+2014-10-15 22:14:56	zhodge	ningu: oh no that looks so pretty
+2014-10-15 22:15:01		irc: disconnected from server
